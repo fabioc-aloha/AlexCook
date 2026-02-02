@@ -1,9 +1,15 @@
 <div align="center">
 
-<img src="./cover.svg" width="850" height="1100" alt="The Alex Cookbook Cover">
+![The Alex Cookbook Cover](./cover.svg)
 
 ---
 
 ### 📖 [Enter the Cookbook →](./README.md)
+
+---
+
+#### Social Preview
+
+![Social Preview](./assets/social-preview.svg)
 
 </div>
