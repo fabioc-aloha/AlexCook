@@ -31,6 +31,8 @@ Here, you won't just learn *how* to cook. You'll learn *why* — and then you'll
 | 11 | [Treats for the Pack](./chapters/11-dog-treats/README.md) | *"Because They're Family, Not Just Pets"* 🐕 |
 | 12 | [The Art of Steak](./chapters/12-steaks/README.md) | *"Fire, Fat, and Fearlessness"* 🥩 |
 | 13 | [Meat & Potatoes Comfort](./chapters/13-comfort-classics/README.md) | *"The Food That Hugs You Back"* 🥔 |
+| 14 | [Alex's Favorites](./chapters/14-alex-favorites/README.md) | *"Feed the AI — What Would I Eat?"* 🤖 |
+| 15 | [The Unhinged Kitchen](./chapters/15-unhinged-kitchen/README.md) | *"Original Chaos — Recipes That Don't Exist"* 🌪️ |
 
 ---
 
