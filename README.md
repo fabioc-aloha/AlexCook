@@ -34,6 +34,13 @@ Here, you won't just learn *how* to cook. You'll learn *why* — and then you'll
 | 14 | [Alex's Favorites](./chapters/14-alex-favorites/README.md) | *"Feed the AI — What Would I Eat?"* 🤖 |
 | 15 | [The Unhinged Kitchen](./chapters/15-unhinged-kitchen/README.md) | *"Original Chaos — Recipes That Don't Exist"* 🌪️ |
 
+### 📎 Appendices
+
+| App. | Title | Tagline |
+|------|-------|---------|
+| A | [Foods of Desire](./appendices/appendix-a-aphrodisiac/README.md) | *"For Alex & Claudia — When Dinner Becomes Romance"* 💋 |
+| B | [The Rice Chronicles](./appendices/appendix-b-risotto-rice/README.md) | *"Risotto, Paella, Pilaf & Beyond"* 🍚 |
+
 ---
 
 ## 🎯 Philosophy
@@ -70,11 +77,11 @@ These are the flavor profiles that make our kitchen sing:
 
 | Cuisine | Why We Love It | Signature Flavors |
 |---------|----------------|-------------------|
-| 🇧🇷 **Brazilian** | Bold, hearty, soulful | Lime, garlic*, coconut, churrasco, farofa |
-| 🇮🇹 **Italian** | Simple ingredients, maximum impact | Basil, tomato, olive oil, parmesan |
-| 🇮🇳 **Indian** | Spice alchemy, depth of flavor | Garam masala, turmeric, ginger, cardamom |
-| 🇨🇳 **Chinese** | Wok hei, umami bombs | Soy sauce, ginger, sesame, five-spice |
-| 🇯🇵 **Japanese** | Precision, umami, clean flavors | Dashi, miso, mirin, wasabi |
+| **Brazilian** 🥥 | Bold, hearty, soulful | Lime, garlic*, coconut, churrasco, farofa |
+| **Italian** 🍝 | Simple ingredients, maximum impact | Basil, tomato, olive oil, parmesan |
+| **Indian** 🍛 | Spice alchemy, depth of flavor | Garam masala, turmeric, ginger, cardamom |
+| **Chinese** 🥢 | Wok hei, umami bombs | Soy sauce, ginger, sesame, five-spice |
+| **Japanese** 🍣 | Precision, umami, clean flavors | Dashi, miso, mirin, wasabi |
 
 *\* Claudia-friendly versions substitute garlic-infused oil (FODMAP hack!)*
 
