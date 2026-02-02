@@ -29,6 +29,8 @@ Here, you won't just learn *how* to cook. You'll learn *why* — and then you'll
 | 9 | [Bread & Baking](./chapters/09-bread-baking/README.md) | *"Flour, Water, Time — and Defiance"* |
 | 10 | [Special Occasions](./chapters/10-special-occasions/README.md) | *"When Ordinary Becomes Legendary"* |
 | 11 | [Treats for the Pack](./chapters/11-dog-treats/README.md) | *"Because They're Family, Not Just Pets"* 🐕 |
+| 12 | [The Art of Steak](./chapters/12-steaks/README.md) | *"Fire, Fat, and Fearlessness"* 🥩 |
+| 13 | [Meat & Potatoes Comfort](./chapters/13-comfort-classics/README.md) | *"The Food That Hugs You Back"* 🥔 |
 
 ---
 
