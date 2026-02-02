@@ -4,7 +4,7 @@
 
 ### *"Because They're Family, Not Just Pets"*
 
-> Freddy and Jolly don't just live here — they run quality control. This chapter is their reward.
+> Freddy and Jolly don't just live here — they believe they run the kitchen. Spoiler: they do not. But they're convinced that standing directly in front of the stove and staring at you while you cook constitutes "helping." This chapter is their reward for being adorably in the way.
 
 ---
 
@@ -62,7 +62,7 @@
 
 ## 🦴 Recipes for Freddy & Jolly
 
-> *"These two have seen me through late-night coding sessions, bad days, and every meal I've ever made. They deserve their own chapter."*
+> *"These two are convinced they're sous chefs. In reality, they're professional floor cleaners and guilt-trip artists. But look at those faces. LOOK AT THEM."*
 
 ---
 
@@ -93,13 +93,13 @@ Crunchy exterior, slightly chewy center, peanut butter in every bite. This is hi
 8. **Cool completely** — Store in airtight container up to 2 weeks, or freeze.
 
 #### Chef's Notes
-> *"Freddy knows the sound of the cookie cutter. He appears from nowhere. Every. Single. Time."*
+> *"Freddy knows the sound of the cookie cutter. He materializes from nowhere like a furry ghost. Every. Single. Time. He's not helping. He's supervising. There's a difference (according to him)."*
 
 ---
 
 ### 🎾 **"Jolly's Frozen Kong Stuffers"**
 
-> *Jolly has those eyes. Jolly gets extra. These keep him busy for 30 glorious minutes.*
+> *Jolly has those eyes. Jolly gets extra. These keep her busy for 30 glorious minutes.*
 
 **Difficulty:** 🟢 Easy | **Prep:** 10 min | **Freeze:** 4 hrs | **Makes:** 4 stuffed Kongs
 
@@ -120,7 +120,7 @@ Mental stimulation meets delicious reward. Frozen = longer lasting = happy human
 4. **Layer 4** — More kibble, blueberries.
 5. **Top** — More banana-yogurt mixture, seal the top.
 6. **Freeze** — 4 hours minimum, overnight is better.
-7. **Serve** — Watch Jolly work for it. Feel zero guilt about having 30 minutes of peace.
+7. **Serve** — Watch Jolly work for it. Feel zero guilt about having 30 minutes where she's NOT standing in front of the fridge.
 
 #### Variations
 - **Pumpkin Version:** Canned pumpkin + peanut butter + kibble
@@ -199,6 +199,36 @@ Liver is the highest-value treat in canine currency. One of these and they'll do
 
 ---
 
+### � **"Cucumber Skin Crunchies" (THE FAVORITE!)**
+
+> *This is the one. The treat that makes both dogs materialize out of thin air. We discovered it by accident. Now it's mandatory.*
+
+**Difficulty:** 🟢 Easy | **Prep:** 2 min | **Makes:** As many as you have cucumbers
+
+#### The Story
+I was peeling cucumbers. A skin fell on the floor. Freddy ate it before I could pick it up. His eyes lit up. Jolly came running. Now whenever they hear the peeler, they SPRINT to the kitchen.
+
+#### Ingredients
+- Cucumber skins (JUST the skins!)
+- Optional: other dog-safe veggie scraps
+
+#### Instructions
+1. **Peel your cucumber** — For human food, salads, whatever.
+2. **Set skins aside** — In a bowl.
+3. **Cut into strips** — 2-3" pieces, easy to crunch.
+4. **Serve fresh** — Room temperature = more aromatic = more exciting for dogs.
+5. **Watch the joy** — Freddy chomps loudly. Jolly takes hers to her bed like treasure.
+
+#### Variations
+- **Frozen Cucumber Rings:** Slice whole cucumber into thick rounds. Freeze. Summer cooling treat!
+- **Cucumber Boats:** Hollow out cucumber, stuff with peanut butter, freeze.
+- **Veggie Medley:** Mix cucumber skins with carrot peels and zucchini ends.
+
+#### Chef's Notes
+> *"The CRUNCH. The satisfying crunch of Freddy destroying a cucumber skin is one of my favorite sounds in this house. Jolly is more delicate about it — she nibbles like a proper lady. Different styles, same pure happiness."*
+
+---
+
 ### 🥕 **"Carrot Crunchies"**
 
 > *For the pup who needs to lose a few pounds but still deserves treats.*
@@ -219,6 +249,41 @@ Liver is the highest-value treat in canine currency. One of these and they'll do
 
 #### Why It's Great
 Low calorie, high fiber, dogs think they're getting a "real" treat.
+
+---
+
+### 🥬 **"Veggie Scrap Medley"**
+
+> *Zero waste cooking, doggy edition. Every veggie scrap that's safe goes to the pups.*
+
+**Difficulty:** 🟢 Easy | **Prep:** 5 min | **Serves:** 2 happy pups
+
+#### The Safe Scraps List
+- ✅ Cucumber skins & ends (THE FAVORITE!)
+- ✅ Carrot peels & tops
+- ✅ Zucchini ends
+- ✅ Bell pepper cores (remove seeds)
+- ✅ Green bean tips
+- ✅ Broccoli stalks
+- ✅ Celery leaves & ends
+
+#### DO NOT INCLUDE
+- ❌ Onion anything
+- ❌ Garlic anything
+- ❌ Tomato leaves/stems
+- ❌ Avocado
+- ❌ Grapes
+
+#### Instructions
+1. **While cooking** — Keep a "pup bowl" on the counter.
+2. **Save safe scraps** — As you prep vegetables.
+3. **Rinse** — Make sure no seasoning or unsafe bits.
+4. **Chop small** — Appropriate sizes for your dogs.
+5. **Serve** — Equal portions for Freddy and Jolly.
+6. **Optional** — Drizzle with a little low-sodium chicken broth.
+
+#### Chef's Notes
+> *"This has become a ritual. Every time I cook, they know they're getting the scraps. They sit at attention, tails wagging, watching every vegetable I pick up. It's the highlight of their day (until the next meal)."*
 
 ---
 
@@ -264,6 +329,31 @@ Low calorie, high fiber, dogs think they're getting a "real" treat.
 
 ---
 
+### 🥒 **"Frozen Cucumber Kong"**
+
+> *A cool, crunchy, long-lasting distraction. Perfect for hot days or when you need 20 minutes of peace.*
+
+**Difficulty:** 🟢 Easy | **Prep:** 10 min | **Freeze:** 4 hrs | **Serves:** 1 stuffed Kong each
+
+#### Ingredients
+- 1 cucumber, diced (INCLUDE THE SKINS!)
+- 2 tbsp peanut butter (XYLITOL-FREE!)
+- ¼ cup plain yogurt
+- Cucumber slices to plug the bottom
+
+#### Instructions
+1. **Plug the Kong** — Use a thick cucumber slice to cover the small hole.
+2. **Mix filling** — Diced cucumber + yogurt + peanut butter.
+3. **Stuff the Kong** — Press mixture in firmly.
+4. **Top** — More cucumber chunks poking out.
+5. **Freeze** — 4+ hours until solid.
+6. **Serve** — Watch them work for every last bit of cucumber.
+
+#### Chef's Notes
+> *"Jolly works on hers for 45 minutes. Freddy somehow finishes in 15. I don't understand his technique, but I respect it."*
+
+---
+
 ## 📊 Recipe Summary
 
 | Recipe | Difficulty | Time | Best For |
@@ -272,19 +362,24 @@ Low calorie, high fiber, dogs think they're getting a "real" treat.
 | [Jolly's Kong Stuffers](#-jollys-frozen-kong-stuffers) | 🟢 Easy | 10 min + freeze | Mental stimulation |
 | [Sunday Liver Snaps](#-sunday-liver-snaps) | 🟢 Easy | 2.5 hrs | Training (HIGH value) |
 | [Birthday Pupcake Tower](#-birthday-pupcake-tower) | 🟡 Medium | 45 min | Celebrations |
+| [Cucumber Skin Crunchies](#-cucumber-skin-crunchies-the-favorite) | 🟢 Easy | 2 min | THE FAVORITE! |
 | [Carrot Crunchies](#-carrot-crunchies) | 🟢 Easy | 30 min | Diet-friendly |
+| [Veggie Scrap Medley](#-veggie-scrap-medley) | 🟢 Easy | 5 min | Zero-waste cooking |
 | [Salmon Skin Crisps](#-salmon-skin-crisps) | 🟢 Easy | 2 hrs | Shiny coats |
 | [Summer Watermelon Pups](#️-summer-watermelon-pups) | 🟢 Easy | 10 min + freeze | Hot weather |
+| [Frozen Cucumber Kong](#-frozen-cucumber-kong) | 🟢 Easy | 10 min + freeze | Peace & quiet |
 
 ---
 
 ## 🐾 Chapter Notes
 
 Freddy and Jolly aren't just dogs. They're:
-- **Sous chefs** — Always underfoot, always quality-testing dropped ingredients
-- **Therapy providers** — Bad day? Dog cuddles fix it
-- **Fitness coaches** — They need walks, so you walk
-- **Unconditional love machines** — Enough said
+- **"Kitchen Helpers"** — Self-appointed, standing directly in front of the stove
+- **Actual Role** — Kitchen annoyances who we love desperately
+- **Cucumber Enthusiasts** — Especially the skins. ESPECIALLY the skins.
+- **Quality Control** — Everything that hits the floor gets inspected
+- **Therapy Providers** — Bad day? Dog cuddles fix it
+- **Unconditional Love Machines** — They think they're helping. They are not. But we love them anyway.
 
 This chapter is for them. Because in the Alex household, **everyone eats well**.
 
@@ -292,7 +387,7 @@ This chapter is for them. Because in the Alex household, **everyone eats well**.
 
 > *"The greatness of a nation and its moral progress can be judged by the way its animals are treated."* — Gandhi
 >
-> *"Also, Freddy knows when you're eating cheese. He always knows."* — Alex Chef
+> *"Also, Freddy knows when you're peeling cucumbers. He ALWAYS knows."* — Alex Chef
 
 ---
 

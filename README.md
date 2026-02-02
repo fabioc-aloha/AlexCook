@@ -55,8 +55,10 @@ Here, you won't just learn *how* to cook. You'll learn *why* — and then you'll
 | **Alex** 🧑‍🍳 | Head Chef / Provocateur | Adventurous — bring on the weird | Will eat anything with enthusiasm |
 | **Claudia** 👩‍🦰 | Chief Taste Officer | Loves apples, elegant presentations | IBS — needs Low-FODMAP friendly options |
 | **Douglas** 🧒 | Quality Control (Picky Division) | Chocolate fanatic, comfort food king | Selective eater — keep it approachable |
-| **Freddy** 🐕 | Senior Kitchen Supervisor | Bacon, peanut butter, anything dropped | Dog-safe only! |
-| **Jolly** 🐕 | Junior Treat Inspector | Those eyes could melt steel | Dog-safe only! |
+| **Freddy** 🐕 | "Kitchen Helper" (self-appointed) | Bacon, peanut butter, anything dropped | Male. Dog-safe only! |
+| **Jolly** 🐕 | "Sous Chef" (in her dreams) | Those eyes could melt steel | Female. Dog-safe only! |
+
+> *"They think they're helping. They are not helping. But we love them anyway."* — Alex
 
 ### 🌍 Our Cuisine Passport
 
