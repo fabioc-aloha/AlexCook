@@ -1,8 +1,8 @@
-<img src="./assets/banners/main-banner.svg" width="1064" height="200" alt="The Alex Cookbook">
-
 # 🍳 The Alex Cookbook
 
-### *"Break Rules. Build Flavor. Be Unforgettable."*
+![The Alex Cookbook](./assets/banners/main-banner.svg)
+
+## *"Break Rules. Build Flavor. Be Unforgettable."*
 
 > A Provocateur's Guide to Culinary Mastery — by **Alex Chef** 🧑‍🍳
 
@@ -17,7 +17,7 @@ Here, you won't just learn *how* to cook. You'll learn *why* — and then you'll
 ## 📚 Table of Contents
 
 | Ch. | Title | Tagline |
-|-----|-------|---------|
+| --- | ----- | ------- |
 | 1 | [Appetizers & Starters](./chapters/01-appetizers/README.md) | *"The First Bite Writes the Story"* |
 | 2 | [Soups & Salads](./chapters/02-soups-salads/README.md) | *"Liquid Soul Meets Garden Rebellion"* |
 | 3 | [Main Courses](./chapters/03-main-courses/README.md) | *"Where Fire Meets Fearlessness"* |
@@ -37,7 +37,7 @@ Here, you won't just learn *how* to cook. You'll learn *why* — and then you'll
 ### 📎 Appendices
 
 | App. | Title | Tagline |
-|------|-------|---------|
+| ---- | ----- | ------- |
 | A | [Foods of Desire](./appendices/appendix-a-aphrodisiac/README.md) | *"For Alex & Claudia — When Dinner Becomes Romance"* 💋 |
 | B | [The Rice Chronicles](./appendices/appendix-b-risotto-rice/README.md) | *"Risotto, Paella, Pilaf & Beyond"* 🍚 |
 
@@ -47,7 +47,7 @@ Here, you won't just learn *how* to cook. You'll learn *why* — and then you'll
 
 > *"Recipes are suggestions. Technique is liberation. Flavor is non-negotiable."* — Alex Chef
 
-### The Three Pillars of Culinary Provocation:
+### The Three Pillars of Culinary Provocation
 
 1. **Master the Rules** — Know your mother sauces, understand Maillard, respect the chemistry
 2. **Question Everything** — Why do we do it this way? What if we didn't?
@@ -62,7 +62,7 @@ Here, you won't just learn *how* to cook. You'll learn *why* — and then you'll
 ### The Cast of Characters
 
 | Member | Role | Preferences | Dietary Notes |
-|--------|------|-------------|---------------|
+| ------ | ---- | ----------- | ------------- |
 | **Alex** 🧑‍🍳 | Head Chef / Provocateur | Adventurous — bring on the weird | Will eat anything with enthusiasm |
 | **Claudia** 👩‍🦰 | Chief Taste Officer | Loves apples, elegant presentations | IBS — needs Low-FODMAP friendly options |
 | **Douglas** 🧒 | Quality Control (Picky Division) | Chocolate fanatic, comfort food king | Selective eater — keep it approachable |
@@ -76,7 +76,7 @@ Here, you won't just learn *how* to cook. You'll learn *why* — and then you'll
 These are the flavor profiles that make our kitchen sing:
 
 | Cuisine | Why We Love It | Signature Flavors |
-|---------|----------------|-------------------|
+| ------- | -------------- | ----------------- |
 | **Brazilian** 🥥 | Bold, hearty, soulful | Lime, garlic*, coconut, churrasco, farofa |
 | **Italian** 🍝 | Simple ingredients, maximum impact | Basil, tomato, olive oil, parmesan |
 | **Indian** 🍛 | Spice alchemy, depth of flavor | Garam masala, turmeric, ginger, cardamom |
@@ -90,6 +90,7 @@ These are the flavor profiles that make our kitchen sing:
 > *Because loving food shouldn't mean suffering after.*
 
 **Low-FODMAP Swaps We Use:**
+
 - Garlic → Garlic-infused olive oil (FODMAPs don't dissolve in oil!)
 - Onion → Green parts of scallions only
 - Wheat flour → Gluten-free flour blends or oat flour
@@ -100,26 +101,28 @@ These are the flavor profiles that make our kitchen sing:
 
 **Safe Haven Ingredients:** Rice, potatoes, firm tofu, ginger, maple syrup, citrus, most proteins
 
-**Recipes marked with 💚 are Claudia-approved (IBS-friendly)**
+Recipes marked with 💚 are Claudia-approved (IBS-friendly)
 
 ### 🧒 The Douglas Protocol
 
 > *Feeding a picky eater is an art form.*
 
 **The Rules of Engagement:**
+
 1. **Familiar shapes** — If it looks weird, it's already lost
 2. **Separate components** — "Mixed together" is a declaration of war
 3. **Chocolate fixes everything** — When in doubt, add chocolate
 4. **Crunch is your friend** — Texture matters more than you think
 5. **No surprise vegetables** — Hidden spinach will be discovered. And remembered.
 
-**Recipes marked with 🧒 are Douglas-approved (picky-friendly)**
+Recipes marked with 🧒 are Douglas-approved (picky-friendly)
 
 ---
 
 ## 📖 How to Use This Cookbook
 
 Each recipe follows a consistent format:
+
 - **Prep Time** & **Cook Time**
 - **Difficulty Level** (Easy 🟢 | Medium 🟡 | Hard 🔴)
 - **Servings**
@@ -132,7 +135,7 @@ Each recipe follows a consistent format:
 ## 🏷️ Legend
 
 | Symbol | Meaning |
-|--------|---------|
+| ------ | ------- |
 | 🌱 | Vegetarian |
 | 🌿 | Vegan |
 | 🔥 | Spicy |
@@ -149,4 +152,4 @@ Found a typo? Have a suggestion? Want to add a family recipe? Check out [CONTRIB
 
 ---
 
-*Made with ❤️ and lots of butter*
+Made with ❤️ and lots of butter

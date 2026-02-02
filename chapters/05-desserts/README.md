@@ -39,9 +39,17 @@
 
 ---
 
-## 🍎👩‍🦰 Recipes in This Chapter
+## �️ Recipes in This Chapter
 
-> *"In this kitchen, we cook for the ones we love — including the four-legged ones."*
+| Recipe | Difficulty | Time | Tags |
+| ------ | ---------- | ---- | ---- |
+| Claudia's Apple Tarte Tatin | 🔴 Hard | 1.5 hrs | 💚 🇫🇷 |
+| Douglas's Chocolate Lava Cakes | 🟡 Medium | 35 min | 🧒 🇫🇷 |
+| Brigadeiros | 🟢 Easy | 30 min | 🇧🇷 🧒 |
+| Tiramisu (No-Alcohol) | 🟡 Medium | 40 min | 🇮🇹 🧒 |
+| Panna Cotta | 🟢 Easy | 20 min | 🇮🇹 💚 |
+| Crème Brûlée | 🟡 Medium | 1 hr | 🇫🇷 💚 |
+| Pup-Safe Banana Ice Cream | 🟢 Easy | 10 min | 🐕 |
 
 ---
 

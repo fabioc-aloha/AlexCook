@@ -38,7 +38,7 @@
 
 ---
 
-## Recipes in This Chapter
+## 🍽️ Recipes in This Chapter
 
 | Recipe | Difficulty | Time | Tags |
 |--------|------------|------|------|

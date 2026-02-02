@@ -31,6 +31,23 @@
 
 ---
 
+## 🍽️ Recipes in This Chapter
+
+| Recipe | Difficulty | Time | For |
+| ------ | ---------- | ---- | --- |
+| Freddy's Peanut Butter Bones | 🟢 Easy | 40 min | 🐕 Training |
+| Jolly's Salmon Delights | 🟢 Easy | 35 min | 🐕 Omega-3 |
+| Frozen Yogurt Pupsicles | 🟢 Easy | 4 hrs | 🐕 Summer |
+| Sweet Potato Chews | 🟢 Easy | 3 hrs | 🐕 Dental |
+| Chicken Jerky Strips | 🟢 Easy | 4 hrs | 🐕 High-Value |
+| Birthday Pupcakes | 🟡 Medium | 45 min | 🐕 Special |
+| Cucumber Crunch Bites | 🟢 Easy | 5 min | 🐕 FAVORITE! |
+| Frozen Cucumber Kongs | 🟢 Easy | 2 hrs | 🐕 Summer |
+| Veggie Scrap Medley | 🟢 Easy | 20 min | 🐕 Zero-Waste |
+| Pumpkin Biscuits | 🟢 Easy | 35 min | 🐕 Digestion |
+
+---
+
 ## ⚠️ CRITICAL: Dog Safety Guide
 
 ### ✅ SAFE Ingredients (Freddy & Jolly Approved)

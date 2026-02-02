@@ -51,7 +51,21 @@
 
 ## 🍽️ Recipes in This Chapter
 
-> *"In this kitchen, we cook for the ones we love — starting with the first bite."*
+| Recipe | Difficulty | Time | Tags |
+| ------ | ---------- | ---- | ---- |
+| Claudia's Caprese Towers | 🟢 Easy | 15 min | 💚 🇮🇹 |
+| Pão de Queijo | 🟢 Easy | 35 min | 🇧🇷 💚 🧒 |
+| Prosciutto-Wrapped Dates | 🟢 Easy | 20 min | 💚 |
+| Douglas's Loaded Potato Skins | 🟢 Easy | 45 min | 🧒 |
+| Chicken Satay Skewers | 🟡 Medium | 40 min | 🧒 |
+| Caprese Salad Bites | 🟢 Easy | 10 min | 💚 |
+| Pup-Safe Chicken Bites | 🟢 Easy | 30 min | 🐕 |
+
+---
+
+## 🍽️ Full Recipes
+
+> *"In this kitchen, we cook for the ones we love — starting with the first bite."**
 
 ---
 
