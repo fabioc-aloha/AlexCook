@@ -99,49 +99,36 @@ foreach ($Chapter in $Chapters) {
         
         $Content = Get-Content $FilePath -Raw -Encoding UTF8
         
-        # Remove the markdown Table of Contents section (use LaTeX TOC instead)
+        # Skip TOC file - we use LaTeX-generated TOC instead
         if ($Chapter -eq "book\03-table-of-contents.md") {
-            # Remove the "## 📚 Table of Contents" section until the next "---" or "## "
-            $Content = $Content -replace '(?s)## 📚 Table of Contents.*?(?=\r?\n---|\r?\n## 🎯)', ''
+            Write-Host "  $progress ✓ $Chapter (using LaTeX TOC)" -ForegroundColor Green
+            continue
         }
         
-        # Remove GitHub navigation links (not needed in book format)
-        # Pattern: [← Back to Table of Contents](../../README.md) or similar
-        $Content = $Content -replace '\[← Back to [^\]]+\]\([^)]+\)\s*', ''
-        # Pattern: [→ Next Chapter](../02-xyz/README.md) or similar
-        $Content = $Content -replace '\[→ [^\]]+\]\([^)]+\)\s*', ''
-        # Remove any standalone navigation arrows at end of file
-        $Content = $Content -replace '\r?\n---\r?\n\s*$', ''
+        # === PDF CONVERSION (SVG → PNG, HTML → Markdown) ===
         
-        # Convert SVG image references to use PNG versions with absolute paths and constrain width
+        # Convert SVG image references to PNG (Pandoc/LaTeX doesn't handle SVG well)
         $PngPath = "$ProjectRoot/book/assets/banners/png"
-        # Add {width=100%} to prevent banners from causing page breaks
         $Content = $Content -replace '!\[([^\]]*)\]\(\./assets/banners/([^)]+)\.svg\)', "![]($PngPath/`$2.png){width=100%}"
-        $Content = $Content -replace '!\[([^\]]*)\]\(assets/banners/([^)]+)\.svg\)', "![]($PngPath/`$2.png){width=100%}"
-        $Content = $Content -replace '!\[([^\]]*)\]\(\.\./\.\./assets/banners/([^)]+)\.svg\)', "![]($PngPath/`$2.png){width=100%}"
+        $Content = $Content -replace '!\[([^\]]*)\]\(\./cover\.svg\)', "![]($PngPath/cover.png){width=100%}"
         
-        # Convert HTML <img> SVG tags to markdown PNG references with width constraint
+        # Convert HTML <img> tags to Markdown (LaTeX compatibility)
         $Content = $Content -replace '<img[^>]*src="[^"]*banners/([^"]+)\.svg"[^>]*>', "![]($PngPath/`$1.png){width=100%}"
-        
-        # Remove any remaining HTML image tags
         $Content = $Content -replace '<img[^>]*>', ''
-        
-        # Remove <div> tags
         $Content = $Content -replace '<div[^>]*>', ''
         $Content = $Content -replace '</div>', ''
         
-        # For chapters, merge the tagline into the chapter heading for better TOC display
-        # Pattern: # 🥗 Chapter X: Title\n\n### *"Tagline"*
-        # Result:  # 🥗 Chapter X: Title — *"Tagline"*
-        if ($Chapter -match 'book\\\d+-' -and $Chapter -notmatch '(cover|dedication|introduction|table-of-contents|cooking-conversions|kitchen-essentials)') {
+        # === CHAPTER FORMATTING ===
+        
+        # For recipe chapters, merge tagline into heading for cleaner TOC
+        if ($Chapter -match 'book\\\d{2}-(appetizers|soups|main|sides|desserts|breakfast|drinks|sauces|bread|special|dog|steaks|comfort|alex|unhinged|appendix)') {
             $Content = $Content -replace '(# [^\r\n]+)\r?\n\r?\n### \*"([^"]+)"\*', '$1 — *"$2"*'
-            
-            # Remove "Chapter X: " from titles - let LaTeX handle numbering
-            # Pattern: # 🥗 Chapter 1: Appetizers -> # 🥗 Appetizers
             $Content = $Content -replace '(# [^\r\n]*?)Chapter \d+:\s*', '$1'
         }
         
-        # Strip variation selectors (U+FE0F) from emojis - Twemoji uses base codepoints
+        # === EMOJI HANDLING ===
+        
+        # Strip variation selectors (U+FE0F) - Twemoji uses base codepoints
         $Content = $Content -replace '\uFE0F', ''
         
         # Replace emojis with inline images
