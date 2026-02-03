@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="book/assets/banners/main-banner.svg" alt="The Alex Cookbook" width="800">
+</p>
+
 # 🍳 The Alex Cookbook
 
 **Break Rules. Build Flavor. Be Unforgettable.**
