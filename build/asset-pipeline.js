@@ -15,37 +15,19 @@ const PROJECT_ROOT = path.join(__dirname, '..');
 const MANIFEST_PATH = path.join(__dirname, 'asset-manifest.json');
 
 const SVG_SOURCES = [
-    'cover.svg',
-    'assets/social-preview.svg',
-    ...fs.readdirSync(path.join(PROJECT_ROOT, 'assets/banners'))
+    'book/cover.svg',
+    'book/assets/social-preview.svg',
+    ...fs.readdirSync(path.join(PROJECT_ROOT, 'book/assets/banners'))
         .filter(f => f.endsWith('.svg'))
-        .map(f => `assets/banners/${f}`)
+        .map(f => `book/assets/banners/${f}`)
 ];
 
 const MARKDOWN_DIRS = [
-    '',  // root
-    'chapters/01-appetizers',
-    'chapters/02-soups-salads',
-    'chapters/03-main-courses',
-    'chapters/04-sides',
-    'chapters/05-desserts',
-    'chapters/06-breakfast',
-    'chapters/07-drinks',
-    'chapters/08-sauces',
-    'chapters/09-bread-baking',
-    'chapters/10-special-occasions',
-    'chapters/11-dog-treats',
-    'chapters/12-steaks',
-    'chapters/13-comfort-classics',
-    'chapters/14-alex-favorites',
-    'chapters/15-unhinged-kitchen',
-    'appendices/appendix-a-aphrodisiac',
-    'appendices/appendix-b-risotto-rice',
-    'references'
+    'book'  // All chapters in single folder
 ];
 
-const PNG_OUTPUT_DIR = path.join(PROJECT_ROOT, 'assets/banners/png');
-const EMOJI_OUTPUT_DIR = path.join(PROJECT_ROOT, 'assets/emojis');
+const PNG_OUTPUT_DIR = path.join(PROJECT_ROOT, 'book/assets/banners/png');
+const EMOJI_OUTPUT_DIR = path.join(PROJECT_ROOT, 'book/assets/emojis');
 
 // Emoji detection regex (covers most emoji including flags, skin tones, ZWJ sequences)
 const EMOJI_REGEX = /[\u{1F468}\u{1F469}][\u{200D}][\u{1F373}]|[\u{1F1E0}-\u{1F1FF}]{2}|[\u{1F300}-\u{1F9FF}]|[\u{2600}-\u{26FF}]|[\u{2700}-\u{27BF}]|[\u{1F600}-\u{1F64F}]|[\u{1F680}-\u{1F6FF}]|[\u{1F900}-\u{1F9FF}]|[\u{1FA00}-\u{1FA6F}]|[\u{1FA70}-\u{1FAFF}]|[\u{231A}-\u{231B}]|[\u{23E9}-\u{23F3}]|[\u{23F8}-\u{23FA}]|[\u{25AA}-\u{25AB}]|[\u{25B6}]|[\u{25C0}]|[\u{25FB}-\u{25FE}]|[\u{2614}-\u{2615}]|[\u{2648}-\u{2653}]|[\u{267F}]|[\u{2693}]|[\u{26A1}]|[\u{26AA}-\u{26AB}]|[\u{26BD}-\u{26BE}]|[\u{26C4}-\u{26C5}]|[\u{26CE}]|[\u{26D4}]|[\u{26EA}]|[\u{26F2}-\u{26F3}]|[\u{26F5}]|[\u{26FA}]|[\u{26FD}]|[\u{2702}]|[\u{2705}]|[\u{2708}-\u{270D}]|[\u{270F}]|[\u{2712}]|[\u{2714}]|[\u{2716}]|[\u{271D}]|[\u{2721}]|[\u{2728}]|[\u{2733}-\u{2734}]|[\u{2744}]|[\u{2747}]|[\u{274C}]|[\u{274E}]|[\u{2753}-\u{2755}]|[\u{2757}]|[\u{2763}-\u{2764}]|[\u{2795}-\u{2797}]|[\u{27A1}]|[\u{27B0}]|[\u{27BF}]|[\u{2934}-\u{2935}]|[\u{2B05}-\u{2B07}]|[\u{2B1B}-\u{2B1C}]|[\u{2B50}]|[\u{2B55}]|[\u{3030}]|[\u{303D}]|[\u{3297}]|[\u{3299}]|[\u{1F004}]|[\u{1F0CF}]|[\u{1F170}-\u{1F171}]|[\u{1F17E}-\u{1F17F}]|[\u{1F18E}]|[\u{1F191}-\u{1F19A}]|[\u{1F201}-\u{1F202}]|[\u{1F21A}]|[\u{1F22F}]|[\u{1F232}-\u{1F23A}]|[\u{1F250}-\u{1F251}]/gu;

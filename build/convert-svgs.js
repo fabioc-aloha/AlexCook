@@ -7,7 +7,7 @@ const sharp = require('sharp');
 const fs = require('fs');
 const path = require('path');
 
-const BANNERS_DIR = path.join(__dirname, '..', 'assets', 'banners');
+const BANNERS_DIR = path.join(__dirname, '..', 'book', 'assets', 'banners');
 const OUTPUT_DIR = path.join(BANNERS_DIR, 'png');
 const DPI = 300; // High resolution
 const SCALE = 3;  // 3x scale for high-res output

@@ -8,7 +8,7 @@ const path = require('path');
 const https = require('https');
 
 const PROJECT_ROOT = path.join(__dirname, '..');
-const EMOJI_DIR = path.join(PROJECT_ROOT, 'assets', 'emojis');
+const EMOJI_DIR = path.join(PROJECT_ROOT, 'book', 'assets', 'emojis');
 
 // Emoji regex that captures most common emoji patterns
 const emojiRegex = /(?:\p{Emoji_Presentation}|\p{Emoji}\uFE0F)/gu;

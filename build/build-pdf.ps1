@@ -8,7 +8,7 @@ Set-Location $ProjectRoot
 Write-Host "🍳 Building The Alex Cookbook PDF..." -ForegroundColor Cyan
 
 # Output paths
-$OutputDir = Join-Path $ProjectRoot "build\output"
+$OutputDir = Join-Path $ProjectRoot "book\output"
 $CombinedMd = Join-Path $OutputDir "cookbook-combined.md"
 $OutputPdf = Join-Path $OutputDir "The-Alex-Cookbook.pdf"
 
@@ -17,29 +17,31 @@ if (-not (Test-Path $OutputDir)) {
     New-Item -ItemType Directory -Path $OutputDir -Force | Out-Null
 }
 
-# Define chapter order (Cover page handled separately via LaTeX title)
+# Define chapter order from book/ folder
 $Chapters = @(
-    "COVER.md"
-    "README.md"
-    "chapters\01-appetizers\README.md"
-    "chapters\02-soups-salads\README.md"
-    "chapters\03-main-courses\README.md"
-    "chapters\04-sides\README.md"
-    "chapters\05-desserts\README.md"
-    "chapters\06-breakfast\README.md"
-    "chapters\07-drinks\README.md"
-    "chapters\08-sauces\README.md"
-    "chapters\09-bread-baking\README.md"
-    "chapters\10-special-occasions\README.md"
-    "chapters\11-dog-treats\README.md"
-    "chapters\12-steaks\README.md"
-    "chapters\13-comfort-classics\README.md"
-    "chapters\14-alex-favorites\README.md"
-    "chapters\15-unhinged-kitchen\README.md"
-    "appendices\appendix-a-aphrodisiac\README.md"
-    "appendices\appendix-b-risotto-rice\README.md"
-    "references\cooking-conversions.md"
-    "references\kitchen-essentials.md"
+    "book\00-cover.md"
+    "book\01-dedication.md"
+    "book\02-introduction.md"
+    "book\03-table-of-contents.md"
+    "book\04-appetizers.md"
+    "book\05-soups-salads.md"
+    "book\06-main-courses.md"
+    "book\07-sides.md"
+    "book\08-desserts.md"
+    "book\09-breakfast.md"
+    "book\10-drinks.md"
+    "book\11-sauces.md"
+    "book\12-bread-baking.md"
+    "book\13-special-occasions.md"
+    "book\14-dog-treats.md"
+    "book\15-steaks.md"
+    "book\16-comfort-classics.md"
+    "book\17-alex-favorites.md"
+    "book\18-unhinged-kitchen.md"
+    "book\19-appendix-a-aphrodisiac.md"
+    "book\20-appendix-b-risotto-rice.md"
+    "book\21-cooking-conversions.md"
+    "book\22-kitchen-essentials.md"
 )
 
 Write-Host "📚 Combining chapters..." -ForegroundColor Yellow
@@ -48,7 +50,7 @@ Write-Host "📚 Combining chapters..." -ForegroundColor Yellow
 $CombinedContent = @()
 
 # Add cover image as first page using raw LaTeX block for Pandoc
-$CoverPng = "$ProjectRoot/assets/banners/png/cover.png" -replace '\\', '/'
+$CoverPng = "$ProjectRoot/book/assets/banners/png/cover.png" -replace '\\', '/'
 $CoverContent = '```{=latex}
 \thispagestyle{empty}
 \newgeometry{margin=0pt}
@@ -85,8 +87,8 @@ foreach ($Chapter in $Chapters) {
     $chapterCount++
     $progress = "[$chapterCount/$totalChapters]"
     
-    # Skip the COVER.md since we're using a custom LaTeX cover
-    if ($Chapter -eq "COVER.md") {
+    # Skip the cover since we're using a custom LaTeX cover
+    if ($Chapter -eq "book\00-cover.md") {
         Write-Host "  $progress ✓ $Chapter (using custom cover)" -ForegroundColor Green
         continue
     }
@@ -97,8 +99,8 @@ foreach ($Chapter in $Chapters) {
         
         $Content = Get-Content $FilePath -Raw -Encoding UTF8
         
-        # Remove the markdown Table of Contents section from README (use LaTeX TOC instead)
-        if ($Chapter -eq "README.md") {
+        # Remove the markdown Table of Contents section (use LaTeX TOC instead)
+        if ($Chapter -eq "book\03-table-of-contents.md") {
             # Remove the "## 📚 Table of Contents" section until the next "---" or "## "
             $Content = $Content -replace '(?s)## 📚 Table of Contents.*?(?=\r?\n---|\r?\n## 🎯)', ''
         }
@@ -112,7 +114,7 @@ foreach ($Chapter in $Chapters) {
         $Content = $Content -replace '\r?\n---\r?\n\s*$', ''
         
         # Convert SVG image references to use PNG versions with absolute paths and constrain width
-        $PngPath = "$ProjectRoot/assets/banners/png"
+        $PngPath = "$ProjectRoot/book/assets/banners/png"
         # Add {width=100%} to prevent banners from causing page breaks
         $Content = $Content -replace '!\[([^\]]*)\]\(\./assets/banners/([^)]+)\.svg\)', "![]($PngPath/`$2.png){width=100%}"
         $Content = $Content -replace '!\[([^\]]*)\]\(assets/banners/([^)]+)\.svg\)', "![]($PngPath/`$2.png){width=100%}"
@@ -131,7 +133,7 @@ foreach ($Chapter in $Chapters) {
         # For chapters, merge the tagline into the chapter heading for better TOC display
         # Pattern: # 🥗 Chapter X: Title\n\n### *"Tagline"*
         # Result:  # 🥗 Chapter X: Title — *"Tagline"*
-        if ($Chapter -match 'chapters\\' -or $Chapter -match 'appendices\\') {
+        if ($Chapter -match 'book\\\d+-' -and $Chapter -notmatch '(cover|dedication|introduction|table-of-contents|cooking-conversions|kitchen-essentials)') {
             $Content = $Content -replace '(# [^\r\n]+)\r?\n\r?\n### \*"([^"]+)"\*', '$1 — *"$2"*'
             
             # Remove "Chapter X: " from titles - let LaTeX handle numbering
@@ -185,7 +187,7 @@ try {
     $pandocOutput = pandoc $CombinedMd `
         --metadata-file=$MetadataFile `
         --pdf-engine=lualatex `
-        --resource-path="$ProjectRoot;$ProjectRoot\assets" `
+        --resource-path="$ProjectRoot;$ProjectRoot\book;$ProjectRoot\book\assets" `
         -o $OutputPdf 2>&1
     
     $exitCode = $LASTEXITCODE
