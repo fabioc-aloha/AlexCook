@@ -164,6 +164,31 @@ recipe: Add Brigadeiros to Chapter 5 Desserts
 
 ---
 
+## 📜 License & Contribution Agreement
+
+### Project License
+
+This project is licensed under **CC BY-NC-SA 4.0** (Creative Commons Attribution-NonCommercial-ShareAlike 4.0).
+
+**What this means:**
+- ✅ Anyone can share and adapt the recipes with credit
+- ❌ Others cannot use the content commercially
+- 🔄 Derivatives must use the same license
+
+### Contributor Agreement
+
+**By submitting a pull request, you agree to:**
+
+1. **License your contribution** under CC BY-NC-SA 4.0 for public use
+2. **Grant the project maintainers** (Alex Chef & Family) a perpetual, royalty-free, worldwide license to use your contribution commercially in The Alex Cookbook and any derivative works (print, ebook, or otherwise)
+3. **Confirm** that your contribution is your original work, or you have the right to submit it
+
+**Why?** We want to keep the cookbook open for everyone to enjoy and share, while also being able to publish and sell it. This dual-licensing approach makes that possible.
+
+**In plain English:** If you contribute a recipe, it stays free for the community, but we can also include it in the book we sell on Amazon. You'll be credited, and you're helping feed families everywhere. 🍳
+
+---
+
 ## 📜 Code of Conduct
 
 Be kind. Be helpful. Remember that food is deeply personal and cultural. Respect different traditions and dietary needs.
