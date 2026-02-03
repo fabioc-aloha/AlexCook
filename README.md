@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="book/assets/banners/main-banner.svg" alt="The Alex Cookbook" width="800">
+  <img src="book/assets/banners/main-banner.svg" alt="The Alex Cookbook" width="100%">
 </p>
 
 # 🍳 The Alex Cookbook
