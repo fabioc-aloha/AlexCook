@@ -1,0 +1,42 @@
+{
+  "skill": "academic-research",
+  "connections": [
+    {
+      "bidirectional": true,
+      "reason": "Academic writing standards and publication workflows",
+      "type": "complements",
+      "strength": 0.85,
+      "target": "writing-publication"
+    },
+    {
+      "reason": "Knowledge acquisition methodology for literature reviews",
+      "type": "uses",
+      "strength": 0.85,
+      "target": "bootstrap-learning"
+    },
+    {
+      "reason": "Research problem analysis and gap identification",
+      "type": "applies",
+      "strength": 0.65,
+      "target": "root-cause-analysis"
+    },
+    {
+      "reason": "Information chunking in academic writing",
+      "type": "considers",
+      "strength": 0.4,
+      "target": "cognitive-load"
+    }
+  ],
+  "inheritance": "inheritable",
+  "triggers": [
+    "academic",
+    "research",
+    "literature review",
+    "citation",
+    "peer review",
+    "methodology",
+    "thesis",
+    "dissertation",
+    "scholarly"
+  ]
+}

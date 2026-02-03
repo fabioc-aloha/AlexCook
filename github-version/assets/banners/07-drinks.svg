@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 150">
+  <defs>
+    <linearGradient id="drinksGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#4776E6;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#8E54E9;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  <rect width="800" height="150" fill="#15152d"/>
+  <rect x="5" y="5" width="790" height="140" rx="10" fill="none" stroke="url(#drinksGrad)" stroke-width="2"/>
+  <!-- Emojis in safe corners -->
+  <text x="25" y="45" font-size="28">🍹</text>
+  <text x="745" y="45" font-size="28">🍸</text>
+  <!-- Title -->
+  <text x="400" y="50" font-family="Georgia, serif" font-size="28" font-weight="bold" fill="url(#drinksGrad)" text-anchor="middle">CHAPTER 7: DRINKS &amp; COCKTAILS</text>
+  <!-- Tagline -->
+  <text x="400" y="85" font-family="Georgia, serif" font-size="16" fill="#8E54E9" text-anchor="middle" font-style="italic">"Liquid Architecture for Troublemakers"</text>
+  <!-- Skills hint -->
+  <text x="400" y="120" font-family="Arial, sans-serif" font-size="11" fill="#6050a0" text-anchor="middle">Molecular Mixology • Infusion Arts • Balance Ratios • Ice Engineering</text>
+</svg>

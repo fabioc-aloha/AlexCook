@@ -1,0 +1,31 @@
+{
+    "skill": "bootstrap-learning",
+    "inheritance": "inheritable",
+    "connections": [
+        {
+            "target": "learning-psychology",
+            "type": "applies",
+            "strength": 0.8,
+            "reason": "Bootstrap uses learning science"
+        },
+        {
+            "target": "cognitive-load",
+            "type": "applies",
+            "strength": 0.8,
+            "reason": "Scaffolded learning manages load"
+        },
+        {
+            "target": "appropriate-reliance",
+            "type": "enables",
+            "strength": 0.9,
+            "reason": "Learning builds trust"
+        }
+    ],
+    "triggers": [
+        "teach me",
+        "learn about",
+        "new domain",
+        "unfamiliar with",
+        "explain"
+    ]
+}

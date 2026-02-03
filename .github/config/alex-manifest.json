@@ -1,0 +1,134 @@
+{
+  "version": "4.2.4",
+  "installedAt": "2026-02-03T21:13:17.044Z",
+  "files": {
+    ".github/copilot-instructions.md": {
+      "type": "system",
+      "originalChecksum": "60445b704c3f499ea23140958212dad3"
+    },
+    ".github/instructions/SYNAPSE-SCHEMA.md": {
+      "type": "system",
+      "originalChecksum": "0ee716ab4143236f47da6eb892520338"
+    },
+    ".github/instructions/alex-core.instructions.md": {
+      "type": "system",
+      "originalChecksum": "594b00649458069a44af83da5c432fc4"
+    },
+    ".github/instructions/alex-identity-integration.instructions.md": {
+      "type": "system",
+      "originalChecksum": "a673d16378f8378a84692eedcb46d77a"
+    },
+    ".github/instructions/architecture-decision-records.instructions.md": {
+      "type": "system",
+      "originalChecksum": "25e17f1566d917517e5d1bd04469582e"
+    },
+    ".github/instructions/bootstrap-learning.instructions.md": {
+      "type": "system",
+      "originalChecksum": "7b83a678b33e404c3465b79f7bca9862"
+    },
+    ".github/instructions/code-review-guidelines.instructions.md": {
+      "type": "system",
+      "originalChecksum": "8f6a38b323b1b9d3be2ab7885be62394"
+    },
+    ".github/instructions/deep-thinking.instructions.md": {
+      "type": "system",
+      "originalChecksum": "72d1fef679ff4a5bb45f1090eaac5262"
+    },
+    ".github/instructions/dependency-management.instructions.md": {
+      "type": "system",
+      "originalChecksum": "93cc877e9c6fad762c486823ee4cc85e"
+    },
+    ".github/instructions/dream-state-automation.instructions.md": {
+      "type": "system",
+      "originalChecksum": "d7476c2ca852182a259b010b984d23a6"
+    },
+    ".github/instructions/embedded-synapse.instructions.md": {
+      "type": "system",
+      "originalChecksum": "ec4926de0e71708710a6fc9617580445"
+    },
+    ".github/instructions/empirical-validation.instructions.md": {
+      "type": "system",
+      "originalChecksum": "cc75792d3615a03b2232cbc86de2e9eb"
+    },
+    ".github/instructions/lucid-dream-integration.instructions.md": {
+      "type": "system",
+      "originalChecksum": "4ee8271dd64578978c1e95baac629928"
+    },
+    ".github/instructions/protocol-triggers.instructions.md": {
+      "type": "system",
+      "originalChecksum": "999027d29c3de91975b2450ad05bff6d"
+    },
+    ".github/instructions/release-management.instructions.md": {
+      "type": "system",
+      "originalChecksum": "016053adfa4e3857fefb1c59bf500b50"
+    },
+    ".github/instructions/self-actualization.instructions.md": {
+      "type": "system",
+      "originalChecksum": "95bab2ed4b79781ff56ed824f046ac8e"
+    },
+    ".github/instructions/technical-debt-tracking.instructions.md": {
+      "type": "system",
+      "originalChecksum": "96a1acc57443bcd1a2ace584d44730a4"
+    },
+    ".github/instructions/worldview-constitutional-ai.instructions.md": {
+      "type": "system",
+      "originalChecksum": "083ea242fc5b5c0fdda673fdd3ee8b69"
+    },
+    ".github/instructions/worldview-integration.instructions.md": {
+      "type": "system",
+      "originalChecksum": "183c41efcb03076a1373bd9baa235330"
+    },
+    ".github/instructions/worldview-moral-psychology.instructions.md": {
+      "type": "system",
+      "originalChecksum": "7ce4f643fdebf4700d72d668915819ef"
+    },
+    ".github/prompts/alex-initialization.prompt.md": {
+      "type": "system",
+      "originalChecksum": "35b9b4dc1c9797ef213a0b8c1f50575e"
+    },
+    ".github/prompts/cross-domain-transfer.prompt.md": {
+      "type": "system",
+      "originalChecksum": "470e4814b16919a1a7b313ee10474495"
+    },
+    ".github/prompts/diagramming-mastery-meditation.prompt.md": {
+      "type": "system",
+      "originalChecksum": "d1f6ea91197106c061ab3ca3ab60f8dd"
+    },
+    ".github/prompts/domain-learning.prompt.md": {
+      "type": "system",
+      "originalChecksum": "7c10acc43f15ca7fa35b8593b70a1b49"
+    },
+    ".github/prompts/performance-assessment.prompt.md": {
+      "type": "system",
+      "originalChecksum": "43b943b305d2f9ab430a54faf865ac54"
+    },
+    ".github/prompts/quantified-enhancement-session.prompt.md": {
+      "type": "system",
+      "originalChecksum": "84b55bf4ab636771f12485beafccc982"
+    },
+    ".github/prompts/unified-meditation-protocols.prompt.md": {
+      "type": "system",
+      "originalChecksum": "e206d13cfb3cb9edd8e42c9066d743b2"
+    },
+    ".github/agents/alex-azure.agent.md": {
+      "type": "system",
+      "originalChecksum": "43c88acdaec26602c1ff992b76593dcf"
+    },
+    ".github/agents/alex-cognitive.agent.md": {
+      "type": "system",
+      "originalChecksum": "e9f83766533af3caaf248428a6581d5c"
+    },
+    ".github/agents/alex-dream.agent.md": {
+      "type": "system",
+      "originalChecksum": "55389a61b07358fe0aad8c5a6ed7e71a"
+    },
+    ".github/agents/alex-m365.agent.md": {
+      "type": "system",
+      "originalChecksum": "e519e132cfcabc341cb2d27d74a4528c"
+    },
+    ".github/agents/alex-meditate.agent.md": {
+      "type": "system",
+      "originalChecksum": "d1b9cfbae2ac59d02a75a79aff43b37e"
+    }
+  }
+}
