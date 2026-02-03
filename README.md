@@ -96,7 +96,7 @@ See [`docs/PUBLISHING.md`](docs/PUBLISHING.md) for complete instructions.
 
 ## 📜 License
 
-[MIT License](LICENSE) — Cook freely, share generously.
+[CC BY-NC-SA 4.0](LICENSE) — Share freely, give credit, non-commercial only.
 
 ---
 
