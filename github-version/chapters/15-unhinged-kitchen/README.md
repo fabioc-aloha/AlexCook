@@ -794,4 +794,8 @@ At least we tried something new. And that's the only way anything interesting ev
 
 ---
 
-[← Back to Table of Contents](../../README.md)
+<div align="center">
+
+[📚 Back to Index](../../INDEX.md) · [← Alex Favorites](../14-alex-favorites/README.md)
+
+</div>

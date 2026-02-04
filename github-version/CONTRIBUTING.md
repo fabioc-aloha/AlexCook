@@ -1,179 +1,127 @@
 # 🍳 Contributing to The Alex Cookbook
 
-> *"The best recipes come from shared kitchens."*
+<div align="center">
 
-Thank you for your interest in contributing to The Alex Cookbook! Whether you're fixing a typo, suggesting a recipe improvement, or adding a family favorite, we welcome your input.
+*So you want to help feed the world? Let's do this.*
 
----
-
-## 📋 Ways to Contribute
-
-### 🐛 Found a Bug or Typo?
-
-1. Open an [Issue](https://github.com/fabioc-aloha/AlexCook/issues)
-2. Describe what you found and where
-3. Bonus points for suggesting the fix!
-
-### 💡 Have a Recipe Suggestion?
-
-We love new recipes! Before submitting, please ensure:
-
-- Recipe fits our family's style (see below)
-- Includes IBS-friendly modifications where possible (💚)
-- Considers picky eaters when appropriate (🧒)
-- Is dog-safe if it's a treat recipe (🐕)
-- Follows our recipe format
-
-### 🔧 Want to Improve an Existing Recipe?
-
-- Fork the repository
-- Make your changes
-- Submit a Pull Request with a clear description
+</div>
 
 ---
 
-## 🎯 Our Recipe Philosophy
+## 🎯 Ways to Contribute
 
-Before contributing, understand what makes an Alex Cookbook recipe:
+### 🐛 Found a Bug (Recipe Error)?
 
-| Principle | Description |
-| --------- | ----------- |
-| **Family First** | Real food for real people with real dietary needs |
-| **Technique Matters** | We explain *why*, not just *how* |
-| **Multi-Cuisine** | Brazilian, Italian, Indian, Chinese, Japanese focus |
-| **Accessible Luxury** | Impressive results without requiring a professional kitchen |
-| **Voice** | Playful, provocative, personal — never sterile |
+- **Wrong measurements?** Let us know!
+- **Typos?** We're human (well, mostly)
+- **Broken links?** Report them!
+
+**Open an issue** with:
+- Which recipe
+- What's wrong
+- What it should be (if you know)
 
 ---
 
-## 📝 Recipe Format
+### 💡 Recipe Suggestions
 
-Please follow this structure for new recipes:
+Have an idea for a recipe that fits our family?
+
+| Family Member | What They Love |
+|---------------|----------------|
+| 👩‍🦱 **Claudia** | Elegant, IBS-friendly (Low-FODMAP), apple-based |
+| 🧒 **Douglas** | Comfort food, chocolate, nothing too weird |
+| 🐕 **Freddy** | Dog-safe treats, bacon, peanut butter |
+| 🐩 **Jolly** | Dog-safe treats, salmon, fancy presentation |
+
+**Open an issue** with:
+- Recipe name idea
+- Who it's for (Claudia/Douglas/Freddy/Jolly/Everyone)
+- Key ingredients
+- Why it fits our vibe
+
+---
+
+### 🔧 Technical Contributions
+
+The cookbook has a build system! You can help with:
+
+- **PDF generation** improvements
+- **Emoji rendering** fixes
+- **Accessibility** enhancements
+- **GitHub formatting** polish
+
+See [`DEVELOPMENT.md`](../DEVELOPMENT.md) for technical details.
+
+---
+
+## 📜 Contribution Guidelines
+
+### Recipe Format
+
+All recipes should follow our [template](templates/recipe-template.md):
 
 ```markdown
-### 🔥 **"Recipe Name"**
+# 🍽️ Recipe Name
 
-> *Brief, enticing description*
+> *Brief enticing description*
 
-**Difficulty:** 🟢 Easy | 🟡 Medium | 🔴 Hard | **Time:** X min | **Serves:** X | **Tags:** 💚 🧒 🐕
+**Difficulty:** 🟢 Easy | 🟡 Medium | 🔴 Hard
+**Prep:** X min | **Cook:** X min | **Serves:** X
 
-#### Ingredients
+## Ingredients
+- Item — amount
 
-- Ingredient 1 — amount
-- Ingredient 2 — amount
+## Instructions
+1. Step one
+2. Step two
 
-#### Instructions
-
-1. First step
-2. Second step
-
-#### Chef's Notes
-
-Tips, variations, and IBS-friendly modifications here.
+## Chef's Notes
+> Tips and variations
 ```
 
----
+### Tags We Use
 
-## 💚 IBS-Friendly Guidelines
-
-Claudia has IBS, so we prioritize Low-FODMAP options:
-
-**Avoid or Substitute:**
-
-- Garlic → Garlic-infused oil
-- Onion → Green parts of scallions only
-- Wheat → Gluten-free alternatives
-- High-lactose dairy → Lactose-free versions
-
-Always mark IBS-friendly recipes with 💚
+| Tag | Meaning |
+|:---:|---------|
+| 💚 | IBS-friendly (Claudia-approved) |
+| 🧒 | Picky-eater friendly (Douglas-approved) |
+| 🐕 | Dog-safe treat |
+| 🔥 | Spicy |
+| ⏱️ | Quick (under 30 min) |
+| ❄️ | Freezer-friendly |
 
 ---
 
-## 🧒 Picky Eater Guidelines
+## 🚫 What We Don't Accept
 
-Douglas is selective, so consider:
-
-- Familiar shapes and textures
-- Components that can be separated
-- No hidden vegetables (he will find them)
-- Chocolate is always welcome
-
-Mark kid-friendly recipes with 🧒
+- Recipes requiring unsafe dog ingredients
+- Content that doesn't fit our family-friendly vibe
+- Spam or self-promotion
+- Recipes without attribution if adapted from elsewhere
 
 ---
 
-## 🐕 Dog Treat Guidelines
+## 📝 Pull Request Process
 
-Freddy and Jolly are family! For dog treats:
-
-**NEVER use:**
-
-- Chocolate, xylitol, grapes/raisins
-- Onions, garlic, avocado
-- Macadamia nuts, alcohol, caffeine
-
-Always verify ingredients are dog-safe!
+1. **Fork** the repo
+2. **Create a branch** (`feature/amazing-recipe`)
+3. **Make changes** following our format
+4. **Test** if it's a build/technical change
+5. **Submit PR** with clear description
 
 ---
 
-## 🚀 Submitting a Pull Request
+## 💬 Questions?
 
-1. **Fork** the repository
-2. **Create a branch** (`git checkout -b feature/amazing-recipe`)
-3. **Make your changes** following our format
-4. **Test** your markdown renders correctly
-5. **Commit** with a clear message
-6. **Push** to your fork
-7. **Open a Pull Request**
-
-### PR Checklist
-
-- Recipe follows our format
-- Dietary tags are accurate (💚 🧒 🐕)
-- Markdown renders correctly
-- No lint errors (run your linter!)
-- Spelling and grammar checked
+Open an issue with the `question` label. We're friendly!
 
 ---
 
-## 🏷️ Commit Message Guidelines
+<div align="center">
 
-```text
-type: brief description
+*Made with ❤️ and lots of butter*
 
-- Detail 1
-- Detail 2
-```
+🧑‍🍳 **Alex Cook**
 
-Types:
-
-- `recipe:` — New or modified recipe
-- `fix:` — Typo or error correction
-- `docs:` — Documentation changes
-- `style:` — Formatting changes
-
-Example:
-
-```text
-recipe: Add Brigadeiros to Chapter 5 Desserts
-
-- Brazilian chocolate truffles
-- Douglas-approved (🧒)
-- Includes condensed milk alternatives for IBS
-```
-
----
-
-## 📜 Code of Conduct
-
-Be kind. Be helpful. Remember that food is deeply personal and cultural. Respect different traditions and dietary needs.
-
----
-
-## ❓ Questions?
-
-Open an issue with the `question` label, and we'll help you out!
-
----
-
-Thank you for helping make The Alex Cookbook even better! 🍳❤️
+</div>

@@ -427,8 +427,12 @@ Then you'll never need a restaurant again.
 
 > *"The only time to eat diet food is while you're waiting for the steak to cook."* — Julia Child
 >
-> *"Also applicable to Freddy, who has never eaten diet food and never will."* — Alex Chef
+> *"Also applicable to Freddy, who has never eaten diet food and never will."* — Alex Cook
 
 ---
 
-[← Back to Table of Contents](../../README.md)
+<div align="center">
+
+[📚 Back to Index](../../INDEX.md) · [← Dog Treats](../11-dog-treats/README.md) · [Comfort Classics →](../13-comfort-classics/README.md)
+
+</div>

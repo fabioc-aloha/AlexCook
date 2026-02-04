@@ -276,10 +276,14 @@ Sweet, creamy, cold. It's basically dessert masquerading as a drink.
 
 ---
 
+<div align="center">
+
 ## Chapter Notes
 
 The bar is a kitchen with different tools. Apply culinary thinking to beverages and watch minds expand.
 
 ---
 
-[← Back to Table of Contents](../../README.md)
+[📚 Back to Index](../../INDEX.md) · [← Breakfast](../06-breakfast/README.md) · [Sauces →](../08-sauces/README.md)
+
+</div>

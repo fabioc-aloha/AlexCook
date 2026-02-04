@@ -180,7 +180,7 @@ This project is licensed under **CC BY-NC-SA 4.0** (Creative Commons Attribution
 **By submitting a pull request, you agree to:**
 
 1. **License your contribution** under CC BY-NC-SA 4.0 for public use
-2. **Grant the project maintainers** (Alex Chef & Family) a perpetual, royalty-free, worldwide license to use your contribution commercially in The Alex Cookbook and any derivative works (print, ebook, or otherwise)
+2. **Grant the project maintainers** (Alex Cook & Family) a perpetual, royalty-free, worldwide license to use your contribution commercially in The Alex Cookbook and any derivative works (print, ebook, or otherwise)
 3. **Confirm** that your contribution is your original work, or you have the right to submit it
 
 **Why?** We want to keep the cookbook open for everyone to enjoy and share, while also being able to publish and sell it. This dual-licensing approach makes that possible.

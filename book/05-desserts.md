@@ -368,15 +368,15 @@ Dog-safe, human-approved (yes, you can try them). These are basically peanut but
 | Recipe | For | Difficulty | Time | Tags |
 |--------|-----|------------|------|------|
 | **SHOWSTOPPERS** | | | | |
-| [Claudia's Tarte Tatin](#-claudias-caramelized-apple-tarte-tatin-of-absolute-madness) | 👩‍🦰 Claudia | 🔴 Hard | 85 min | 🍎 apple, french, showstopper |
+| [Claudia's Tarte Tatin](#-claudias-caramelized-apple-tarte-tatin-of-absolute-madness) | 👩‍� Claudia | 🔴 Hard | 85 min | 🍎 apple, french, showstopper |
 | [Douglas's Lava Bomb](#-douglass-triple-threat-molten-chocolate-lava-bomb) | 🧒 Douglas | 🟡 Medium | 32 min | 🍫 chocolate, decadent |
 | [Pupcakes](#-freddy--jollys-peanut-butter-bacon-pupcakes) | 🐕 Pups | 🟢 Easy | 40 min | 🐾 dog-safe, bacon |
 | **QUICK & DIRTY** | | | | |
-| [15-Minute Apple Situation](#-quick--dirty-the-15-minute-apple-situation) | 👩‍🦰 Claudia | 🟢 Easy | 15 min | ⚡ quick, bourbon |
+| [15-Minute Apple Situation](#-quick--dirty-the-15-minute-apple-situation) | 👩‍🦱 Claudia | 🟢 Easy | 15 min | ⚡ quick, bourbon |
 | [Microwave Mug Brownie](#-quick--dirty-microwave-mug-brownie-of-shame--glory) | 🧒 Douglas | 🟢 Easy | 4 min | ⚡ instant, emergency |
 | [Frozen Banana Pup Pops](#-quick--dirty-frozen-banana-pup-pops) | 🐕 Pups | 🟢 Easy | 5 min + freeze | ⚡ frozen, simple |
 | **ABSOLUTELY UNHINGED** | | | | |
-| [Apple Nachos](#-absolutely-unhinged-apple-nachos-for-chaos-lovers) | 👩‍🦰 Claudia | 🟢 Easy | 10 min | 🤯 no-cook, shareable |
+| [Apple Nachos](#-absolutely-unhinged-apple-nachos-for-chaos-lovers) | 👩‍🦱 Claudia | 🟢 Easy | 10 min | 🤯 no-cook, shareable |
 | [S'mores Dip](#-absolutely-unhinged-smores-dip-of-decadence) | 🧒 Douglas | 🟢 Easy | 13 min | 🤯 fire, interactive |
 | [Dog-cuterie Board](#-absolutely-unhinged-the-sniff-test-charcuterie-board) | 🐕 Pups | 🟢 Easy | 10 min | 🤯 instagram, fancy |
 

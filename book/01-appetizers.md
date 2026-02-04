@@ -316,15 +316,15 @@ These aren't the sad, floppy potato skins from the freezer aisle. These are twic
 | Recipe | For | Difficulty | Time | Tags |
 |--------|-----|------------|------|------|
 | **SHOWSTOPPERS** | | | | |
-| [Claudia's Caprese Towers](#-claudias-caprese-towers-of-sophistication) | 👩‍🦰 Claudia | 🟢 Easy | 15 min | 💚 IBS-friendly, elegant |
+| [Claudia's Caprese Towers](#-claudias-caprese-towers-of-sophistication) | 👩‍� Claudia | 🟢 Easy | 15 min | 💚 IBS-friendly, elegant |
 | [Douglas's Loaded Potato Skins](#-douglass-loaded-potato-skins-of-dreams) | 🧒 Douglas | 🟡 Medium | 65 min | 🧒 comfort food, bacon |
 | [Freddy's Liver Pops](#-freddys-frozen-chicken-liver-pops) | 🐕 Freddy | 🟢 Easy | 10 min + freeze | 🐾 training treats |
 | **QUICK & DIRTY** | | | | |
-| [5-Minute Burrata](#-quick--dirty-5-minute-burrata-situation) | 👩‍🦰 Claudia | 🟢 Easy | 5 min | ⚡ instant elegance |
+| [5-Minute Burrata](#-quick--dirty-5-minute-burrata-situation) | 👩‍🦱 Claudia | 🟢 Easy | 5 min | ⚡ instant elegance |
 | [Air Fryer Mozz Sticks](#-quick--dirty-air-fryer-mozzarella-sticks) | 🧒 Douglas | 🟢 Easy | 10 min | ⚡ kid-approved |
 | [Carrot Coins](#-quick--dirty-carrot-coins) | 🐕 Dogs | 🟢 Easy | 1 min | ⚡ healthy |
 | **ABSOLUTELY UNHINGED** | | | | |
-| [Caprese Skewers](#-absolutely-unhinged-caprese-skewers-for-chaos) | 👩‍🦰 Claudia | 🟢 Easy | 10 min | 🤯 party-ready |
+| [Caprese Skewers](#-absolutely-unhinged-caprese-skewers-for-chaos) | 👩‍🦱 Claudia | 🟢 Easy | 10 min | 🤯 party-ready |
 | [Pizza Roll Nachos](#-absolutely-unhinged-pizza-roll-nachos) | 🧒 Douglas | 🟢 Easy | 20 min | 🤯 guilty pleasure |
 | [Puppy Charcuterie](#-absolutely-unhinged-puppy-charcuterie-board) | 🐕 Dogs | 🟢 Easy | 10 min | 🤯 instagram-worthy |
 

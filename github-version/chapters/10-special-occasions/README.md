@@ -291,10 +291,14 @@ The reverse sear method means edge-to-edge perfection. Low heat builds to temper
 
 ---
 
+<div align="center">
+
 ## Chapter Notes
 
 Special occasions are not about perfection — they're about presence. Cook with love, serve with joy, and the rest takes care of itself.
 
 ---
 
-[← Back to Table of Contents](../../README.md)
+[📚 Back to Index](../../INDEX.md) · [← Bread & Baking](../09-bread-baking/README.md) · [Dog Treats →](../11-dog-treats/README.md)
+
+</div>

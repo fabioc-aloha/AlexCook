@@ -34,7 +34,7 @@ pdftotext -layout ".\book\output\The-Alex-Cookbook-Print.pdf" ".\book\output\pdf
 | Character | Emoji | Notes |
 |-----------|-------|-------|
 | **Alex** | 🧑‍🍳 | Chef - AI author |
-| **Claudia** | 👩‍🦰 | Woman with red hair - wife, IBS |
+| **Claudia** | 👩‍� | Woman with curly hair - wife, IBS (brunette) |
 | **Douglas** | 🧒 | Child - picky eater son |
 | **Freddy** | 🐕 | Dog (generic) - male |
 | **Jolly** | 🐩 | Poodle - female |
@@ -95,7 +95,7 @@ pdftotext -layout ".\book\output\The-Alex-Cookbook-Print.pdf" ".\book\output\pdf
 
 ### 8. Emoji Consistency
 - Checks Jolly uses 🐩 not 🐕
-- Verifies ZWJ emojis render as single images (Alex 🧑‍🍳, Claudia 👩‍🦰)
+- Verifies ZWJ emojis render as single images (Alex 🧑‍🍳, Claudia 👩‍�)
 
 ## Build Script Emoji Handling
 

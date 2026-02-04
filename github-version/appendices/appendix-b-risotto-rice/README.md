@@ -720,6 +720,8 @@ This is the traditional accompaniment to Lebanese stews, grilled meats, and vege
 
 ---
 
+<div align="center">
+
 ## 🍚 The Rice Master's Manifesto
 
 Rice is humble. Rice is patient. Rice is the foundation.
@@ -740,4 +742,6 @@ Learn these techniques. Respect the grain. And remember: no matter how fancy the
 
 ---
 
-[← Back to Table of Contents](../../README.md)
+[← Foods of Desire](../appendix-a-aphrodisiac/README.md) · [📚 Back to Index](../../INDEX.md) · [Amazon Shopping List →](../appendix-c-amazon-shopping-list/README.md)
+
+</div>

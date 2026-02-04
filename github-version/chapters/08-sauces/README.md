@@ -287,10 +287,14 @@ Sweet + salty = the flavor profile kids are genetically programmed to love.
 
 ---
 
+<div align="center">
+
 ## Chapter Notes
 
 Escoffier gave us five mother sauces. The world gave us thousands more. Your job is to master the fundamentals, then write your own chapter.
 
 ---
 
-[← Back to Table of Contents](../../README.md)
+[📚 Back to Index](../../INDEX.md) · [← Drinks](../07-drinks/README.md) · [Bread & Baking →](../09-bread-baking/README.md)
+
+</div>

@@ -497,10 +497,14 @@ Master these dishes and you'll never need a restaurant on a rainy night.
 
 ---
 
-> *"Life is too short for fake butter, fake cheese, and fake comfort."* — Alex Chef
+> *"Life is too short for fake butter, fake cheese, and fake comfort."* — Alex Cook
 >
 > *"Freddy and Jolly agree. They've never had fake anything."*
 
 ---
 
-[← Back to Table of Contents](../../README.md)
+<div align="center">
+
+[📚 Back to Index](../../INDEX.md) · [← Steaks](../12-steaks/README.md) · [Alex Favorites →](../14-alex-favorites/README.md)
+
+</div>

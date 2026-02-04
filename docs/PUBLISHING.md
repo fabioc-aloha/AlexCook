@@ -76,7 +76,7 @@ pandoc book/*.md -o cookbook.epub `
   --toc-depth=2 `
   --epub-cover-image=cover.jpg `
   --metadata title="The Alex Cookbook" `
-  --metadata author="Alex Chef" `
+  --metadata author="Alex Cook" `
   --metadata subtitle="A Provocateur's Guide to Culinary Mastery"
 ```
 
@@ -147,7 +147,7 @@ Enrolling in KDP Select provides additional benefits:
 |-------|-------|
 | **Title** | The Alex Cookbook |
 | **Subtitle** | A Provocateur's Guide to Culinary Mastery |
-| **Author** | Alex Chef |
+| **Author** | Alex Cook |
 | **Language** | English |
 | **Publication date** | [Set on publish] |
 

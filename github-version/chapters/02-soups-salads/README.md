@@ -277,10 +277,14 @@ Freddy and Jolly think they're getting gourmet treats. They're getting vegetable
 
 ---
 
+<div align="center">
+
 ## Chapter Notes
 
 The French built an empire on stock. The Italians conquered with olive oil and acid. Master both traditions, then create your own.
 
 ---
 
-[← Back to Table of Contents](../../README.md)
+[📚 Back to Index](../../INDEX.md) · [← Appetizers](../01-appetizers/README.md) · [Main Courses →](../03-main-courses/README.md)
+
+</div>

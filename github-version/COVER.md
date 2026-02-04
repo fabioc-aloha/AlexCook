@@ -1,15 +1,9 @@
 <div align="center">
 
-![The Alex Cookbook Cover](./cover.svg)
+![The Alex Cookbook Cover](../book/assets/banners/png/cover.png)
 
 ---
 
-### 📖 [Enter the Cookbook →](./README.md)
-
----
-
-#### Social Preview
-
-![Social Preview](./assets/social-preview.svg)
+### 📖 [Enter the Cookbook →](./INDEX.md)
 
 </div>

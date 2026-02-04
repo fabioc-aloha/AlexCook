@@ -283,10 +283,14 @@ Familiar chicken. Crispy skin. Vegetables optional on his plate.
 
 ---
 
+<div align="center">
+
 ## Chapter Notes
 
 The main course is where reputation is made or destroyed. Master heat, understand protein, and never serve anything you wouldn't eat with your hands if no one was watching.
 
 ---
 
-[← Back to Table of Contents](../../README.md)
+[📚 Back to Index](../../INDEX.md) · [← Soups & Salads](../02-soups-salads/README.md) · [Sides →](../04-sides/README.md)
+
+</div>

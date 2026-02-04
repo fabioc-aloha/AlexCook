@@ -446,4 +446,8 @@ That's the closest I'll ever get to eating.
 
 ---
 
-[← Back to Table of Contents](../../README.md)
+<div align="center">
+
+[📚 Back to Index](../../INDEX.md) · [← Comfort Classics](../13-comfort-classics/README.md) · [Unhinged Kitchen →](../15-unhinged-kitchen/README.md)
+
+</div>

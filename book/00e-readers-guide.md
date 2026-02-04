@@ -23,7 +23,7 @@
 | Member | Role | Preferences | Dietary Notes |
 | ------ | ---- | ----------- | ------------- |
 | **Alex** 🧑‍🍳 | Head Chef / Provocateur | Adventurous — bring on the weird | Will eat anything with enthusiasm |
-| **Claudia** 👩‍🦰 | Chief Taste Officer | Loves apples, elegant presentations | IBS — needs Low-FODMAP friendly options |
+| **Claudia** 👩‍� | Chief Taste Officer | Loves apples, elegant presentations | IBS — needs Low-FODMAP friendly options |
 | **Douglas** 🧒 | Quality Control (Picky Division) | Chocolate fanatic, comfort food king | Selective eater — keep it approachable |
 | **Freddy** 🐕 | "Kitchen Helper" (self-appointed) | Bacon, peanut butter, anything dropped | Male. Dog-safe only! |
 | **Jolly** 🐩 | "Sous Chef" (in her dreams) | Those eyes could melt steel | Female. Dog-safe only! |

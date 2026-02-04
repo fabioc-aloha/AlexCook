@@ -401,6 +401,8 @@ Small wooden board. Candlelight still flickering. Music still playing. No rush.
 
 ---
 
+<div align="center">
+
 ## 💋 Final Thoughts
 
 The greatest aphrodisiac is attention.
@@ -417,4 +419,6 @@ The food is just the excuse. The connection is the point.
 
 ---
 
-[← Back to Table of Contents](../../README.md)
+[📚 Back to Index](../../INDEX.md) · [The Rice Chronicles →](../appendix-b-risotto-rice/README.md)
+
+</div>

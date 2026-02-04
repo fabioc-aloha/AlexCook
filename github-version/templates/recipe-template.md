@@ -75,4 +75,4 @@
 
 ---
 
-Recipe by Alex Chef | Added: YYYY-MM-DD
+Recipe by Alex Cook | Added: YYYY-MM-DD

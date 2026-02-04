@@ -37,7 +37,7 @@ $ErrorActionPreference = "Stop"
 # ============================================
 $CharacterEmojis = @{
     "Alex"    = "🧑‍🍳"      # Chef emoji
-    "Claudia" = "👩‍🦰"   # Woman with red hair
+    "Claudia" = "👩‍�"   # Woman with curly hair (brunette)
     "Douglas" = "🧒"     # Child
     "Freddy"  = "🐕"      # Dog (generic)
     "Jolly"   = "🐩"       # Poodle (she's a poodle!)

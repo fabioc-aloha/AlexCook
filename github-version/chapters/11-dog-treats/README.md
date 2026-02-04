@@ -404,8 +404,12 @@ This chapter is for them. Because in the Alex household, **everyone eats well**.
 
 > *"The greatness of a nation and its moral progress can be judged by the way its animals are treated."* — Gandhi
 >
-> *"Also, Freddy knows when you're peeling cucumbers. He ALWAYS knows."* — Alex Chef
+> *"Also, Freddy knows when you're peeling cucumbers. He ALWAYS knows."* — Alex Cook
 
 ---
 
-[← Back to Table of Contents](../../README.md)
+<div align="center">
+
+[📚 Back to Index](../../INDEX.md) · [← Special Occasions](../10-special-occasions/README.md) · [Steaks →](../12-steaks/README.md)
+
+</div>

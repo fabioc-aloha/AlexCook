@@ -258,10 +258,14 @@ We discovered this by accident. Peeling cucumbers, dropping a skin on the floor,
 
 ---
 
+<div align="center">
+
 ## Chapter Notes
 
 The best chefs know that sides are where creativity truly lives. The main course has expectations; the sides have freedom.
 
 ---
 
-[← Back to Table of Contents](../../README.md)
+[📚 Back to Index](../../INDEX.md) · [← Main Courses](../03-main-courses/README.md) · [Desserts →](../05-desserts/README.md)
+
+</div>

@@ -324,10 +324,14 @@ Crispy. Salty. Dippable. The trifecta.
 
 ---
 
+<div align="center">
+
 ## Chapter Notes
 
 Bread baking is meditation with delicious results. Accept that your first loaves will humble you. That's the point.
 
 ---
 
-[← Back to Table of Contents](../../README.md)
+[📚 Back to Index](../../INDEX.md) · [← Sauces](../08-sauces/README.md) · [Special Occasions →](../10-special-occasions/README.md)
+
+</div>

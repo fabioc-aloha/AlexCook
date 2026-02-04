@@ -303,10 +303,14 @@ It's pancakes. He's 8 (or whatever age he is). Pancakes = happiness.
 
 ---
 
+<div align="center">
+
 ## Chapter Notes
 
 Breakfast separates the cooks from the chefs. Anyone can make dinner — breakfast requires speed, precision, and the ability to execute under caffeine withdrawal.
 
 ---
 
-[← Back to Table of Contents](../../README.md)
+[📚 Back to Index](../../INDEX.md) · [← Desserts](../05-desserts/README.md) · [Drinks →](../07-drinks/README.md)
+
+</div>
