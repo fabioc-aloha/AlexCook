@@ -1,5 +1,3 @@
-<img src="./assets/banners/11-dog-treats.svg" width="1064" height="200" alt="Treats for the Pack">
-
 # 🐕 Chapter 11: Treats for the Pack
 
 \bigskip

@@ -1,5 +1,3 @@
-<img src="./assets/banners/14-alex-favorites.svg" width="1064" height="200" alt="Alex's Favorites — Feed the AI">
-
 # 🤖 Chapter 14: Alex's Favorites — Feed the AI
 
 \bigskip

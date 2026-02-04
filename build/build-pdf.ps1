@@ -114,18 +114,10 @@ foreach ($Chapter in $Chapters) {
         
         $PngPath = "$ProjectRoot/book/assets/banners/png"
         
-        # For chapters with banners: move banner AFTER the heading to prevent page break separation
-        # Pattern: <img banner> followed by # Chapter Heading
-        # Result: # Chapter Heading followed by banner image (only for H1, not ## or ###)
-        if ($Content -match '<img[^>]*src="[^"]*banners/(\d{2}-[^"]+)\.svg"[^>]*>') {
-            $bannerName = $matches[1]
-            # Remove the banner from its original position
-            $Content = $Content -replace '<img[^>]*src="[^"]*banners/[^"]+\.svg"[^>]*>\r?\n*', ''
-            # Insert banner after the H1 chapter heading line ONLY (^# not ##)
-            $Content = $Content -replace '(?m)(^# [^\r\n]+)', "`$1`n`n![]($PngPath/$bannerName.png){width=100%}"
-        }
+        # Remove any leftover banner image tags (banners removed from book design)
+        $Content = $Content -replace '<img[^>]*src="[^"]*banners/[^"]+\.svg"[^>]*>\r?\n*', ''
         
-        # Convert any remaining SVG references to PNG
+        # Convert any remaining SVG references to PNG (for cover only)
         $Content = $Content -replace '!\[([^\]]*)\]\(\./assets/banners/([^)]+)\.svg\)', "![]($PngPath/`$2.png){width=100%}"
         $Content = $Content -replace '!\[([^\]]*)\]\(\./cover\.svg\)', "![]($PngPath/cover.png){width=100%}"
         
@@ -146,10 +138,20 @@ foreach ($Chapter in $Chapters) {
         }
         
         # === FRONT MATTER HANDLING ===
-        # Make dedication and introduction unnumbered (use {.unnumbered} attribute)
-        if ($Chapter -match 'book\\00[ab]-(dedication|introduction)\.md') {
-            # Convert # Heading to # Heading {.unnumbered} for Pandoc
+        # Make ALL headings in front matter unnumbered to prevent 0.x section numbers
+        # This includes: dedication, introduction, meet-alex, behind-the-scenes, readers-guide
+        if ($Chapter -match 'book\\00[a-e]-') {
+            # Mark H1 as unnumbered (for TOC) 
             $Content = $Content -replace '^(# [^\r\n{]+)(\r?\n)', '$1 {.unnumbered}$2'
+            # Mark H2-H4 as unnumbered too (prevents 0.1, 0.2 numbering)
+            $Content = $Content -replace '^(#{2,4} [^\r\n{]+)(\r?\n)', '$1 {.unnumbered}$2'
+        }
+        
+        # === APPENDIX HANDLING ===
+        # Mark appendix/reference chapters as unnumbered with Appendix prefix
+        if ($Chapter -match 'book\\(1[6-9]|2[0-1])-') {
+            # Mark all headings as unnumbered
+            $Content = $Content -replace '^(#{1,4} [^\r\n{]+)(\r?\n)', '$1 {.unnumbered}$2'
         }
         
         # === EMOJI HANDLING ===
@@ -172,6 +174,11 @@ foreach ($Chapter in $Chapters) {
         # Switch to Arabic numerals and reset chapter counter at first real chapter
         if ($Chapter -eq "book\01-appetizers.md") {
             $CombinedContent += '```{=latex}' + "`n\pagenumbering{arabic}`n\setcounter{chapter}{0}`n" + '```' + "`n`n"
+        }
+        
+        # Switch to appendix mode before first appendix
+        if ($Chapter -eq "book\16-appendix-a-aphrodisiac.md") {
+            $CombinedContent += '```{=latex}' + "`n\appendix`n" + '```' + "`n`n"
         }
         
         # Add chapter content (book class automatically handles page breaks before chapters)
@@ -209,8 +216,7 @@ function Build-CookbookPdf {
     
     try {
         $pandocOutput = pandoc $CombinedMd `
-            --metadata-file=$ConfigFile `
-            --pdf-engine=lualatex `
+            --defaults=$ConfigFile `
             --resource-path="$ProjectRoot;$ProjectRoot\book;$ProjectRoot\book\assets" `
             -V "hyperrefoptions=draft" `
             -o $OutputPdf 2>&1

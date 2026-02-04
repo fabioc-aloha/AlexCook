@@ -1,109 +1,30 @@
----
-# Pandoc metadata for The Alex Cookbook (PRINT version)
-# Title/author/date removed to prevent automatic title page generation
-lang: en-US
+# Pandoc defaults for The Alex Cookbook (PRINT version)
+# Pandoc 3.8+ format
 
-# PDF settings - twoside for professional print layout
-documentclass: book
-classoption:
-  - twoside
-  - openright
-papersize: letter
-geometry:
-  - margin=1in
-  - top=1.25in
-  - bottom=1.25in
-fontsize: 11pt
-linestretch: 1.2
+pdf-engine: lualatex
+standalone: true
 
-# Disable automatic title page (we use custom cover)
-titlepage: false
+variables:
+  lang: en-US
+  documentclass: book
+  classoption:
+    - twoside
+    - openright
+  papersize: letter
+  geometry:
+    - margin=1in
+    - top=1.25in
+    - bottom=1.25in
+  fontsize: 11pt
+  linestretch: 1.2
+  titlepage: false
+  toc: false
+  toc-depth: 1
+  colorlinks: true
+  linkcolor: BrickRed
+  urlcolor: NavyBlue
+  toccolor: Black
+  numbersections: true
+  secnumdepth: 1
 
-# Table of contents (manually inserted after cover page)
-toc: false
-toc-depth: 1
-
-# Styling
-colorlinks: true
-linkcolor: BrickRed
-urlcolor: NavyBlue
-toccolor: Black
-
-# Headers and footers
-header-includes:
-  - |
-    \usepackage{fancyhdr}
-    \pagestyle{fancy}
-    \fancyhf{}
-    \fancyhead[LE,RO]{\thepage}
-    \fancyhead[RE]{\textit{The Alex Cookbook}}
-    \fancyhead[LO]{\textit{\leftmark}}
-    \fancyfoot[C]{\small Break Rules. Build Flavor. Be Unforgettable.}
-    \renewcommand{\headrulewidth}{0.4pt}
-    \renewcommand{\footrulewidth}{0.2pt}
-  - |
-    \usepackage{titlesec}
-    \titleformat{\chapter}[display]
-      {\normalfont\huge\bfseries}{\chaptertitlename\ \thechapter}{20pt}{\Huge}
-    \titlespacing*{\chapter}{0pt}{-20pt}{20pt}
-    \titleformat{\section}{\normalfont\Large\bfseries}{\thesection}{1em}{}
-    \titlespacing*{\section}{0pt}{2.5ex plus 1ex minus .2ex}{1.5ex plus .2ex}
-    \titleformat{\subsection}{\normalfont\large\bfseries}{\thesubsection}{1em}{}
-    \titlespacing*{\subsection}{0pt}{2ex plus 1ex minus .2ex}{1ex plus .2ex}
-    \titleformat{\subsubsection}{\normalfont\normalsize\bfseries}{\thesubsubsection}{1em}{}
-    \titlespacing*{\subsubsection}{0pt}{1.5ex plus 1ex minus .2ex}{0.5ex plus .2ex}
-    \raggedbottom
-    \widowpenalty=10000
-    \clubpenalty=10000
-  - |
-    \usepackage{needspace}
-    \let\oldsection\section
-    \renewcommand{\section}{\needspace{5\baselineskip}\oldsection}
-    \let\oldsubsection\subsection
-    \renewcommand{\subsection}{\needspace{4\baselineskip}\oldsubsection}
-    \let\oldsubsubsection\subsubsection
-    \renewcommand{\subsubsection}{\needspace{3\baselineskip}\oldsubsubsection}
-  - |
-    \usepackage{booktabs}
-    \usepackage{longtable}
-    \usepackage{array}
-    \usepackage{tabularx}
-    \usepackage{ltablex}
-    \usepackage{etoolbox}
-    \renewcommand{\arraystretch}{1.15}
-    \BeforeBeginEnvironment{tabular}{\needspace{4\baselineskip}}
-    \BeforeBeginEnvironment{longtable}{\needspace{6\baselineskip}}
-  - |
-    \usepackage{graphicx}
-    \usepackage{float}
-    \floatplacement{figure}{H}
-  - |
-    \usepackage{tikz}
-  - |
-    \usepackage{fontspec}
-    \setmainfont{Segoe UI}
-    \setsansfont{Segoe UI}
-    \setmonofont{Cascadia Code}
-  - |
-    \usepackage{tocloft}
-    \renewcommand{\cftchappresnum}{Chapter }
-    \renewcommand{\cftchapaftersnum}{:}
-    \setlength{\cftchapnumwidth}{5.5em}
-    \renewcommand{\cftchapleader}{\cftdotfill{\cftdotsep}}
-    \setlength{\cftbeforechapskip}{0.5em}
-  - |
-    \usepackage{parskip}
-    \setlength{\parskip}{0.5em}
-    \setlength{\parindent}{0pt}
-  - |
-    \usepackage{enumitem}
-    \setlist{nosep, leftmargin=*}
-  - |
-    \usepackage{xcolor}
-    \definecolor{alexred}{RGB}{180,50,50}
-    \definecolor{alexgold}{RGB}{180,140,50}
-
-# Number sections
-numbersections: true
-secnumdepth: 1
----
+include-in-header: build/header-print.tex

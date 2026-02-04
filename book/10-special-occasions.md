@@ -1,5 +1,3 @@
-<img src="./assets/banners/10-special-occasions.svg" width="1064" height="200" alt="Special Occasions">
-
 # 🎉 Chapter 10: Special Occasions
 
 \bigskip

@@ -1,5 +1,3 @@
-<img src="./assets/banners/09-bread-baking.svg" width="1064" height="200" alt="Bread & Baking">
-
 # 🍞 Chapter 9: Bread & Baking
 
 \bigskip

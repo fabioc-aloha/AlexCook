@@ -1,5 +1,3 @@
-<img src="./assets/banners/01-appetizers.svg" width="1064" height="200" alt="Appetizers & Starters">
-
 # 🥗 Chapter 1: Appetizers & Starters
 
 \bigskip

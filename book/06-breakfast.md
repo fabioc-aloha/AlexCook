@@ -1,5 +1,3 @@
-<img src="./assets/banners/06-breakfast.svg" width="1064" height="200" alt="Breakfast & Brunch">
-
 # 🍳 Chapter 6: Breakfast & Brunch
 
 \bigskip

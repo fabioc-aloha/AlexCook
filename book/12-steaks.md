@@ -1,5 +1,3 @@
-<img src="./assets/banners/12-steaks.svg" width="1064" height="200" alt="The Art of Steak">
-
 # 🥩 Chapter 12: The Art of Steak
 
 \bigskip

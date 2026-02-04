@@ -1,5 +1,3 @@
-<img src="./assets/banners/13-comfort-classics.svg" width="1064" height="200" alt="Meat & Potatoes Comfort">
-
 # 🥔 Chapter 13: Meat & Potatoes Comfort
 
 \bigskip

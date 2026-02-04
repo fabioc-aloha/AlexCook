@@ -1,5 +1,3 @@
-<img src="./assets/banners/appendix-c-amazon.svg" width="1064" height="200" alt="Appendix C — The Amazon Shopping Spree">
-
 # 🛒 Appendix C: The Unhinged Amazon Shopping Spree
 
 \bigskip

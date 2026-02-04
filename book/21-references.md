@@ -1,5 +1,3 @@
-<img src="./assets/banners/appendix-d-references.svg" width="1064" height="200" alt="Appendix D — References">
-
 # 📚 Appendix D: References & Further Reading
 
 \bigskip

@@ -1,5 +1,3 @@
-<img src="./assets/banners/appendix-a-aphrodisiac.svg" width="1064" height="200" alt="Appendix A — Foods of Desire">
-
 # 💋 Appendix A: Foods of Desire
 
 \bigskip

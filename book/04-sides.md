@@ -1,5 +1,3 @@
-<img src="./assets/banners/04-sides.svg" width="1064" height="200" alt="Sides & Accompaniments">
-
 # 🥔 Chapter 4: Sides & Accompaniments
 
 \bigskip

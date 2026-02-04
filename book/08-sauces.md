@@ -1,5 +1,3 @@
-<img src="./assets/banners/08-sauces.svg" width="1064" height="200" alt="Sauces & Condiments">
-
 # 🫙 Chapter 8: Sauces & Condiments
 
 \bigskip

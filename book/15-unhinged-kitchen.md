@@ -1,5 +1,3 @@
-<img src="./assets/banners/15-unhinged-kitchen.svg" width="1064" height="200" alt="The Unhinged Kitchen — Original Chaos">
-
 # 🌪️ Chapter 15: The Unhinged Kitchen
 
 \bigskip

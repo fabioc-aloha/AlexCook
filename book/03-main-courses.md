@@ -1,5 +1,3 @@
-<img src="./assets/banners/03-main-courses.svg" width="1064" height="200" alt="Main Courses">
-
 # 🍖 Chapter 3: Main Courses
 
 \bigskip

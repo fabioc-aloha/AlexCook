@@ -1,5 +1,3 @@
-<img src="./assets/banners/07-drinks.svg" width="1064" height="200" alt="Drinks & Cocktails">
-
 # 🍹 Chapter 7: Drinks & Cocktails
 
 \bigskip

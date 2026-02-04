@@ -1,5 +1,3 @@
-<img src="./assets/banners/appendix-b-risotto-rice.svg" width="1064" height="200" alt="Appendix B — The Rice Chronicles">
-
 # 🍚 Appendix B: The Rice Chronicles
 
 \bigskip

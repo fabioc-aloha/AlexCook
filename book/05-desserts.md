@@ -1,5 +1,3 @@
-<img src="./assets/banners/05-desserts.svg" width="1064" height="200" alt="Desserts & Sweets">
-
 # 🍰 Chapter 5: Desserts & Sweets
 
 \bigskip

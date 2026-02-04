@@ -1,5 +1,3 @@
-<img src="./assets/banners/02-soups-salads.svg" width="1064" height="200" alt="Soups & Salads">
-
 # 🥣 Chapter 2: Soups & Salads
 
 \bigskip
