@@ -6,54 +6,78 @@ This document describes the organization of The Alex Cookbook across its three o
 
 ## Directory Overview
 
-```
+```text
 AlexCook/
-├── book/                    # 📖 CANONICAL SOURCE for PDF builds
-│   ├── *.md                 # All chapters (single flat folder)
-│   ├── cover.svg            # Book cover artwork
+│
+├── 📖 book/                    ─── CANONICAL SOURCE for PDF builds
+│   ├── *.md                        All chapters (single flat folder)
+│   ├── cover.svg                   Book cover artwork
 │   ├── assets/
-│   │   ├── banners/         # Chapter banner SVGs
-│   │   │   └── png/         # Converted PNGs for PDF
-│   │   ├── emojis/          # Twemoji PNGs (140+)
-│   │   └── images/          # Photos and illustrations
-│   └── output/              # Generated PDFs
+│   │   ├── banners/                Chapter banner SVGs
+│   │   │   └── png/                Converted PNGs for PDF
+│   │   ├── emojis/                 Twemoji PNGs (140+)
+│   │   └── images/                 Photos and illustrations
+│   └── output/                     Generated PDFs
 │
-├── github-version/          # 🌐 GITHUB-OPTIMIZED structure
-│   ├── COVER.md             # Root README (displays on repo home)
-│   ├── INDEX.md             # Chapter listing with navigation
-│   ├── intro/               # Front matter files
-│   ├── chapters/            # Recipe chapters (one folder each)
-│   ├── appendices/          # Reference appendices
-│   ├── references/          # Conversion tables, essentials
-│   └── assets/              # GitHub-specific assets
+├── 🌐 github-version/          ─── GITHUB-OPTIMIZED structure
+│   ├── COVER.md                    Root README (displays on repo home)
+│   ├── INDEX.md                    Chapter listing with navigation
+│   ├── intro/                      Front matter files
+│   ├── chapters/                   Recipe chapters (one folder each)
+│   ├── appendices/                 Reference appendices
+│   ├── references/                 Conversion tables, essentials
+│   └── assets/                     GitHub-specific assets
 │
-├── build/                   # 🔧 BUILD SCRIPTS and config
-│   ├── *.js                 # Node.js conversion scripts
-│   ├── *.ps1                # PowerShell build/QA scripts
-│   ├── *.yaml               # Pandoc configuration
-│   ├── *.tex                # LaTeX headers
-│   └── emoji-map.json       # Emoji→PNG mapping
+├── 🔧 build/                   ─── BUILD SCRIPTS and config
+│   ├── *.js                        Node.js conversion scripts
+│   ├── *.ps1                       PowerShell build/QA scripts
+│   ├── *.yaml                      Pandoc configuration
+│   ├── *.tex                       LaTeX headers
+│   └── emoji-map.json              Emoji→PNG mapping
 │
-├── docs/                    # 📚 DOCUMENTATION
-│   ├── BUILD-PIPELINE.md    # This file's companion
-│   ├── PUBLISHING.md        # Amazon KDP guide
-│   ├── BOOK-FORMATTING-STANDARDS.md
-│   └── AI-COOKBOOK-HISTORY.md
+├── 📚 docs/                    ─── DOCUMENTATION
+│   ├── BUILD-PIPELINE.md           Script documentation
+│   ├── PROJECT-STRUCTURE.md        This file
+│   ├── PUBLISHING.md               Amazon KDP guide
+│   └── BOOK-FORMATTING-STANDARDS.md
 │
-└── archive/                 # 🗄️ LEGACY (deprecated)
-    └── chapters/            # Old per-folder chapter structure
+└── 🗄️ archive/                 ─── LEGACY (deprecated)
+    └── chapters/                   Old per-folder chapter structure
 ```
 
 ---
 
 ## Three Output Formats
 
+```text
+                        ╔════════════════════════════╗
+                        ║    MARKDOWN SOURCE         ║
+                        ║      book/*.md             ║
+                        ╚════════════════════════════╝
+                                     │
+          ┌──────────────────────────┼──────────────────────────┐
+          ▼                          ▼                          ▼
+┌─────────────────────┐   ┌─────────────────────┐   ┌─────────────────────┐
+│   🌐 GITHUB         │   │   🖨️ PRINT PDF       │   │   📱 DIGITAL PDF    │
+├─────────────────────┤   ├─────────────────────┤   ├─────────────────────┤
+│ • Navigation        │   │ • Two-sided         │   │ • Single-sided      │
+│ • Badges            │   │ • Right-start       │   │ • Hyperlinks        │
+│ • Collapsibles      │   │ • Roman numerals    │   │ • No blank pages    │
+│ • SVG images        │   │ • PNG images        │   │ • Screen colors     │
+│ • Flag PNGs         │   │ • Embedded emoji    │   │ • Embedded emoji    │
+└─────────────────────┘   └─────────────────────┘   └─────────────────────┘
+          │                          │                          │
+          ▼                          ▼                          ▼
+   github-version/          cookbook-print.pdf        cookbook-digital.pdf
+```
+
 ### 1. GitHub Version (`github-version/`)
 
 **Purpose:** Web browsing on GitHub.com with navigation, badges, and collapsible sections.
 
 **Structure:**
-```
+
+```text
 github-version/
 ├── COVER.md                 # Root README - book cover + badges
 ├── INDEX.md                 # Full chapter listing

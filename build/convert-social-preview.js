@@ -114,9 +114,8 @@ function replaceEmojisInSvg(svgContent) {
             }
             return result || match;
         } else {
-            // Mixed text + emoji line - use <tspan> approach with inline images
-            // For SVG rendering, we need a <g> group with text + images positioned together
-            
+            // Mixed text + emoji line
+            // Strategy: Measure each segment, position precisely
             console.log(`  📝 Mixed line: "${content.substring(0, 50)}..."`);
             
             // Split content into segments (text and emoji)
@@ -136,63 +135,49 @@ function replaceEmojisInSvg(svgContent) {
                 segments.push({ type: 'text', value: content.substring(lastIndex) });
             }
             
-            // Create a group with text spans and positioned images
-            // We'll create text with placeholders, then overlay images
-            let textParts = '';
-            let images = '';
+            // Calculate widths more accurately
+            // Arial at fontSize 18: average char ~9px, but varies
+            const avgCharWidth = fontSize * 0.55;
+            const emojiWidth = fontSize * 1.2;
+            const emojiSpacing = fontSize * 0.3;
             
-            // Calculate approximate character width (rough estimate)
-            const charWidth = fontSize * 0.5;
-            const emojiWidth = fontSize;
-            
-            // Build the layout
-            let currentOffset = 0;
+            // Calculate total width
+            let totalWidth = 0;
             for (const seg of segments) {
                 if (seg.type === 'text') {
-                    textParts += seg.value;
-                    currentOffset += seg.value.length * charWidth;
+                    totalWidth += seg.value.length * avgCharWidth;
                 } else {
-                    // Add spaces to preserve layout
-                    textParts += '   '; // placeholder
-                    
-                    const pngPath = getEmojiPngPath(seg.value);
-                    if (pngPath && fs.existsSync(pngPath)) {
-                        const pngData = fs.readFileSync(pngPath);
-                        const base64 = pngData.toString('base64');
-                        console.log(`  ✓ Replaced: ${seg.value}`);
-                        
-                        // Position calculation depends on text-anchor
-                        // For now, mark for replacement
-                        images += `<!-- emoji:${seg.value}:${currentOffset} -->`;
-                    } else {
-                        console.log(`  ⚠ Missing PNG for: ${seg.value}`);
-                    }
-                    currentOffset += emojiWidth;
+                    totalWidth += emojiWidth + emojiSpacing;
                 }
             }
             
-            // For mixed content, keep the text but add images nearby
-            // This is complex; for now, let's output the text with images as a group
-            const totalWidth = currentOffset;
-            let startX = isMiddle ? baseX - totalWidth / 2 : baseX;
+            // Start position
+            let currentX = isMiddle ? baseX - totalWidth / 2 : baseX;
             
-            // Rebuild with positioned elements
+            // Build SVG group
             let result = `<g>`;
-            let xPos = startX;
+            
+            // Extract other attrs for text elements (fill, font-family, etc)
+            const fillMatch = attrs.match(/fill="([^"]+)"/);
+            const fontMatch = attrs.match(/font-family="([^"]+)"/);
+            const fill = fillMatch ? fillMatch[1] : '#666666';
+            const fontFamily = fontMatch ? fontMatch[1] : 'Arial, sans-serif';
             
             for (const seg of segments) {
                 if (seg.type === 'text') {
-                    result += `<text${attrs.replace(/x="[^"]*"/, `x="${xPos}"`).replace(/text-anchor="middle"/, '')}>${seg.value}</text>`;
-                    xPos += seg.value.length * charWidth;
+                    const textWidth = seg.value.length * avgCharWidth;
+                    result += `<text x="${currentX}" y="${y}" font-family="${fontFamily}" font-size="${fontSize}" fill="${fill}">${seg.value}</text>`;
+                    currentX += textWidth;
                 } else {
                     const pngPath = getEmojiPngPath(seg.value);
                     if (pngPath && fs.existsSync(pngPath)) {
                         const pngData = fs.readFileSync(pngPath);
                         const base64 = pngData.toString('base64');
-                        const imgY = y - fontSize + 4;
-                        result += `<image x="${xPos}" y="${imgY}" width="${fontSize}" height="${fontSize}" href="data:image/png;base64,${base64}"/>`;
+                        const imgY = y - fontSize + 2;
+                        result += `<image x="${currentX}" y="${imgY}" width="${fontSize}" height="${fontSize}" href="data:image/png;base64,${base64}"/>`;
+                        console.log(`  ✓ Replaced: ${seg.value}`);
                     }
-                    xPos += emojiWidth;
+                    currentX += emojiWidth + emojiSpacing;
                 }
             }
             
