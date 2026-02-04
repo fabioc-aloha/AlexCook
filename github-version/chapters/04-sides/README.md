@@ -44,13 +44,13 @@
 | Recipe | Difficulty | Time | Tags |
 |--------|------------|------|------|
 | Hasselback Potatoes | 🔴 Complex | 1.5 hrs | 🌎 💚 |
-| Brazilian Cheese Bread (Pão de Queijo) | 🔴 Complex | 1 hr | 🇧🇷 🧒 |
-| Indian Raita | 🟢 Simple | 10 min | 🇮🇳 💚 |
+| Brazilian Cheese Bread (Pão de Queijo) | 🔴 Complex | 1 hr | <img src="../../assets/emojis/1f1e7-1f1f7.png" alt="🇧🇷" height="16"> 🧒 |
+| Indian Raita | 🟢 Simple | 10 min | <img src="../../assets/emojis/1f1ee-1f1f3.png" alt="🇮🇳" height="16"> 💚 |
 | Roasted Vegetables (Char Method) | 🟢 Simple | 30 min | 💚 🧒 |
-| Italian Polenta | 🟡 Medium | 45 min | 🇮🇹 💚 |
-| Japanese Pickled Vegetables | 🟢 Simple | 15 min | 🇯🇵 💚 |
-| Chinese Egg Fried Rice | 🟢 Simple | 15 min | 🇨🇳 🧒 |
-| Farofa (Brazilian Toasted Cassava) | 🟢 Simple | 15 min | 🇧🇷 |
+| Italian Polenta | 🟡 Medium | 45 min | <img src="../../assets/emojis/1f1ee-1f1f9.png" alt="🇮🇹" height="16"> 💚 |
+| Japanese Pickled Vegetables | 🟢 Simple | 15 min | <img src="../../assets/emojis/1f1ef-1f1f5.png" alt="🇯🇵" height="16"> 💚 |
+| Chinese Egg Fried Rice | 🟢 Simple | 15 min | <img src="../../assets/emojis/1f1e8-1f1f3.png" alt="🇨🇳" height="16"> 🧒 |
+| Farofa (Brazilian Toasted Cassava) | 🟢 Simple | 15 min | <img src="../../assets/emojis/1f1e7-1f1f7.png" alt="🇧🇷" height="16"> |
 | Cucumber Crunch Bites (Dog-Safe) | 🟢 Simple | 5 min | 🐕 |
 
 ---
@@ -85,13 +85,13 @@ The Hasselback proves that technique transforms humble ingredients. Every slice 
 8. **Finish** — Flaky salt, thyme, optional cheese in the last 5 min.
 
 #### Global Variations
-- 🇮🇹 **Italian:** Stuff with mozzarella + sun-dried tomatoes
-- 🇮🇳 **Indian:** Spiced butter with cumin, turmeric, chili
-- 🇯🇵 **Japanese:** Brush with miso-butter glaze
+- <img src="../../assets/emojis/1f1ee-1f1f9.png" alt="🇮🇹" height="16"> **Italian:** Stuff with mozzarella + sun-dried tomatoes
+- <img src="../../assets/emojis/1f1ee-1f1f3.png" alt="🇮🇳" height="16"> **Indian:** Spiced butter with cumin, turmeric, chili
+- <img src="../../assets/emojis/1f1ef-1f1f5.png" alt="🇯🇵" height="16"> **Japanese:** Brush with miso-butter glaze
 
 ---
 
-### 🇧🇷 **Pão de Queijo (Brazilian Cheese Bread)**
+### <img src="../../assets/emojis/1f1e7-1f1f7.png" alt="🇧🇷" height="16"> **Pão de Queijo (Brazilian Cheese Bread)**
 
 > *"Crispy outside, chewy inside, cheese throughout. These are illegal in 47 countries (not really, but they should be)."*
 
@@ -153,7 +153,7 @@ Cheesy. No visible vegetables. Ball-shaped (fun to eat). What's not to love?
 
 ---
 
-### 🇮🇳 **Cucumber Raita**
+### <img src="../../assets/emojis/1f1ee-1f1f3.png" alt="🇮🇳" height="16"> **Cucumber Raita**
 
 > *"The cool contrast to anything spicy. Also, just a really good dip for naan."*
 
@@ -176,7 +176,7 @@ Cheesy. No visible vegetables. Ball-shaped (fun to eat). What's not to love?
 
 ---
 
-### 🇨🇳 **Egg Fried Rice (The Real Way)**
+### <img src="../../assets/emojis/1f1e8-1f1f3.png" alt="🇨🇳" height="16"> **Egg Fried Rice (The Real Way)**
 
 > *"Cold rice. Hot wok. Day-old rice exists for this moment."*
 
@@ -205,7 +205,7 @@ Rice + eggs + soy sauce = his holy trinity.
 
 ---
 
-### 🇯🇵 **Quick Pickled Vegetables (Tsukemono)**
+### <img src="../../assets/emojis/1f1ef-1f1f5.png" alt="🇯🇵" height="16"> **Quick Pickled Vegetables (Tsukemono)**
 
 > *"Japanese meals aren't complete without pickles. These take 15 minutes."*
 

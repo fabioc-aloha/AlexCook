@@ -43,21 +43,21 @@
 
 | Recipe | Difficulty | Time | Tags |
 |--------|------------|------|------|
-| Caipirinha (Brazilian Classic) | 🟡 Medium | 5 min | 🇧🇷 |
-| Aperol Spritz | 🟢 Simple | 3 min | 🇮🇹 |
-| Mango Lassi | 🟢 Simple | 5 min | 🇮🇳 💚 |
-| Japanese Whisky Highball | 🟢 Simple | 3 min | 🇯🇵 |
+| Caipirinha (Brazilian Classic) | 🟡 Medium | 5 min | <img src="../../assets/emojis/1f1e7-1f1f7.png" alt="🇧🇷" height="16"> |
+| Aperol Spritz | 🟢 Simple | 3 min | <img src="../../assets/emojis/1f1ee-1f1f9.png" alt="🇮🇹" height="16"> |
+| Mango Lassi | 🟢 Simple | 5 min | <img src="../../assets/emojis/1f1ee-1f1f3.png" alt="🇮🇳" height="16"> 💚 |
+| Japanese Whisky Highball | 🟢 Simple | 3 min | <img src="../../assets/emojis/1f1ef-1f1f5.png" alt="🇯🇵" height="16"> |
 | Hot Honey Ginger Tea | 🟢 Simple | 10 min | 🌏 💚 |
-| Brazilian Lemonade | 🟢 Simple | 10 min | 🇧🇷 🧒 |
-| Classic Margarita | 🟡 Medium | 5 min | 🇲🇽 |
-| Matcha Latte | 🟢 Simple | 5 min | 🇯🇵 💚 |
+| Brazilian Lemonade | 🟢 Simple | 10 min | <img src="../../assets/emojis/1f1e7-1f1f7.png" alt="🇧🇷" height="16"> 🧒 |
+| Classic Margarita | 🟡 Medium | 5 min | <img src="../../assets/emojis/1f1f2-1f1fd.png" alt="🇲🇽" height="16"> |
+| Matcha Latte | 🟢 Simple | 5 min | <img src="../../assets/emojis/1f1ef-1f1f5.png" alt="🇯🇵" height="16"> 💚 |
 | Pup-Friendly Broth | 🟢 Simple | 5 min | 🐕 |
 
 ---
 
 ## 🍸 COMPLEX RECIPES
 
-### 🇧🇷 **Caipirinha (The Real Deal)**
+### <img src="../../assets/emojis/1f1e7-1f1f7.png" alt="🇧🇷" height="16"> **Caipirinha (The Real Deal)**
 
 > *"Brazil's national cocktail. Cachaça, lime, sugar, ice. Everything else is a lie."*
 
@@ -114,7 +114,7 @@ The muddling matters. You're releasing lime oils, not making paste. And NEVER us
 
 ## 🥤 SIMPLE RECIPES
 
-### 🇮🇹 **Aperol Spritz**
+### <img src="../../assets/emojis/1f1ee-1f1f9.png" alt="🇮🇹" height="16"> **Aperol Spritz**
 
 > *"Italian summers in a glass. Bitter, bubbly, dangerous because you can drink five."*
 
@@ -136,7 +136,7 @@ The muddling matters. You're releasing lime oils, not making paste. And NEVER us
 
 ---
 
-### 🇮🇳 **Mango Lassi**
+### <img src="../../assets/emojis/1f1ee-1f1f3.png" alt="🇮🇳" height="16"> **Mango Lassi**
 
 > *"The Indian smoothie that proves yogurt belongs in drinks."*
 
@@ -158,7 +158,7 @@ The muddling matters. You're releasing lime oils, not making paste. And NEVER us
 
 ---
 
-### 🇯🇵 **Japanese Whisky Highball**
+### <img src="../../assets/emojis/1f1ef-1f1f5.png" alt="🇯🇵" height="16"> **Japanese Whisky Highball**
 
 > *"The art of dilution. This isn't lazy — it's precise."*
 
@@ -179,7 +179,7 @@ The muddling matters. You're releasing lime oils, not making paste. And NEVER us
 
 ---
 
-### 🇧🇷 **Brazilian Lemonade (Swiss-Style)**
+### <img src="../../assets/emojis/1f1e7-1f1f7.png" alt="🇧🇷" height="16"> **Brazilian Lemonade (Swiss-Style)**
 
 > *"It's not lemonade. It's limeade. With condensed milk. Don't question it, just drink it."*
 
@@ -227,7 +227,7 @@ Sweet, creamy, cold. It's basically dessert masquerading as a drink.
 
 ---
 
-### 🇯🇵 **Matcha Latte**
+### <img src="../../assets/emojis/1f1ef-1f1f5.png" alt="🇯🇵" height="16"> **Matcha Latte**
 
 > *"Green, earthy, caffeinated, beautiful."*
 

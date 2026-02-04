@@ -196,12 +196,64 @@ node build/asset-pipeline.js
 4. Combines emoji extraction + SVG conversion in one pass
 
 **Output:**
+
 - `build/asset-manifest.json` — Hash cache for change detection
 - All emoji and banner PNGs as needed
 
 ---
 
-### 6. `build-pdf.ps1` — PDF Generation
+### 6. `replace-flags.js` — Cross-Platform Flag Support
+
+**Purpose:** Replaces flag emojis with PNG images for Windows compatibility.
+
+**Location:** `build/replace-flags.js`
+
+**Usage:**
+
+```bash
+node build/replace-flags.js
+```
+
+**How it works:**
+
+1. Scans all Markdown files in `github-version/`
+2. Finds regional indicator flag emojis (🇧🇷, 🇮🇹, 🇮🇳, etc.)
+3. Calculates relative path from each file to `assets/emojis/`
+4. Replaces flag with inline `<img>` tag pointing to Twemoji PNG
+
+**Why needed:** Windows Segoe UI Emoji font **does not render flag emojis** — they appear as two-letter country codes (BR, IT, IN) instead of flag images. This is a known Windows limitation due to political considerations by Microsoft.
+
+**Flag mapping:**
+
+```javascript
+const FLAGS = {
+    '🇧🇷': '1f1e7-1f1f7.png',  // Brazil
+    '🇮🇹': '1f1ee-1f1f9.png',  // Italy
+    '🇮🇳': '1f1ee-1f1f3.png',  // India
+    '🇨🇳': '1f1e8-1f1f3.png',  // China
+    '🇯🇵': '1f1ef-1f1f5.png',  // Japan
+    '🇫🇷': '1f1eb-1f1f7.png',  // France
+    '🇬🇧': '1f1ec-1f1e7.png',  // UK
+    '🇺🇸': '1f1fa-1f1f8.png',  // USA
+    '🇲🇽': '1f1f2-1f1fd.png',  // Mexico
+    '🇰🇷': '1f1f0-1f1f7.png',  // Korea
+};
+```
+
+**Generated HTML:**
+
+```html
+<img src="../assets/emojis/1f1e7-1f1f7.png" alt="🇧🇷" height="16">
+```
+
+**Output:**
+
+- Modified Markdown files with flag PNGs
+- Console output showing replacement counts per file
+
+---
+
+### 7. `build-pdf.ps1` — PDF Generation
 
 **Purpose:** Orchestrates the complete PDF build using Pandoc and LuaLaTeX.
 
@@ -296,8 +348,10 @@ LaTeX preamble with:
 **Problem:** System fonts render emojis differently (Apple vs Windows vs Linux).
 
 **Solution:** Download all emojis as PNG from Twitter's Twemoji CDN and embed them:
+
 - In SVG: As base64 data URIs in `<image>` elements
 - In PDF: As `\includegraphics` LaTeX commands
+- In GitHub Markdown: As `<img>` tags for problematic emojis
 
 ### 2. ZWJ Sequence Handling
 
@@ -305,11 +359,35 @@ LaTeX preamble with:
 
 **Solution:** Match longer sequences FIRST in regex, before individual emojis.
 
-### 3. Regional Indicator Flags
+### 3. Regional Indicator Flags (Cross-Platform Issue)
 
-**Problem:** Country flags like `🇧🇷` are TWO regional indicator symbols combined.
+**Problem:** Country flags like `🇧🇷` are TWO regional indicator symbols combined. **Windows does not render these flags** — they appear as two-letter codes (BR, IT, etc.) instead of flag images.
 
-**Solution:** Use regex range `[\u{1F1E0}-\u{1F1FF}]{2}` to match flag pairs.
+**Why Windows fails:** Windows uses Segoe UI Emoji which doesn't include flag glyphs (political reasons). macOS and Linux render flags correctly.
+
+**Solution for GitHub:** Replace flag emojis with inline PNG images using `<img>` tags:
+
+```javascript
+// Flag mapping in replace-flags.js
+const FLAGS = {
+    '🇧🇷': '1f1e7-1f1f7.png',  // Brazil
+    '🇮🇹': '1f1ee-1f1f9.png',  // Italy
+    '🇮🇳': '1f1ee-1f1f3.png',  // India
+    '🇨🇳': '1f1e8-1f1f3.png',  // China
+    '🇯🇵': '1f1ef-1f1f5.png',  // Japan
+};
+
+// Replace with inline image
+const imgTag = `<img src="${relativePath}/${filename}" alt="${flag}" height="16">`;
+```
+
+**Usage:**
+
+```bash
+node build/replace-flags.js
+```
+
+This replaces all flag emojis in `github-version/` with PNG images that render on all platforms.
 
 ### 4. Mixed Text + Emoji Lines
 

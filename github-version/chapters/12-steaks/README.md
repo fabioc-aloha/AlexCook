@@ -44,15 +44,15 @@
 | Recipe | Difficulty | Time | Tags |
 |--------|------------|------|------|
 | Perfect Ribeye (Reverse Sear) | 🔴 Complex | 1.5 hrs | 🌎 |
-| Picanha (Brazilian Sirloin Cap) | 🔴 Complex | 45 min | 🇧🇷 |
-| Bistecca alla Fiorentina | 🔴 Complex | 30 min | 🇮🇹 |
-| Japanese Wagyu (A5 Treatment) | 🔴 Complex | 20 min | 🇯🇵 |
-| Churrasco Platter | 🔴 Complex | 2 hrs | 🇧🇷 |
+| Picanha (Brazilian Sirloin Cap) | 🔴 Complex | 45 min | <img src="../../assets/emojis/1f1e7-1f1f7.png" alt="🇧🇷" height="16"> |
+| Bistecca alla Fiorentina | 🔴 Complex | 30 min | <img src="../../assets/emojis/1f1ee-1f1f9.png" alt="🇮🇹" height="16"> |
+| Japanese Wagyu (A5 Treatment) | 🔴 Complex | 20 min | <img src="../../assets/emojis/1f1ef-1f1f5.png" alt="🇯🇵" height="16"> |
+| Churrasco Platter | 🔴 Complex | 2 hrs | <img src="../../assets/emojis/1f1e7-1f1f7.png" alt="🇧🇷" height="16"> |
 | Pan-Seared NY Strip | 🟢 Simple | 15 min | 🌎 🧒 |
-| Skirt Steak Tacos | 🟢 Simple | 20 min | 🇲🇽 💚 |
+| Skirt Steak Tacos | 🟢 Simple | 20 min | <img src="../../assets/emojis/1f1f2-1f1fd.png" alt="🇲🇽" height="16"> 💚 |
 | Flat Iron Steak | 🟢 Simple | 15 min | 🌎 💚 |
-| Steak Diane | 🟡 Medium | 25 min | 🇫🇷 |
-| Korean BBQ Bulgogi | 🟡 Medium | 30 min + marinade | 🇰🇷 🧒 |
+| Steak Diane | 🟡 Medium | 25 min | <img src="../../assets/emojis/1f1eb-1f1f7.png" alt="🇫🇷" height="16"> |
+| Korean BBQ Bulgogi | 🟡 Medium | 30 min + marinade | <img src="../../assets/emojis/1f1f0-1f1f7.png" alt="🇰🇷" height="16"> 🧒 |
 | Pup Steak Bites | 🟢 Simple | 15 min | 🐕 |
 
 ---
@@ -97,7 +97,7 @@ Traditional searing gives you a gray band of overcooked meat. Reverse sear elimi
 
 ---
 
-### 🇧🇷 **Picanha (The Brazilian Way)**
+### <img src="../../assets/emojis/1f1e7-1f1f7.png" alt="🇧🇷" height="16"> **Picanha (The Brazilian Way)**
 
 > *"Fat cap up, coarse salt only, fire hot. Brazil knows what they're doing."*
 
@@ -133,7 +133,7 @@ Picanha (top sirloin cap) is the king of Brazilian churrasco. The fat cap is sac
 
 ---
 
-### 🇮🇹 **Bistecca alla Fiorentina**
+### <img src="../../assets/emojis/1f1ee-1f1f9.png" alt="🇮🇹" height="16"> **Bistecca alla Fiorentina**
 
 > *"Florence's gift to humanity. A T-bone so big it needs two people. Cooked over fire. Finished with olive oil."*
 
@@ -166,7 +166,7 @@ This must be thick (2-3 inches), must be T-bone or Porterhouse, and must be fini
 
 ---
 
-### 🇯🇵 **A5 Wagyu (Treating It Right)**
+### <img src="../../assets/emojis/1f1ef-1f1f5.png" alt="🇯🇵" height="16"> **A5 Wagyu (Treating It Right)**
 
 > *"This is the most expensive beef on earth. Don't cook it like a regular steak. It's not."*
 
@@ -195,7 +195,7 @@ A5 Wagyu is 50%+ fat. It MELTS. You cannot eat a full steak — 3-4 oz is a port
 
 ---
 
-### 🇧🇷 **Churrasco Platter (Full Brazilian BBQ)**
+### <img src="../../assets/emojis/1f1e7-1f1f7.png" alt="🇧🇷" height="16"> **Churrasco Platter (Full Brazilian BBQ)**
 
 > *"This isn't one steak. It's ALL the steaks. The full churrascaria experience at home."*
 
@@ -256,7 +256,7 @@ No weird stuff. Just steak. Crispy outside, pink inside. He gets his cut into st
 
 ---
 
-### 🇲🇽 **Skirt Steak Tacos**
+### <img src="../../assets/emojis/1f1f2-1f1fd.png" alt="🇲🇽" height="16"> **Skirt Steak Tacos**
 
 > *"High heat, fast cook, thin slice. The taco filling that makes you question everything else."*
 
@@ -302,7 +302,7 @@ No weird stuff. Just steak. Crispy outside, pink inside. He gets his cut into st
 
 ---
 
-### 🇰🇷 **Korean Bulgogi**
+### <img src="../../assets/emojis/1f1f0-1f1f7.png" alt="🇰🇷" height="16"> **Korean Bulgogi**
 
 > *"Sweet, savory, caramelized beef. Wrap it in lettuce. Try not to eat the whole batch."*
 
@@ -336,7 +336,7 @@ Sweet! Caramelized! Goes with rice! All his favorite things.
 
 ---
 
-### 🇫🇷 **Steak Diane (Old-School Glamour)**
+### <img src="../../assets/emojis/1f1eb-1f1f7.png" alt="🇫🇷" height="16"> **Steak Diane (Old-School Glamour)**
 
 > *"Flambéed tableside in the 1960s. Still impressive. Still delicious."*
 

@@ -70,7 +70,7 @@ This appendix is a journey through rice — from the patient stirring of Italian
 
 ---
 
-# 🇮🇹 RISOTTO SECTION
+# <img src="../../assets/emojis/1f1ee-1f1f9.png" alt="🇮🇹" height="16"> RISOTTO SECTION
 
 ## The Philosophy of Risotto
 
@@ -307,7 +307,7 @@ This will stain. Your lips, your teeth, your wooden spoons. It's worth it.
 
 ---
 
-# 🇪🇸 PAELLA & SPANISH SECTION
+# <img src="../../assets/emojis/1f1ea-1f1f8.png" alt="🇪🇸" height="16"> PAELLA & SPANISH SECTION
 
 ## The Philosophy of Paella
 
@@ -433,7 +433,7 @@ Paella is not risotto. You do NOT stir paella. The goal is socarrat — the cris
 
 ---
 
-# 🇯🇵 ASIAN RICE SECTION
+# <img src="../../assets/emojis/1f1ef-1f1f5.png" alt="🇯🇵" height="16"> ASIAN RICE SECTION
 
 ## The Philosophy of Asian Rice
 
@@ -611,7 +611,7 @@ The wok must be HOT. The rice must be COLD. This temperature differential is wha
 
 ---
 
-# 🇮🇷 PILAF & MIDDLE EASTERN SECTION
+# <img src="../../assets/emojis/1f1ee-1f1f7.png" alt="🇮🇷" height="16"> PILAF & MIDDLE EASTERN SECTION
 
 ## PERSIAN JEWELED RICE (MORASA POLO)
 

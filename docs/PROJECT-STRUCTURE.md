@@ -207,7 +207,7 @@ Each chapter file follows this structure:
 
 ## Recipe Name
 
-**Origin:** Country/Region  
+**Origin:** Country/Region
 **Prep:** X min | **Cook:** Y min | **Serves:** N
 
 > Chef's note or story about the dish

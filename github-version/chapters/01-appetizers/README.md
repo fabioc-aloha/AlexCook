@@ -41,11 +41,11 @@
 
 | Cuisine | Philosophy | Signature Starters |
 |---------|-----------|-------------------|
-| 🇧🇷 **Brazilian** | Bold, shareable, meat-forward | Coxinhas, pão de queijo, pastéis |
-| 🇮🇹 **Italian** | Simple ingredients, maximum impact | Bruschetta, arancini, carpaccio |
-| 🇮🇳 **Indian** | Spice-layered, fried perfection | Samosas, pakoras, chaat |
-| 🇨🇳 **Chinese** | Dim sum culture, bite-sized art | Dumplings, spring rolls, bao |
-| 🇯🇵 **Japanese** | Delicate, seasonal, beautiful | Edamame, gyoza, tataki |
+| <img src="../../assets/emojis/1f1e7-1f1f7.png" alt="🇧🇷" height="16"> **Brazilian** | Bold, shareable, meat-forward | Coxinhas, pão de queijo, pastéis |
+| <img src="../../assets/emojis/1f1ee-1f1f9.png" alt="🇮🇹" height="16"> **Italian** | Simple ingredients, maximum impact | Bruschetta, arancini, carpaccio |
+| <img src="../../assets/emojis/1f1ee-1f1f3.png" alt="🇮🇳" height="16"> **Indian** | Spice-layered, fried perfection | Samosas, pakoras, chaat |
+| <img src="../../assets/emojis/1f1e8-1f1f3.png" alt="🇨🇳" height="16"> **Chinese** | Dim sum culture, bite-sized art | Dumplings, spring rolls, bao |
+| <img src="../../assets/emojis/1f1ef-1f1f5.png" alt="🇯🇵" height="16"> **Japanese** | Delicate, seasonal, beautiful | Edamame, gyoza, tataki |
 
 ---
 
@@ -53,8 +53,8 @@
 
 | Recipe | Difficulty | Time | Tags |
 | ------ | ---------- | ---- | ---- |
-| Claudia's Caprese Towers | 🟢 Easy | 15 min | 💚 🇮🇹 |
-| Pão de Queijo | 🟢 Easy | 35 min | 🇧🇷 💚 🧒 |
+| Claudia's Caprese Towers | 🟢 Easy | 15 min | 💚 <img src="../../assets/emojis/1f1ee-1f1f9.png" alt="🇮🇹" height="16"> |
+| Pão de Queijo | 🟢 Easy | 35 min | <img src="../../assets/emojis/1f1e7-1f1f7.png" alt="🇧🇷" height="16"> 💚 🧒 |
 | Prosciutto-Wrapped Dates | 🟢 Easy | 20 min | 💚 |
 | Douglas's Loaded Potato Skins | 🟢 Easy | 45 min | 🧒 |
 | Chicken Satay Skewers | 🟡 Medium | 40 min | 🧒 |
@@ -108,11 +108,11 @@ This isn't your grandmother's caprese salad lying flat on a plate like it gave u
 - ⚠️ Stick to 1 tower per serving for safe portions
 
 ##### 🌍 Cuisine Variations
-- 🇧🇷 **Brazilian Twist:** Add hearts of palm, swap basil for cilantro, lime dressing
-- 🇮🇹 **Italian Twist:** Burrata instead of mozzarella, prosciutto draped elegantly
-- 🇮🇳 **Indian Twist:** Paneer instead of mozzarella, mint chutney drizzle, chaat masala
-- 🇨🇳 **Chinese Twist:** Silken tofu layers, sesame oil, crispy shallots (green parts only for IBS)
-- 🇯🇵 **Japanese Twist:** Add shiso leaves, ponzu drizzle, tobiko on top
+- <img src="../../assets/emojis/1f1e7-1f1f7.png" alt="🇧🇷" height="16"> **Brazilian Twist:** Add hearts of palm, swap basil for cilantro, lime dressing
+- <img src="../../assets/emojis/1f1ee-1f1f9.png" alt="🇮🇹" height="16"> **Italian Twist:** Burrata instead of mozzarella, prosciutto draped elegantly
+- <img src="../../assets/emojis/1f1ee-1f1f3.png" alt="🇮🇳" height="16"> **Indian Twist:** Paneer instead of mozzarella, mint chutney drizzle, chaat masala
+- <img src="../../assets/emojis/1f1e8-1f1f3.png" alt="🇨🇳" height="16"> **Chinese Twist:** Silken tofu layers, sesame oil, crispy shallots (green parts only for IBS)
+- <img src="../../assets/emojis/1f1ef-1f1f5.png" alt="🇯🇵" height="16"> **Japanese Twist:** Add shiso leaves, ponzu drizzle, tobiko on top
 
 ##### Chef's Notes for Claudia
 > *"Claudia, this is the appetizer for when you want to feel like we're dining in Positano, even if we're just at home on a Tuesday."* — Alex Cook
@@ -205,11 +205,11 @@ These aren't the sad, floppy potato skins from the freezer aisle. These are twic
 - No weird textures, no hidden vegetables
 
 ##### 🌍 Cuisine Variations
-- 🇧🇷 **Brazilian Twist:** Catupiry cheese (creamy Brazilian cheese), calabresa sausage
-- 🇮🇹 **Italian Twist:** Gorgonzola, crispy prosciutto, rosemary
-- 🇮🇳 **Indian Twist:** Spiced potato filling, mint yogurt, tamarind drizzle (for adventurous days)
-- 🇨🇳 **Chinese Twist:** Char siu pork, hoisin drizzle, sesame seeds
-- 🇯🇵 **Japanese Twist:** Japanese mayo, bonito flakes, teriyaki drizzle
+- <img src="../../assets/emojis/1f1e7-1f1f7.png" alt="🇧🇷" height="16"> **Brazilian Twist:** Catupiry cheese (creamy Brazilian cheese), calabresa sausage
+- <img src="../../assets/emojis/1f1ee-1f1f9.png" alt="🇮🇹" height="16"> **Italian Twist:** Gorgonzola, crispy prosciutto, rosemary
+- <img src="../../assets/emojis/1f1ee-1f1f3.png" alt="🇮🇳" height="16"> **Indian Twist:** Spiced potato filling, mint yogurt, tamarind drizzle (for adventurous days)
+- <img src="../../assets/emojis/1f1e8-1f1f3.png" alt="🇨🇳" height="16"> **Chinese Twist:** Char siu pork, hoisin drizzle, sesame seeds
+- <img src="../../assets/emojis/1f1ef-1f1f5.png" alt="🇯🇵" height="16"> **Japanese Twist:** Japanese mayo, bonito flakes, teriyaki drizzle
 
 ##### Chef's Notes for Douglas
 > *"Douglas, buddy — these are the potato skins other potato skins wish they could be. Extra bacon, as requested."* — Dad

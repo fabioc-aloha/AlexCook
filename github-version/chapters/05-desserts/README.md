@@ -43,12 +43,12 @@
 
 | Recipe | Difficulty | Time | Tags |
 | ------ | ---------- | ---- | ---- |
-| Claudia's Apple Tarte Tatin | 🔴 Hard | 1.5 hrs | 💚 🇫🇷 |
-| Douglas's Chocolate Lava Cakes | 🟡 Medium | 35 min | 🧒 🇫🇷 |
-| Brigadeiros | 🟢 Easy | 30 min | 🇧🇷 🧒 |
-| Tiramisu (No-Alcohol) | 🟡 Medium | 40 min | 🇮🇹 🧒 |
-| Panna Cotta | 🟢 Easy | 20 min | 🇮🇹 💚 |
-| Crème Brûlée | 🟡 Medium | 1 hr | 🇫🇷 💚 |
+| Claudia's Apple Tarte Tatin | 🔴 Hard | 1.5 hrs | 💚 <img src="../../assets/emojis/1f1eb-1f1f7.png" alt="🇫🇷" height="16"> |
+| Douglas's Chocolate Lava Cakes | 🟡 Medium | 35 min | 🧒 <img src="../../assets/emojis/1f1eb-1f1f7.png" alt="🇫🇷" height="16"> |
+| Brigadeiros | 🟢 Easy | 30 min | <img src="../../assets/emojis/1f1e7-1f1f7.png" alt="🇧🇷" height="16"> 🧒 |
+| Tiramisu (No-Alcohol) | 🟡 Medium | 40 min | <img src="../../assets/emojis/1f1ee-1f1f9.png" alt="🇮🇹" height="16"> 🧒 |
+| Panna Cotta | 🟢 Easy | 20 min | <img src="../../assets/emojis/1f1ee-1f1f9.png" alt="🇮🇹" height="16"> 💚 |
+| Crème Brûlée | 🟡 Medium | 1 hr | <img src="../../assets/emojis/1f1eb-1f1f7.png" alt="🇫🇷" height="16"> 💚 |
 | Pup-Safe Banana Ice Cream | 🟢 Easy | 10 min | 🐕 |
 
 ---
@@ -59,11 +59,11 @@
 
 | Cuisine | Dessert Philosophy | Signature Sweets |
 |---------|-------------------|------------------|
-| 🇧🇷 **Brazilian** | Rich, tropical, celebratory | Brigadeiros, pudim, açaí bowls |
-| 🇮🇹 **Italian** | Simple elegance, quality ingredients | Tiramisu, panna cotta, gelato |
-| 🇮🇳 **Indian** | Cardamom dreams, milk sweets | Gulab jamun, kheer, barfi |
-| 🇨🇳 **Chinese** | Subtle sweetness, textural play | Red bean, sesame balls, egg tarts |
-| 🇯🇵 **Japanese** | Delicate, artistic, restrained sweetness | Mochi, matcha, dorayaki |
+| <img src="../../assets/emojis/1f1e7-1f1f7.png" alt="🇧🇷" height="16"> **Brazilian** | Rich, tropical, celebratory | Brigadeiros, pudim, açaí bowls |
+| <img src="../../assets/emojis/1f1ee-1f1f9.png" alt="🇮🇹" height="16"> **Italian** | Simple elegance, quality ingredients | Tiramisu, panna cotta, gelato |
+| <img src="../../assets/emojis/1f1ee-1f1f3.png" alt="🇮🇳" height="16"> **Indian** | Cardamom dreams, milk sweets | Gulab jamun, kheer, barfi |
+| <img src="../../assets/emojis/1f1e8-1f1f3.png" alt="🇨🇳" height="16"> **Chinese** | Subtle sweetness, textural play | Red bean, sesame balls, egg tarts |
+| <img src="../../assets/emojis/1f1ef-1f1f5.png" alt="🇯🇵" height="16"> **Japanese** | Delicate, artistic, restrained sweetness | Mochi, matcha, dorayaki |
 
 ---
 
@@ -115,10 +115,10 @@ This isn't grandmother's apple pie. This is apples treated like royalty — cara
 - Smaller portion (thin slice) = happier tummy
 
 ##### 🌍 Cuisine Variations
-- 🇧🇷 **Brazilian Twist:** Add coconut milk to the caramel, serve with doce de leite
-- 🇮🇹 **Italian Twist:** Mascarpone instead of crème fraîche, drizzle of amaretto
-- 🇮🇳 **Indian Twist:** Cardamom in the caramel, rosewater cream, crushed pistachios
-- 🇯🇵 **Japanese Twist:** Miso caramel, matcha whipped cream, black sesame
+- <img src="../../assets/emojis/1f1e7-1f1f7.png" alt="🇧🇷" height="16"> **Brazilian Twist:** Add coconut milk to the caramel, serve with doce de leite
+- <img src="../../assets/emojis/1f1ee-1f1f9.png" alt="🇮🇹" height="16"> **Italian Twist:** Mascarpone instead of crème fraîche, drizzle of amaretto
+- <img src="../../assets/emojis/1f1ee-1f1f3.png" alt="🇮🇳" height="16"> **Indian Twist:** Cardamom in the caramel, rosewater cream, crushed pistachios
+- <img src="../../assets/emojis/1f1ef-1f1f5.png" alt="🇯🇵" height="16"> **Japanese Twist:** Miso caramel, matcha whipped cream, black sesame
 
 ---
 
@@ -226,11 +226,11 @@ Three chocolates. Three textures. One moment of pure volcanic joy. A dark chocol
 - He can watch the lava flow — interactive = engaged
 
 ##### 🌍 Cuisine Variations
-- 🇧🇷 **Brazilian Twist:** Brigadeiro center instead of milk chocolate (condensed milk + cocoa)
-- 🇮🇹 **Italian Twist:** Amaretto in the batter, crushed amaretti cookie crumble
-- 🇮🇳 **Indian Twist:** Cardamom + pistachio crémeux, rosewater chocolate
-- 🇨🇳 **Chinese Twist:** Black sesame crémeux, five-spice chocolate shell
-- 🇯🇵 **Japanese Twist:** Matcha white chocolate crémeux, kinako (roasted soy flour) dust
+- <img src="../../assets/emojis/1f1e7-1f1f7.png" alt="🇧🇷" height="16"> **Brazilian Twist:** Brigadeiro center instead of milk chocolate (condensed milk + cocoa)
+- <img src="../../assets/emojis/1f1ee-1f1f9.png" alt="🇮🇹" height="16"> **Italian Twist:** Amaretto in the batter, crushed amaretti cookie crumble
+- <img src="../../assets/emojis/1f1ee-1f1f3.png" alt="🇮🇳" height="16"> **Indian Twist:** Cardamom + pistachio crémeux, rosewater chocolate
+- <img src="../../assets/emojis/1f1e8-1f1f3.png" alt="🇨🇳" height="16"> **Chinese Twist:** Black sesame crémeux, five-spice chocolate shell
+- <img src="../../assets/emojis/1f1ef-1f1f5.png" alt="🇯🇵" height="16"> **Japanese Twist:** Matcha white chocolate crémeux, kinako (roasted soy flour) dust
 
 ---
 
@@ -329,9 +329,9 @@ Dog-safe, human-approved (yes, you can try them). These are basically peanut but
 - ❌ Never: Chocolate, xylitol, grapes, raisins, onions, macadamia nuts
 
 ##### 🌍 Global Pup Treat Variations
-- 🇧🇷 **Brazilian Twist:** Coconut flour + açaí powder (dog-safe!) + banana
-- 🇮🇹 **Italian Twist:** Add a tiny bit of parmesan to the mix (dogs go WILD)
-- 🇯🇵 **Japanese Twist:** Sweet potato base, pumpkin puree, hint of ginger
+- <img src="../../assets/emojis/1f1e7-1f1f7.png" alt="🇧🇷" height="16"> **Brazilian Twist:** Coconut flour + açaí powder (dog-safe!) + banana
+- <img src="../../assets/emojis/1f1ee-1f1f9.png" alt="🇮🇹" height="16"> **Italian Twist:** Add a tiny bit of parmesan to the mix (dogs go WILD)
+- <img src="../../assets/emojis/1f1ef-1f1f5.png" alt="🇯🇵" height="16"> **Japanese Twist:** Sweet potato base, pumpkin puree, hint of ginger
 
 ---
 

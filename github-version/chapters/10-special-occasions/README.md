@@ -44,13 +44,13 @@
 | Recipe | Difficulty | Time | Tags |
 |--------|------------|------|------|
 | Standing Rib Roast | 🔴 Complex | 4 hrs | 🌎 |
-| Brazilian Feijoada | 🔴 Complex | 5+ hrs | 🇧🇷 |
-| Italian Lasagna (Proper) | 🔴 Complex | 4 hrs | 🇮🇹 |
-| Japanese Sukiyaki | 🟡 Medium | 45 min | 🇯🇵 |
-| Indian Biryani | 🔴 Complex | 2.5 hrs | 🇮🇳 |
+| Brazilian Feijoada | 🔴 Complex | 5+ hrs | <img src="../../assets/emojis/1f1e7-1f1f7.png" alt="🇧🇷" height="16"> |
+| Italian Lasagna (Proper) | 🔴 Complex | 4 hrs | <img src="../../assets/emojis/1f1ee-1f1f9.png" alt="🇮🇹" height="16"> |
+| Japanese Sukiyaki | 🟡 Medium | 45 min | <img src="../../assets/emojis/1f1ef-1f1f5.png" alt="🇯🇵" height="16"> |
+| Indian Biryani | 🔴 Complex | 2.5 hrs | <img src="../../assets/emojis/1f1ee-1f1f3.png" alt="🇮🇳" height="16"> |
 | Birthday Dinner Steak | 🟡 Medium | 30 min | 🌎 🧒 |
 | Anniversary Surf & Turf | 🔴 Complex | 1 hr | 🌎 💚 |
-| Holiday Apple Tart | 🟡 Medium | 1.5 hrs | 🇫🇷 💚 |
+| Holiday Apple Tart | 🟡 Medium | 1.5 hrs | <img src="../../assets/emojis/1f1eb-1f1f7.png" alt="🇫🇷" height="16"> 💚 |
 | Pup Party Platter | 🟢 Simple | 15 min | 🐕 |
 
 ---
@@ -94,7 +94,7 @@ The reverse sear method means edge-to-edge perfection. Low heat builds to temper
 
 ---
 
-### 🇧🇷 **Feijoada (Brazilian National Dish)**
+### <img src="../../assets/emojis/1f1e7-1f1f7.png" alt="🇧🇷" height="16"> **Feijoada (Brazilian National Dish)**
 
 > *"Black beans, every part of the pig, served with rice, greens, and farofa. This is a celebration, not a meal."*
 
@@ -129,7 +129,7 @@ The reverse sear method means edge-to-edge perfection. Low heat builds to temper
 
 ---
 
-### 🇮🇹 **Lasagna (The Real One)**
+### <img src="../../assets/emojis/1f1ee-1f1f9.png" alt="🇮🇹" height="16"> **Lasagna (The Real One)**
 
 > *"Three homemade components. Two hours of assembly. Zero regrets."*
 
@@ -178,7 +178,7 @@ The reverse sear method means edge-to-edge perfection. Low heat builds to temper
 
 ---
 
-### 🇮🇳 **Lamb Biryani (The Crown Jewel)**
+### <img src="../../assets/emojis/1f1ee-1f1f3.png" alt="🇮🇳" height="16"> **Lamb Biryani (The Crown Jewel)**
 
 > *"Layers of rice, layers of meat, layers of flavor. This is how you show love."*
 
@@ -234,7 +234,7 @@ The reverse sear method means edge-to-edge perfection. Low heat builds to temper
 
 ---
 
-### 🇫🇷 **Holiday Apple Tart (For Claudia)**
+### <img src="../../assets/emojis/1f1eb-1f1f7.png" alt="🇫🇷" height="16"> **Holiday Apple Tart (For Claudia)**
 
 > *"Claudia loves apples. Claudia deserves a showstopper. This is that tart."*
 

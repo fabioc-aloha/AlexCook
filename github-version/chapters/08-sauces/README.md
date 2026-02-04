@@ -43,14 +43,14 @@
 
 | Recipe | Difficulty | Time | Tags |
 |--------|------------|------|------|
-| Classic Hollandaise | 🔴 Complex | 15 min | 🇫🇷 |
-| Italian Red Sauce (Sugo) | 🟡 Medium | 45 min | 🇮🇹 💚 |
-| Japanese Teriyaki | 🟢 Simple | 10 min | 🇯🇵 🧒 |
-| Indian Raita | 🟢 Simple | 5 min | 🇮🇳 💚 |
-| Brazilian Chimichurri | 🟢 Simple | 10 min | 🇧🇷 💚 |
-| Chinese Stir-Fry Sauce | 🟢 Simple | 5 min | 🇨🇳 🧒 |
-| Beurre Blanc | 🔴 Complex | 15 min | 🇫🇷 💚 |
-| Mole Simplified | 🔴 Complex | 2 hrs | 🇲🇽 |
+| Classic Hollandaise | 🔴 Complex | 15 min | <img src="../../assets/emojis/1f1eb-1f1f7.png" alt="🇫🇷" height="16"> |
+| Italian Red Sauce (Sugo) | 🟡 Medium | 45 min | <img src="../../assets/emojis/1f1ee-1f1f9.png" alt="🇮🇹" height="16"> 💚 |
+| Japanese Teriyaki | 🟢 Simple | 10 min | <img src="../../assets/emojis/1f1ef-1f1f5.png" alt="🇯🇵" height="16"> 🧒 |
+| Indian Raita | 🟢 Simple | 5 min | <img src="../../assets/emojis/1f1ee-1f1f3.png" alt="🇮🇳" height="16"> 💚 |
+| Brazilian Chimichurri | 🟢 Simple | 10 min | <img src="../../assets/emojis/1f1e7-1f1f7.png" alt="🇧🇷" height="16"> 💚 |
+| Chinese Stir-Fry Sauce | 🟢 Simple | 5 min | <img src="../../assets/emojis/1f1e8-1f1f3.png" alt="🇨🇳" height="16"> 🧒 |
+| Beurre Blanc | 🔴 Complex | 15 min | <img src="../../assets/emojis/1f1eb-1f1f7.png" alt="🇫🇷" height="16"> 💚 |
+| Mole Simplified | 🔴 Complex | 2 hrs | <img src="../../assets/emojis/1f1f2-1f1fd.png" alt="🇲🇽" height="16"> |
 | Pup-Safe Gravy | 🟢 Simple | 10 min | 🐕 |
 
 ---
@@ -114,7 +114,7 @@ Hollandaise breaks because of two things: heat too high, or butter added too fas
 
 ---
 
-### 🇲🇽 **Simplified Mole**
+### <img src="../../assets/emojis/1f1f2-1f1fd.png" alt="🇲🇽" height="16"> **Simplified Mole**
 
 > *"Real mole takes 3 days and 47 ingredients. This takes 2 hours and still blows minds."*
 
@@ -147,7 +147,7 @@ Hollandaise breaks because of two things: heat too high, or butter added too fas
 
 ## 🥄 SIMPLE RECIPES
 
-### 🇮🇹 **Italian Red Sauce (Sugo di Pomodoro)**
+### <img src="../../assets/emojis/1f1ee-1f1f9.png" alt="🇮🇹" height="16"> **Italian Red Sauce (Sugo di Pomodoro)**
 
 > *"The sauce that raised generations. Tomatoes, basil, time. Nothing else needed."*
 
@@ -170,7 +170,7 @@ Hollandaise breaks because of two things: heat too high, or butter added too fas
 
 ---
 
-### 🇯🇵 **Teriyaki Sauce**
+### <img src="../../assets/emojis/1f1ef-1f1f5.png" alt="🇯🇵" height="16"> **Teriyaki Sauce**
 
 > *"Sweet, salty, glossy. Store-bought teriyaki can never compete."*
 
@@ -196,7 +196,7 @@ Sweet + salty = the flavor profile kids are genetically programmed to love.
 
 ---
 
-### 🇧🇷 **Chimichurri**
+### <img src="../../assets/emojis/1f1e7-1f1f7.png" alt="🇧🇷" height="16"> **Chimichurri**
 
 > *"Argentina's gift to grilled meat. Bright, herbaceous, addictive."*
 
@@ -220,7 +220,7 @@ Sweet + salty = the flavor profile kids are genetically programmed to love.
 
 ---
 
-### 🇨🇳 **All-Purpose Stir-Fry Sauce**
+### <img src="../../assets/emojis/1f1e8-1f1f3.png" alt="🇨🇳" height="16"> **All-Purpose Stir-Fry Sauce**
 
 > *"Make a jar. Keep it in the fridge. Instant stir-fry for weeks."*
 
@@ -242,7 +242,7 @@ Sweet + salty = the flavor profile kids are genetically programmed to love.
 
 ---
 
-### 🇮🇳 **Quick Raita**
+### <img src="../../assets/emojis/1f1ee-1f1f3.png" alt="🇮🇳" height="16"> **Quick Raita**
 
 > *"Cooling contrast to anything spicy. Also just delicious with naan."*
 

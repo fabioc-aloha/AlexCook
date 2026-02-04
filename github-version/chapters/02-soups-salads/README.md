@@ -42,14 +42,14 @@
 
 | Recipe | Difficulty | Time | Tags |
 |--------|------------|------|------|
-| Brazilian Fish Stew (Moqueca) | 🔴 Complex | 1.5 hrs | 🇧🇷 💚 |
-| Minestrone di Casa | 🔴 Complex | 2 hrs | 🇮🇹 💚 |
+| Brazilian Fish Stew (Moqueca) | 🔴 Complex | 1.5 hrs | <img src="../../assets/emojis/1f1e7-1f1f7.png" alt="🇧🇷" height="16"> 💚 |
+| Minestrone di Casa | 🔴 Complex | 2 hrs | <img src="../../assets/emojis/1f1ee-1f1f9.png" alt="🇮🇹" height="16"> 💚 |
 | Tom Yum Goong | 🔴 Complex | 1 hr | 🌏 💚 |
-| Japanese Miso Ramen | 🔴 Complex | 3 hrs | 🇯🇵 |
-| Indian Dal Soup | 🟡 Medium | 45 min | 🇮🇳 💚 🧒 |
-| 15-Minute Egg Drop Soup | 🟢 Simple | 15 min | 🇨🇳 🧒 |
-| Caprese Salad Tower | 🟢 Simple | 10 min | 🇮🇹 🧒 |
-| Japanese Cucumber Salad | 🟢 Simple | 10 min | 🇯🇵 💚 |
+| Japanese Miso Ramen | 🔴 Complex | 3 hrs | <img src="../../assets/emojis/1f1ef-1f1f5.png" alt="🇯🇵" height="16"> |
+| Indian Dal Soup | 🟡 Medium | 45 min | <img src="../../assets/emojis/1f1ee-1f1f3.png" alt="🇮🇳" height="16"> 💚 🧒 |
+| 15-Minute Egg Drop Soup | 🟢 Simple | 15 min | <img src="../../assets/emojis/1f1e8-1f1f3.png" alt="🇨🇳" height="16"> 🧒 |
+| Caprese Salad Tower | 🟢 Simple | 10 min | <img src="../../assets/emojis/1f1ee-1f1f9.png" alt="🇮🇹" height="16"> 🧒 |
+| Japanese Cucumber Salad | 🟢 Simple | 10 min | <img src="../../assets/emojis/1f1ef-1f1f5.png" alt="🇯🇵" height="16"> 💚 |
 | Caesar Salad (The Real One) | 🟡 Medium | 20 min | 🌎 |
 | Freddy & Jolly's Veggie Crunch Bowl | 🟢 Simple | 5 min | 🐕 |
 
@@ -57,7 +57,7 @@
 
 ## 🍲 COMPLEX RECIPES
 
-### 🇧🇷 **Moqueca Baiana (Brazilian Fish Stew)**
+### <img src="../../assets/emojis/1f1e7-1f1f7.png" alt="🇧🇷" height="16"> **Moqueca Baiana (Brazilian Fish Stew)**
 
 > *"This is the dish that makes people book flights to Salvador. Dendê oil, coconut milk, and fish so fresh it practically swam into the pot."*
 
@@ -90,13 +90,13 @@ Moqueca is not a soup — it's a meditation. Layers built slowly, coconut milk t
 8. **Cilantro shower** — Finish with fresh herbs. Serve with white rice.
 
 #### Global Variations
-- 🇮🇹 **Italian:** Swap coconut for white wine + tomatoes = Cioppino style
-- 🇮🇳 **Indian:** Add curry paste, use mustard oil instead of dendê
-- 🇯🇵 **Japanese:** Miso-coconut broth, add bok choy, top with nori
+- <img src="../../assets/emojis/1f1ee-1f1f9.png" alt="🇮🇹" height="16"> **Italian:** Swap coconut for white wine + tomatoes = Cioppino style
+- <img src="../../assets/emojis/1f1ee-1f1f3.png" alt="🇮🇳" height="16"> **Indian:** Add curry paste, use mustard oil instead of dendê
+- <img src="../../assets/emojis/1f1ef-1f1f5.png" alt="🇯🇵" height="16"> **Japanese:** Miso-coconut broth, add bok choy, top with nori
 
 ---
 
-### 🇮🇹 **Minestrone di Casa (The Proper Italian Way)**
+### <img src="../../assets/emojis/1f1ee-1f1f9.png" alt="🇮🇹" height="16"> **Minestrone di Casa (The Proper Italian Way)**
 
 > *"Every Italian grandmother has her version. This is mine. Fight me."*
 
@@ -133,7 +133,7 @@ Minestrone is not vegetable soup with pasta. It's a vegetable garden that fell i
 
 ---
 
-### 🇯🇵 **Tonkotsu-Style Miso Ramen**
+### <img src="../../assets/emojis/1f1ef-1f1f5.png" alt="🇯🇵" height="16"> **Tonkotsu-Style Miso Ramen**
 
 > *"Real ramen takes 12+ hours. This 'cheater' version takes 3 and still makes restaurant ramen weep."*
 
@@ -175,7 +175,7 @@ Ramen is engineering. Broth, tare, aroma oil, noodles, toppings — each compone
 
 ## 🥗 SIMPLE RECIPES
 
-### 🇨🇳 **15-Minute Egg Drop Soup**
+### <img src="../../assets/emojis/1f1e8-1f1f3.png" alt="🇨🇳" height="16"> **15-Minute Egg Drop Soup**
 
 > *"The soup that heals everything. Colds, bad days, existential dread — all fixed."*
 
@@ -202,7 +202,7 @@ Silky eggs, familiar flavors, nothing weird floating in it. Safe and comforting.
 
 ---
 
-### 🇯🇵 **Sunomono (Japanese Cucumber Salad)**
+### <img src="../../assets/emojis/1f1ef-1f1f5.png" alt="🇯🇵" height="16"> **Sunomono (Japanese Cucumber Salad)**
 
 > *"Three ingredients. Infinite refreshment. This is Japanese minimalism at its finest."*
 
@@ -224,7 +224,7 @@ Silky eggs, familiar flavors, nothing weird floating in it. Safe and comforting.
 
 ---
 
-### 🇮🇹 **Caprese Towers**
+### <img src="../../assets/emojis/1f1ee-1f1f9.png" alt="🇮🇹" height="16"> **Caprese Towers**
 
 > *"It's just tomatoes and mozzarella. But STACKED. Presentation is everything."*
 

@@ -44,11 +44,11 @@
 
 | Cuisine | Why We Love It | Signature Flavors |
 |---------|----------------|-------------------|
-| 🇧🇷 **Brazilian** | Bold, hearty, soulful | Lime, garlic*, coconut, churrasco, farofa |
-| 🇮🇹 **Italian** | Simple ingredients, maximum impact | Basil, tomato, olive oil, parmesan |
-| 🇮🇳 **Indian** | Spice alchemy, depth of flavor | Garam masala, turmeric, ginger, cardamom |
-| 🇨🇳 **Chinese** | Wok hei, umami bombs | Soy sauce, ginger, sesame, five-spice |
-| 🇯🇵 **Japanese** | Precision, umami, clean flavors | Dashi, miso, mirin, wasabi |
+| <img src="../assets/emojis/1f1e7-1f1f7.png" alt="🇧🇷" height="16"> **Brazilian** | Bold, hearty, soulful | Lime, garlic*, coconut, churrasco, farofa |
+| <img src="../assets/emojis/1f1ee-1f1f9.png" alt="🇮🇹" height="16"> **Italian** | Simple ingredients, maximum impact | Basil, tomato, olive oil, parmesan |
+| <img src="../assets/emojis/1f1ee-1f1f3.png" alt="🇮🇳" height="16"> **Indian** | Spice alchemy, depth of flavor | Garam masala, turmeric, ginger, cardamom |
+| <img src="../assets/emojis/1f1e8-1f1f3.png" alt="🇨🇳" height="16"> **Chinese** | Wok hei, umami bombs | Soy sauce, ginger, sesame, five-spice |
+| <img src="../assets/emojis/1f1ef-1f1f5.png" alt="🇯🇵" height="16"> **Japanese** | Precision, umami, clean flavors | Dashi, miso, mirin, wasabi |
 
 *\* Claudia-friendly versions substitute garlic-infused oil (FODMAP hack!)*
 

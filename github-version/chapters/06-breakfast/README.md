@@ -44,11 +44,11 @@
 | Recipe | Difficulty | Time | Tags |
 |--------|------------|------|------|
 | Eggs Benedict (Classic + Variations) | 🔴 Complex | 45 min | 🌎 |
-| Japanese Souffle Pancakes | 🔴 Complex | 40 min | 🇯🇵 🧒 |
-| Indian Masala Dosa | 🔴 Complex | 2+ hrs | 🇮🇳 💚 |
-| Brazilian Açaí Bowl | 🟡 Medium | 15 min | 🇧🇷 💚 🧒 |
-| French Scrambled Eggs | 🟢 Simple | 10 min | 🇫🇷 💚 |
-| Chinese Congee | 🟢 Simple | 1 hr (passive) | 🇨🇳 💚 |
+| Japanese Souffle Pancakes | 🔴 Complex | 40 min | <img src="../../assets/emojis/1f1ef-1f1f5.png" alt="🇯🇵" height="16"> 🧒 |
+| Indian Masala Dosa | 🔴 Complex | 2+ hrs | <img src="../../assets/emojis/1f1ee-1f1f3.png" alt="🇮🇳" height="16"> 💚 |
+| Brazilian Açaí Bowl | 🟡 Medium | 15 min | <img src="../../assets/emojis/1f1e7-1f1f7.png" alt="🇧🇷" height="16"> 💚 🧒 |
+| French Scrambled Eggs | 🟢 Simple | 10 min | <img src="../../assets/emojis/1f1eb-1f1f7.png" alt="🇫🇷" height="16"> 💚 |
+| Chinese Congee | 🟢 Simple | 1 hr (passive) | <img src="../../assets/emojis/1f1e8-1f1f3.png" alt="🇨🇳" height="16"> 💚 |
 | Classic Pancakes | 🟢 Simple | 20 min | 🧒 |
 | Pup Pancakes (Dog-Safe) | 🟢 Simple | 15 min | 🐕 |
 
@@ -100,14 +100,14 @@ Eggs Benedict intimidates people because of hollandaise. Stop being scared. It's
 2. **Serve immediately** — This dish doesn't wait.
 
 #### Variations
-- 🇮🇹 **Florentine:** Spinach instead of bacon
-- 🇧🇷 **Brasileira:** Add chimichurri to the hollandaise
-- 🇯🇵 **Tokyo Style:** Teriyaki glazed pork belly, wasabi hollandaise
+- <img src="../../assets/emojis/1f1ee-1f1f9.png" alt="🇮🇹" height="16"> **Florentine:** Spinach instead of bacon
+- <img src="../../assets/emojis/1f1e7-1f1f7.png" alt="🇧🇷" height="16"> **Brasileira:** Add chimichurri to the hollandaise
+- <img src="../../assets/emojis/1f1ef-1f1f5.png" alt="🇯🇵" height="16"> **Tokyo Style:** Teriyaki glazed pork belly, wasabi hollandaise
 - 💚 **Claudia's Version:** Skip English muffin, serve over roasted potatoes
 
 ---
 
-### 🇯🇵 **Japanese Souffle Pancakes**
+### <img src="../../assets/emojis/1f1ef-1f1f5.png" alt="🇯🇵" height="16"> **Japanese Souffle Pancakes**
 
 > *"These jiggly clouds of joy have taken over the internet. Time to make them at home."*
 
@@ -144,7 +144,7 @@ Fluffy. Sweet. Jiggles. What more could a kid want?
 
 ---
 
-### 🇮🇳 **Masala Dosa**
+### <img src="../../assets/emojis/1f1ee-1f1f3.png" alt="🇮🇳" height="16"> **Masala Dosa**
 
 > *"A fermented crepe filled with spiced potatoes. South Indian breakfast perfection."*
 
@@ -248,7 +248,7 @@ It's pancakes. He's 8 (or whatever age he is). Pancakes = happiness.
 
 ---
 
-### 🇧🇷 **Açaí Bowl**
+### <img src="../../assets/emojis/1f1e7-1f1f7.png" alt="🇧🇷" height="16"> **Açaí Bowl**
 
 > *"Brazilian energy in a bowl. Purple, cold, beautiful, healthy-ish."*
 

@@ -44,16 +44,16 @@
 | Recipe | Difficulty | Time | Tags |
 |--------|------------|------|------|
 | Pot Roast (The Perfect Braise) | 🔴 Complex | 4 hrs | 🌎 💚 |
-| Shepherd's Pie | 🔴 Complex | 2 hrs | 🇬🇧 🧒 |
-| Beef Stroganoff | 🟡 Medium | 45 min | 🇷🇺 🧒 |
-| Bangers and Mash | 🟡 Medium | 45 min | 🇬🇧 🧒 |
+| Shepherd's Pie | 🔴 Complex | 2 hrs | <img src="../../assets/emojis/1f1ec-1f1e7.png" alt="🇬🇧" height="16"> 🧒 |
+| Beef Stroganoff | 🟡 Medium | 45 min | <img src="../../assets/emojis/1f1f7-1f1fa.png" alt="🇷🇺" height="16"> 🧒 |
+| Bangers and Mash | 🟡 Medium | 45 min | <img src="../../assets/emojis/1f1ec-1f1e7.png" alt="🇬🇧" height="16"> 🧒 |
 | Meatloaf (Glazed & Loaded) | 🟡 Medium | 1.5 hrs | 🌎 🧒 |
 | Roast Chicken & Potatoes | 🟡 Medium | 1.5 hrs | 🌎 💚 |
-| Chicken Fried Steak | 🟡 Medium | 30 min | 🇺🇸 🧒 |
+| Chicken Fried Steak | 🟡 Medium | 30 min | <img src="../../assets/emojis/1f1fa-1f1f8.png" alt="🇺🇸" height="16"> 🧒 |
 | Loaded Baked Potatoes | 🟢 Simple | 1 hr | 🌎 🧒 |
 | Mashed Potatoes (Ultimate) | 🟢 Simple | 30 min | 🌎 💚 🧒 |
 | Beef Stew | 🔴 Complex | 3 hrs | 🌎 💚 |
-| Cottage Pie | 🟡 Medium | 1.5 hrs | 🇬🇧 🧒 |
+| Cottage Pie | 🟡 Medium | 1.5 hrs | <img src="../../assets/emojis/1f1ec-1f1e7.png" alt="🇬🇧" height="16"> 🧒 |
 | Pork Chops & Apples | 🟢 Simple | 30 min | 🌎 💚 |
 | Pup Comfort Bowl | 🟢 Simple | 20 min | 🐕 |
 
@@ -102,7 +102,7 @@ Chuck roast is cheap and tough. After 3+ hours in the oven, it becomes the most 
 
 ---
 
-### 🇬🇧 **Shepherd's Pie (The Authentic One)**
+### <img src="../../assets/emojis/1f1ec-1f1e7.png" alt="🇬🇧" height="16"> **Shepherd's Pie (The Authentic One)**
 
 > *"Lamb underneath, mashed potatoes on top, broiled until golden. British comfort at its peak."*
 
@@ -189,7 +189,7 @@ Mashed potatoes on top of meat. That's his dream dish. He doesn't even notice th
 
 ## 🥘 MEDIUM RECIPES
 
-### 🇷🇺 **Beef Stroganoff (The Real Version)**
+### <img src="../../assets/emojis/1f1f7-1f1fa.png" alt="🇷🇺" height="16"> **Beef Stroganoff (The Real Version)**
 
 > *"Tender beef, mushrooms, sour cream sauce. Served over egg noodles. Russian genius."*
 
@@ -223,7 +223,7 @@ Creamy! Noodles! Mushrooms he actually likes!
 
 ---
 
-### 🇬🇧 **Bangers and Mash**
+### <img src="../../assets/emojis/1f1ec-1f1e7.png" alt="🇬🇧" height="16"> **Bangers and Mash**
 
 > *"British pub perfection. Sausages, mashed potatoes, onion gravy. Three components, infinite satisfaction."*
 
@@ -333,7 +333,7 @@ Creamy! Noodles! Mushrooms he actually likes!
 
 ---
 
-### 🇺🇸 **Chicken Fried Steak**
+### <img src="../../assets/emojis/1f1fa-1f1f8.png" alt="🇺🇸" height="16"> **Chicken Fried Steak**
 
 > *"Texan masterpiece. Pounded beef, crispy coating, cream gravy. The South knows comfort."*
 

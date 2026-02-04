@@ -44,13 +44,13 @@
 | Recipe | Difficulty | Time | Tags |
 |--------|------------|------|------|
 | Sourdough Bread | 🔴 Complex | 2 days | 🌎 💚 |
-| Croissants | 🔴 Complex | 3 days | 🇫🇷 |
-| Focaccia | 🟡 Medium | 3 hrs | 🇮🇹 💚 |
-| Japanese Milk Bread | 🟡 Medium | 4 hrs | 🇯🇵 🧒 |
-| Brazilian Cheese Bread | 🟡 Medium | 1 hr | 🇧🇷 🧒 |
-| Indian Naan | 🟢 Simple | 1.5 hrs | 🇮🇳 💚 |
+| Croissants | 🔴 Complex | 3 days | <img src="../../assets/emojis/1f1eb-1f1f7.png" alt="🇫🇷" height="16"> |
+| Focaccia | 🟡 Medium | 3 hrs | <img src="../../assets/emojis/1f1ee-1f1f9.png" alt="🇮🇹" height="16"> 💚 |
+| Japanese Milk Bread | 🟡 Medium | 4 hrs | <img src="../../assets/emojis/1f1ef-1f1f5.png" alt="🇯🇵" height="16"> 🧒 |
+| Brazilian Cheese Bread | 🟡 Medium | 1 hr | <img src="../../assets/emojis/1f1e7-1f1f7.png" alt="🇧🇷" height="16"> 🧒 |
+| Indian Naan | 🟢 Simple | 1.5 hrs | <img src="../../assets/emojis/1f1ee-1f1f3.png" alt="🇮🇳" height="16"> 💚 |
 | No-Knead Crusty Bread | 🟢 Simple | 18 hrs (passive) | 🌎 💚 |
-| Chinese Scallion Pancakes | 🟢 Simple | 30 min | 🇨🇳 🧒 |
+| Chinese Scallion Pancakes | 🟢 Simple | 30 min | <img src="../../assets/emojis/1f1e8-1f1f3.png" alt="🇨🇳" height="16"> 🧒 |
 | Pup Biscotti | 🟢 Simple | 1 hr | 🐕 |
 
 ---
@@ -99,7 +99,7 @@ Sourdough is fermented, which makes it easier on digestion. The long fermentatio
 
 ---
 
-### 🇫🇷 **Croissants (The Mountain)**
+### <img src="../../assets/emojis/1f1eb-1f1f7.png" alt="🇫🇷" height="16"> **Croissants (The Mountain)**
 
 > *"Three days. Dozens of layers. Butter between every one. Is it worth it? Absolutely."*
 
@@ -145,7 +145,7 @@ Sourdough is fermented, which makes it easier on digestion. The long fermentatio
 
 ## 🥖 MEDIUM RECIPES
 
-### 🇮🇹 **Focaccia**
+### <img src="../../assets/emojis/1f1ee-1f1f9.png" alt="🇮🇹" height="16"> **Focaccia**
 
 > *"The pizza that's socially acceptable to eat for breakfast."*
 
@@ -173,7 +173,7 @@ Sourdough is fermented, which makes it easier on digestion. The long fermentatio
 
 ---
 
-### 🇯🇵 **Japanese Milk Bread (Shokupan)**
+### <img src="../../assets/emojis/1f1ef-1f1f5.png" alt="🇯🇵" height="16"> **Japanese Milk Bread (Shokupan)**
 
 > *"The softest bread you will ever eat. Pillow-like. Cloud-like. Addictive."*
 
@@ -218,7 +218,7 @@ So soft. So sweet. Makes the best sandwiches and toast.
 
 ## 🥯 SIMPLE RECIPES
 
-### 🇮🇳 **Naan**
+### <img src="../../assets/emojis/1f1ee-1f1f3.png" alt="🇮🇳" height="16"> **Naan**
 
 > *"Chewy, charred, perfect for scooping curry."*
 
@@ -269,7 +269,7 @@ So soft. So sweet. Makes the best sandwiches and toast.
 
 ---
 
-### 🇨🇳 **Scallion Pancakes**
+### <img src="../../assets/emojis/1f1e8-1f1f3.png" alt="🇨🇳" height="16"> **Scallion Pancakes**
 
 > *"Flaky, savory, crispy. Street food you can make at home."*
 

@@ -43,22 +43,22 @@
 
 | Recipe | Difficulty | Time | Tags |
 |--------|------------|------|------|
-| Beef Wellington | 🔴 Complex | 3 hrs | 🇬🇧 |
-| Moqueca de Camarão (Shrimp) | 🔴 Complex | 1.5 hrs | 🇧🇷 💚 |
-| Ossobuco alla Milanese | 🔴 Complex | 3 hrs | 🇮🇹 💚 |
-| Chicken Tikka Masala | 🔴 Complex | 1.5 hrs | 🇮🇳 |
-| Mapo Tofu | 🟡 Medium | 30 min | 🇨🇳 |
-| Japanese Curry | 🟡 Medium | 1 hr | 🇯🇵 🧒 |
+| Beef Wellington | 🔴 Complex | 3 hrs | <img src="../../assets/emojis/1f1ec-1f1e7.png" alt="🇬🇧" height="16"> |
+| Moqueca de Camarão (Shrimp) | 🔴 Complex | 1.5 hrs | <img src="../../assets/emojis/1f1e7-1f1f7.png" alt="🇧🇷" height="16"> 💚 |
+| Ossobuco alla Milanese | 🔴 Complex | 3 hrs | <img src="../../assets/emojis/1f1ee-1f1f9.png" alt="🇮🇹" height="16"> 💚 |
+| Chicken Tikka Masala | 🔴 Complex | 1.5 hrs | <img src="../../assets/emojis/1f1ee-1f1f3.png" alt="🇮🇳" height="16"> |
+| Mapo Tofu | 🟡 Medium | 30 min | <img src="../../assets/emojis/1f1e8-1f1f3.png" alt="🇨🇳" height="16"> |
+| Japanese Curry | 🟡 Medium | 1 hr | <img src="../../assets/emojis/1f1ef-1f1f5.png" alt="🇯🇵" height="16"> 🧒 |
 | Pan-Seared Salmon | 🟢 Simple | 20 min | 💚 |
 | One-Pan Chicken Thighs | 🟢 Simple | 40 min | 🧒 |
-| Brazilian Steak (Picanha) | 🟡 Medium | 30 min | 🇧🇷 |
+| Brazilian Steak (Picanha) | 🟡 Medium | 30 min | <img src="../../assets/emojis/1f1e7-1f1f7.png" alt="🇧🇷" height="16"> |
 | Pup Patties (Dog-Safe) | 🟢 Simple | 25 min | 🐕 |
 
 ---
 
 ## 🍖 COMPLEX RECIPES
 
-### 🇬🇧 **Beef Wellington (The Full Monty)**
+### <img src="../../assets/emojis/1f1ec-1f1e7.png" alt="🇬🇧" height="16"> **Beef Wellington (The Full Monty)**
 
 > *"The dish that separates the ambitious from the merely hungry. Pastry, mushrooms, beef — engineered perfection."*
 
@@ -105,7 +105,7 @@ Wellington isn't hard — it's just a sequence of simple steps done correctly. M
 
 ---
 
-### 🇧🇷 **Picanha (Brazilian Top Sirloin Cap)**
+### <img src="../../assets/emojis/1f1e7-1f1f7.png" alt="🇧🇷" height="16"> **Picanha (Brazilian Top Sirloin Cap)**
 
 > *"The king of Brazilian barbecue. Fat cap = flavor. Salt = religion. Simplicity = genius."*
 
@@ -130,13 +130,13 @@ Brazilians understand that great beef needs almost nothing. Coarse salt, high he
 8. **Slice against grain** — Thin slices, fat cap on every piece.
 
 #### Global Variations
-- 🇮🇹 **Italian Tagliata:** Slice, top with arugula, parm shavings, lemon
-- 🇯🇵 **Japanese Yakiniku:** Thin slice, grill at table, dip in tare
-- 🇮🇳 **Indian Seekh-style:** Spice rub with garam masala before grilling
+- <img src="../../assets/emojis/1f1ee-1f1f9.png" alt="🇮🇹" height="16"> **Italian Tagliata:** Slice, top with arugula, parm shavings, lemon
+- <img src="../../assets/emojis/1f1ef-1f1f5.png" alt="🇯🇵" height="16"> **Japanese Yakiniku:** Thin slice, grill at table, dip in tare
+- <img src="../../assets/emojis/1f1ee-1f1f3.png" alt="🇮🇳" height="16"> **Indian Seekh-style:** Spice rub with garam masala before grilling
 
 ---
 
-### 🇮🇹 **Ossobuco alla Milanese**
+### <img src="../../assets/emojis/1f1ee-1f1f9.png" alt="🇮🇹" height="16"> **Ossobuco alla Milanese**
 
 > *"Braised veal shanks in liquid gold. The gremolata on top is not optional — it wakes everything up."*
 
@@ -172,7 +172,7 @@ Brazilians understand that great beef needs almost nothing. Coarse salt, high he
 
 ---
 
-### 🇯🇵 **Japanese Curry Rice (Kare Raisu)**
+### <img src="../../assets/emojis/1f1ef-1f1f5.png" alt="🇯🇵" height="16"> **Japanese Curry Rice (Kare Raisu)**
 
 > *"The comfort food of Japan. Sweet, savory, and so thick the rice makes divots."*
 
