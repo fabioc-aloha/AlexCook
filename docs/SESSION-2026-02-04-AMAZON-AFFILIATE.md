@@ -135,12 +135,30 @@ node build/update-affiliate-tag.js
 | File | Action | Description |
 |------|--------|-------------|
 | `book/20-amazon-shopping-list.md` | Modified | 185 affiliate links + disclosure |
+| `github-version/appendices/appendix-c-amazon-shopping-list/README.md` | Modified | 185 affiliate links (synced with book) |
 | `build/add-amazon-links.js` | Created | Initial link generation script |
 | `build/update-affiliate-tag.js` | Created | Tag update script |
 | `build/convert-social-preview.js` | Modified | Better mixed line layout |
 | `docs/BUILD-PIPELINE.md` | Modified | Added script docs + polished diagrams |
 | `docs/PROJECT-STRUCTURE.md` | Modified | Added flow diagram + emoji prefixes |
 | `github-version/assets/social-preview.png` | Modified | Regenerated with fixes |
+
+---
+
+## ⚠️ Dual-Maintenance Note
+
+The Amazon shopping list exists in **two locations** that must stay in sync:
+
+| Location | Purpose |
+|----------|---------|
+| `book/20-amazon-shopping-list.md` | PDF generation (print/digital) |
+| `github-version/appendices/appendix-c-amazon-shopping-list/README.md` | GitHub web viewing |
+
+**When updating affiliate links:**
+1. Run `node build/add-amazon-links.js` for book version
+2. Manually apply same transformation to GitHub version (script only targets book/)
+
+**Future enhancement:** Consider updating `add-amazon-links.js` to process both files automatically.
 
 ---
 

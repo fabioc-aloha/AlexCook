@@ -338,6 +338,21 @@ The `github-version/` is **manually synced** from `book/` with these transformat
 - [ ] Strip LaTeX-specific markup
 - [ ] Add navigation footers
 - [ ] Update INDEX.md if chapters changed
+- [ ] Sync affiliate links in Amazon shopping list (see below)
+
+### Amazon Affiliate Links
+
+The Amazon shopping list exists in both locations and must stay in sync:
+
+| File | Purpose |
+|------|---------|
+| `book/20-amazon-shopping-list.md` | PDF generation |
+| `github-version/appendices/appendix-c-amazon-shopping-list/README.md` | GitHub web viewing |
+
+**Update process:**
+1. `node build/add-amazon-links.js` — processes `book/` version
+2. Manually apply same regex to `github-version/` version
+3. Both should have `tag=alexcook05-20` affiliate tag
 - [ ] Verify emoji consistency
 - [ ] Test links locally
 
