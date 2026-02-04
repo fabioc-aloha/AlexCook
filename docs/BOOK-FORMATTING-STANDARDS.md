@@ -287,6 +287,50 @@ All H1-H4 headings in front matter files should use `{.unnumbered}` attribute to
 
 ---
 
+## 📋 Implementation Checklist
+
+Track progress applying these standards to The Alex Cookbook.
+
+### 🔴 Priority 1 — Critical
+
+- [x] **Add copyright page** (`book/00aa-copyright.md`) ✅
+  - © notice, rights reserved, disclaimer for Chapter 15 untested recipes
+  - Insert after title page in build order
+
+### 🟡 Priority 2 — Important
+
+- [x] **Add half-title page** (`book/00ab-halftitle.md`) ✅
+  - Simple "The Alex Cookbook" title only
+  - Professional touch, low effort
+- [x] **Clean Reader's Guide duplicate content** ✅
+  - Removed banner/tagline repetition from `00e-readers-guide.md`
+  - Now starts with "Reader's Guide" heading directly
+- [x] **Update front matter order in build script** ✅
+  - New order: Cover → Half Title → Copyright → Dedication → Intro → Meet Alex → Behind Scenes → Reader's Guide
+
+### 🟢 Priority 3 — Nice to Have
+
+- [ ] **Replace `\bigskip` LaTeX commands** (100+ instances)
+  - Deferred: Works fine for PDF (primary output), only affects GitHub rendering
+  - Future: Could strip in GitHub-version build pipeline
+
+### ✅ Completed
+
+- [x] Front matter sections unnumbered (no 0.1, 0.2)
+- [x] Appendices use `\appendix` command (Appendix A, B, C)
+- [x] Build script updated for Pandoc 3.8 format
+- [x] Formatting standards research documented
+- [x] Cookbook ragged-right exception noted
+- [x] **All 15 chapters match title format** — Verified `# 🎨 Chapter N: Title`
+- [x] **Appendix titles use letters** — A, B, C, D format confirmed
+- [x] **Copyright page added** — `book/00aa-copyright.md` with disclaimer for Ch15
+- [x] **Half-title page added** — `book/00ab-halftitle.md`
+- [x] **Reader's Guide cleaned** — Removed duplicate banner/tagline
+- [x] **Build script order updated** — New front matter sequence in `$Chapters`
+- [x] **Behind the Scenes softened** — Renamed to "Behind the Kitchen Door"
+
+---
+
 ## Sources
 
 - **Joel Friedlander** — [The Book Designer](https://thebookdesigner.com)
@@ -296,4 +340,4 @@ All H1-H4 headings in front matter files should use `{.unnumbered}` attribute to
 
 ---
 
-*Last updated: February 2026*
+*Last updated: February 3, 2026*

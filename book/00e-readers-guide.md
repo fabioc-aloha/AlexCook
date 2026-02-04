@@ -1,14 +1,4 @@
-# 🍳 The Alex Cookbook
-
-![The Alex Cookbook](./assets/banners/main-banner.svg)
-
-## *"Break Rules. Build Flavor. Be Unforgettable."*
-
-> A Provocateur's Guide to Culinary Mastery — by **Alex Cook** 🧑‍🍳
-
-Welcome to **The Alex Cookbook** — not just a collection of recipes, but a **manifesto for kitchen rebels**. This is where technique meets audacity, where science dances with intuition, and where every dish tells a story worth remembering.
-
-Here, you won't just learn *how* to cook. You'll learn *why* — and then you'll learn when to throw that knowledge out the window.
+# Reader's Guide {.unnumbered}
 
 ## 🎯 Philosophy
 

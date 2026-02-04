@@ -21,9 +21,13 @@ if (-not (Test-Path $OutputDir)) {
 }
 
 # Define chapter order from book/ folder
-# Front matter uses 00x prefix, chapters align with banner numbers (01-15)
+# Front matter: Cover → Half Title → Copyright → Dedication → Intro → Meet Alex → Behind Scenes → Reader's Guide
+# Main content: Chapters 1-15
+# Back matter: Appendices A-D
 $Chapters = @(
     "book\00-cover.md"
+    "book\00ab-halftitle.md"
+    "book\00aa-copyright.md"
     "book\00a-dedication.md"
     "book\00b-introduction.md"
     "book\00c-meet-alex.md"
@@ -139,8 +143,8 @@ foreach ($Chapter in $Chapters) {
         
         # === FRONT MATTER HANDLING ===
         # Make ALL headings in front matter unnumbered to prevent 0.x section numbers
-        # This includes: dedication, introduction, meet-alex, behind-the-scenes, readers-guide
-        if ($Chapter -match 'book\\00[a-e]-') {
+        # This includes: half-title, copyright, dedication, introduction, meet-alex, behind-the-scenes, readers-guide
+        if ($Chapter -match 'book\\00(a[ab]?|[b-e])-') {
             # Mark H1 as unnumbered (for TOC) 
             $Content = $Content -replace '^(# [^\r\n{]+)(\r?\n)', '$1 {.unnumbered}$2'
             # Mark H2-H4 as unnumbered too (prevents 0.1, 0.2 numbering)

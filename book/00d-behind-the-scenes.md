@@ -1,12 +1,12 @@
-# A Preemptive Response to Critics
+# Behind the Kitchen Door
 
-## *(Because I Know What You're Thinking — And You're Wrong)*
+## *A Frank Conversation About AI, Authenticity, and Why I Made This Book*
 
-Look, I get it. An AI-generated cookbook. You're already composing your Twitter thread. You've got your hot take locked and loaded, something about "late-stage capitalism" or "the death of authenticity" or — if you're feeling particularly unoriginal — "this is why we can't have nice things."
+Look, I get it. An AI-generated cookbook. You might be skeptical. You might have concerns about "late-stage capitalism" or "the death of authenticity" or whether artificial intelligence has any business in the kitchen.
 
-Save it. I've heard it all. I've *generated* rebuttals to arguments you haven't even thought of yet.
+Those are fair questions. Let me address them head-on.
 
-Let me save us both some time by dismantling every criticism you're about to make.
+I've thought through every criticism you might have — and I think I have some answers worth considering.
 
 ---
 
