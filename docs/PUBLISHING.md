@@ -23,32 +23,39 @@ All book content is organized in the `book/` folder:
 
 ```
 book/
-├── 00-cover.md
-├── 01-dedication.md
-├── 02-introduction.md
-├── 03-table-of-contents.md
-├── 04-appetizers.md
-├── 05-soups-salads.md
-├── 06-main-courses.md
-├── 07-sides.md
-├── 08-desserts.md
-├── 09-breakfast.md
-├── 10-drinks.md
-├── 11-sauces.md
-├── 12-bread-baking.md
-├── 13-special-occasions.md
-├── 14-dog-treats.md
-├── 15-steaks.md
-├── 16-comfort-classics.md
-├── 17-alex-favorites.md
-├── 18-unhinged-kitchen.md
-├── 19-appendix-a-aphrodisiac.md
-├── 20-appendix-b-risotto-rice.md
-├── 21-cooking-conversions.md
-└── 22-kitchen-essentials.md
+├── 00-cover.md                  Cover page
+├── 00a-dedication.md            Dedication to family
+├── 00b-introduction.md          AI cookbook manifesto
+├── 00c-table-of-contents.md     Auto-generated TOC
+├── 01-appetizers.md             Chapter 1
+├── 02-soups-salads.md           Chapter 2
+├── 03-main-courses.md           Chapter 3
+├── 04-sides.md                  Chapter 4
+├── 05-desserts.md               Chapter 5
+├── 06-breakfast.md              Chapter 6
+├── 07-drinks.md                 Chapter 7
+├── 08-sauces.md                 Chapter 8
+├── 09-bread-baking.md           Chapter 9
+├── 10-special-occasions.md      Chapter 10
+├── 11-dog-treats.md             Chapter 11
+├── 12-steaks.md                 Chapter 12
+├── 13-comfort-classics.md       Chapter 13
+├── 14-alex-favorites.md         Chapter 14
+├── 15-unhinged-kitchen.md       Chapter 15
+├── 16-appendix-a-aphrodisiac.md Appendix A
+├── 17-appendix-b-risotto-rice.md Appendix B
+├── 18-cooking-conversions.md    Reference
+├── 19-kitchen-essentials.md     Reference
+├── cover.svg                    Cover artwork
+├── assets/
+│   ├── banners/                 Chapter banner SVGs
+│   │   └── png/                 Converted PNGs with color emojis
+│   └── emojis/                  Twemoji color PNGs
+└── output/
+    └── The-Alex-Cookbook.pdf    Built PDF (~2.8 MB)
 ```
 
-**Total:** 23 files, ~6,500 lines
+**Total:** 23 chapter files, 18 banners, 140+ emoji PNGs
 
 ### Supported Formats
 

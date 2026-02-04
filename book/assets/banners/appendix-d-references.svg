@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1064 200">
+  <defs>
+    <linearGradient id="refGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#4A90A4;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#6BB3C9;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#4A90A4;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  <rect width="1064" height="200" fill="#1a2a30"/>
+  <rect x="10" y="10" width="1044" height="180" rx="15" fill="none" stroke="url(#refGrad)" stroke-width="3"/>
+  <!-- Book and reference emojis -->
+  <text x="50" y="110" font-size="36">📚</text>
+  <text x="120" y="110" font-size="36">🔬</text>
+  <text x="904" y="110" font-size="36">🧪</text>
+  <text x="974" y="110" font-size="36">📖</text>
+  <!-- Title -->
+  <text x="532" y="75" font-family="Georgia, serif" font-size="42" font-weight="bold" fill="url(#refGrad)" text-anchor="middle">Appendix D — References</text>
+  <!-- Tagline -->
+  <text x="532" y="115" font-family="Georgia, serif" font-size="20" fill="#6BB3C9" text-anchor="middle" font-style="italic">"Standing on the Shoulders of Culinary Giants"</text>
+  <!-- Subtitle -->
+  <text x="532" y="155" font-family="Georgia, serif" font-size="14" fill="#a0a0a0" text-anchor="middle">Sources • Further Reading • The Science Behind the Magic</text>
+</svg>

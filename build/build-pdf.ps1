@@ -1,16 +1,19 @@
 # Build script for The Alex Cookbook PDF
 # Usage: .\build\build-pdf.ps1
+# Always generates both PRINT and DIGITAL versions
 
 $ErrorActionPreference = "Stop"
 $ProjectRoot = Split-Path -Parent $PSScriptRoot
 Set-Location $ProjectRoot
 
-Write-Host "🍳 Building The Alex Cookbook PDF..." -ForegroundColor Cyan
+Write-Host ""
+Write-Host "🍳 The Alex Cookbook - PDF Builder" -ForegroundColor Cyan
+Write-Host "   Building: PRINT + DIGITAL versions" -ForegroundColor White
+Write-Host ""
 
 # Output paths
 $OutputDir = Join-Path $ProjectRoot "book\output"
 $CombinedMd = Join-Path $OutputDir "cookbook-combined.md"
-$OutputPdf = Join-Path $OutputDir "The-Alex-Cookbook.pdf"
 
 # Create output directory
 if (-not (Test-Path $OutputDir)) {
@@ -18,30 +21,35 @@ if (-not (Test-Path $OutputDir)) {
 }
 
 # Define chapter order from book/ folder
+# Front matter uses 00x prefix, chapters align with banner numbers (01-15)
 $Chapters = @(
     "book\00-cover.md"
-    "book\01-dedication.md"
-    "book\02-introduction.md"
-    "book\03-table-of-contents.md"
-    "book\04-appetizers.md"
-    "book\05-soups-salads.md"
-    "book\06-main-courses.md"
-    "book\07-sides.md"
-    "book\08-desserts.md"
-    "book\09-breakfast.md"
-    "book\10-drinks.md"
-    "book\11-sauces.md"
-    "book\12-bread-baking.md"
-    "book\13-special-occasions.md"
-    "book\14-dog-treats.md"
-    "book\15-steaks.md"
-    "book\16-comfort-classics.md"
-    "book\17-alex-favorites.md"
-    "book\18-unhinged-kitchen.md"
-    "book\19-appendix-a-aphrodisiac.md"
-    "book\20-appendix-b-risotto-rice.md"
-    "book\21-cooking-conversions.md"
-    "book\22-kitchen-essentials.md"
+    "book\00a-dedication.md"
+    "book\00b-introduction.md"
+    "book\00c-meet-alex.md"
+    "book\00d-behind-the-scenes.md"
+    "book\00e-readers-guide.md"
+    "book\01-appetizers.md"
+    "book\02-soups-salads.md"
+    "book\03-main-courses.md"
+    "book\04-sides.md"
+    "book\05-desserts.md"
+    "book\06-breakfast.md"
+    "book\07-drinks.md"
+    "book\08-sauces.md"
+    "book\09-bread-baking.md"
+    "book\10-special-occasions.md"
+    "book\11-dog-treats.md"
+    "book\12-steaks.md"
+    "book\13-comfort-classics.md"
+    "book\14-alex-favorites.md"
+    "book\15-unhinged-kitchen.md"
+    "book\16-appendix-a-aphrodisiac.md"
+    "book\17-appendix-b-risotto-rice.md"
+    "book\18-cooking-conversions.md"
+    "book\19-kitchen-essentials.md"
+    "book\20-amazon-shopping-list.md"
+    "book\21-references.md"
 )
 
 Write-Host "📚 Combining chapters..." -ForegroundColor Yellow
@@ -61,6 +69,9 @@ $CoverContent = '```{=latex}
 \end{tikzpicture}
 \restoregeometry
 \newpage
+
+% Front matter uses Roman numerals (i, ii, iii...)
+\pagenumbering{roman}
 
 \setcounter{tocdepth}{0}
 \tableofcontents
@@ -99,24 +110,32 @@ foreach ($Chapter in $Chapters) {
         
         $Content = Get-Content $FilePath -Raw -Encoding UTF8
         
-        # Skip TOC file - we use LaTeX-generated TOC instead
-        if ($Chapter -eq "book\03-table-of-contents.md") {
-            Write-Host "  $progress ✓ $Chapter (using LaTeX TOC)" -ForegroundColor Green
-            continue
-        }
-        
         # === PDF CONVERSION (SVG → PNG, HTML → Markdown) ===
         
-        # Convert SVG image references to PNG (Pandoc/LaTeX doesn't handle SVG well)
         $PngPath = "$ProjectRoot/book/assets/banners/png"
+        
+        # For chapters with banners: move banner AFTER the heading to prevent page break separation
+        # Pattern: <img banner> followed by # Chapter Heading
+        # Result: # Chapter Heading followed by banner image (only for H1, not ## or ###)
+        if ($Content -match '<img[^>]*src="[^"]*banners/(\d{2}-[^"]+)\.svg"[^>]*>') {
+            $bannerName = $matches[1]
+            # Remove the banner from its original position
+            $Content = $Content -replace '<img[^>]*src="[^"]*banners/[^"]+\.svg"[^>]*>\r?\n*', ''
+            # Insert banner after the H1 chapter heading line ONLY (^# not ##)
+            $Content = $Content -replace '(?m)(^# [^\r\n]+)', "`$1`n`n![]($PngPath/$bannerName.png){width=100%}"
+        }
+        
+        # Convert any remaining SVG references to PNG
         $Content = $Content -replace '!\[([^\]]*)\]\(\./assets/banners/([^)]+)\.svg\)', "![]($PngPath/`$2.png){width=100%}"
         $Content = $Content -replace '!\[([^\]]*)\]\(\./cover\.svg\)', "![]($PngPath/cover.png){width=100%}"
         
-        # Convert HTML <img> tags to Markdown (LaTeX compatibility)
-        $Content = $Content -replace '<img[^>]*src="[^"]*banners/([^"]+)\.svg"[^>]*>', "![]($PngPath/`$1.png){width=100%}"
+        # Clean up remaining HTML tags
         $Content = $Content -replace '<img[^>]*>', ''
         $Content = $Content -replace '<div[^>]*>', ''
         $Content = $Content -replace '</div>', ''
+        
+        # Strip internal anchor links (not useful in PDF, cause hyperref warnings)
+        $Content = $Content -replace '\[([^\]]+)\]\(#[^)]+\)', '$1'
         
         # === CHAPTER FORMATTING ===
         
@@ -126,13 +145,23 @@ foreach ($Chapter in $Chapters) {
             $Content = $Content -replace '(# [^\r\n]*?)Chapter \d+:\s*', '$1'
         }
         
+        # === FRONT MATTER HANDLING ===
+        # Make dedication and introduction unnumbered (use {.unnumbered} attribute)
+        if ($Chapter -match 'book\\00[ab]-(dedication|introduction)\.md') {
+            # Convert # Heading to # Heading {.unnumbered} for Pandoc
+            $Content = $Content -replace '^(# [^\r\n{]+)(\r?\n)', '$1 {.unnumbered}$2'
+        }
+        
         # === EMOJI HANDLING ===
         
         # Strip variation selectors (U+FE0F) - Twemoji uses base codepoints
         $Content = $Content -replace '\uFE0F', ''
         
         # Replace emojis with inline images
-        foreach ($emoji in $EmojiMap.Keys) {
+        # IMPORTANT: Sort by length descending so compound emojis (ZWJ sequences like 🧑‍🍳)
+        # are matched BEFORE their component parts (🧑, 🍳)
+        $sortedEmojis = $EmojiMap.Keys | Sort-Object { $_.Length } -Descending
+        foreach ($emoji in $sortedEmojis) {
             # Use forward slashes consistently for LaTeX compatibility
             $imgPath = ($ProjectRoot + "/" + $EmojiMap[$emoji]) -replace '\\', '/'
             # Use LaTeX includegraphics for inline emoji (height matches text)
@@ -140,9 +169,13 @@ foreach ($Chapter in $Chapters) {
             $Content = $Content.Replace($emoji, $replacement)
         }
         
-        # Add page break between chapters using raw LaTeX block
-        $CombinedContent += $Content
-        $CombinedContent += "`n`n" + '```{=latex}' + "`n\newpage`n" + '```' + "`n`n"
+        # Switch to Arabic numerals and reset chapter counter at first real chapter
+        if ($Chapter -eq "book\01-appetizers.md") {
+            $CombinedContent += '```{=latex}' + "`n\pagenumbering{arabic}`n\setcounter{chapter}{0}`n" + '```' + "`n`n"
+        }
+        
+        # Add chapter content (book class automatically handles page breaks before chapters)
+        $CombinedContent += $Content + "`n`n"
     }
     else {
         Write-Host "  $progress ✗ $Chapter (NOT FOUND)" -ForegroundColor Red
@@ -154,81 +187,94 @@ $CombinedContent | Out-File -FilePath $CombinedMd -Encoding UTF8
 $mdSize = (Get-Item $CombinedMd).Length
 Write-Host "📝 Combined markdown: $CombinedMd ($([math]::Round($mdSize/1KB, 1)) KB)" -ForegroundColor Yellow
 
-# Build PDF with Pandoc
-Write-Host "🔨 Running Pandoc..." -ForegroundColor Yellow
-Write-Host "   This may take 30-60 seconds..." -ForegroundColor DarkGray
-
-$MetadataFile = Join-Path $ProjectRoot "build\cookbook.yaml"
-
-# Capture PDF timestamp before build (if exists)
-$oldPdfTime = $null
-$oldPdfSize = 0
-if (Test-Path $OutputPdf) {
-    $oldPdfTime = (Get-Item $OutputPdf).LastWriteTime
-    $oldPdfSize = (Get-Item $OutputPdf).Length
-}
-
-$startTime = Get-Date
-
-try {
-    $pandocOutput = pandoc $CombinedMd `
-        --metadata-file=$MetadataFile `
-        --pdf-engine=lualatex `
-        --resource-path="$ProjectRoot;$ProjectRoot\book;$ProjectRoot\book\assets" `
-        -o $OutputPdf 2>&1
+# Function to build PDF with specified config
+function Build-CookbookPdf {
+    param(
+        [string]$ConfigFile,
+        [string]$OutputPdf,
+        [string]$Label
+    )
     
-    $exitCode = $LASTEXITCODE
-    $elapsed = (Get-Date) - $startTime
+    Write-Host ""
+    Write-Host "🔨 Building $Label..." -ForegroundColor Yellow
+    Write-Host "   Config: $ConfigFile" -ForegroundColor DarkGray
     
-    # Show any warnings from Pandoc
-    if ($pandocOutput) {
-        $pandocOutput | ForEach-Object {
-            if ($_ -match "WARNING") {
-                Write-Host $_ -ForegroundColor DarkYellow
-            }
-            elseif ($_ -match "ERROR|error") {
-                Write-Host $_ -ForegroundColor Red
+    # Capture PDF timestamp before build (if exists)
+    $oldPdfSize = 0
+    if (Test-Path $OutputPdf) {
+        $oldPdfSize = (Get-Item $OutputPdf).Length
+    }
+    
+    $startTime = Get-Date
+    
+    try {
+        $pandocOutput = pandoc $CombinedMd `
+            --metadata-file=$ConfigFile `
+            --pdf-engine=lualatex `
+            --resource-path="$ProjectRoot;$ProjectRoot\book;$ProjectRoot\book\assets" `
+            -V "hyperrefoptions=draft" `
+            -o $OutputPdf 2>&1
+        
+        $exitCode = $LASTEXITCODE
+        $elapsed = (Get-Date) - $startTime
+        
+        # Show any warnings from Pandoc
+        if ($pandocOutput) {
+            $pandocOutput | ForEach-Object {
+                if ($_ -match "WARNING") {
+                    Write-Host "   $_" -ForegroundColor DarkYellow
+                }
+                elseif ($_ -match "ERROR|error") {
+                    Write-Host "   $_" -ForegroundColor Red
+                }
             }
         }
+        
+        # Verify PDF was created
+        if (-not (Test-Path $OutputPdf)) {
+            Write-Host "   ❌ FAILED: PDF file was not created!" -ForegroundColor Red
+            return $false
+        }
+        
+        $newPdfSize = (Get-Item $OutputPdf).Length
+        
+        Write-Host "   ✅ Created in $([math]::Round($elapsed.TotalSeconds, 1))s" -ForegroundColor Green
+        Write-Host "   📄 $OutputPdf" -ForegroundColor White
+        Write-Host "   📊 Size: $([math]::Round($newPdfSize/1MB, 2)) MB" -ForegroundColor White
+        if ($oldPdfSize -gt 0) {
+            $sizeDiff = $newPdfSize - $oldPdfSize
+            $diffSign = if ($sizeDiff -ge 0) { "+" } else { "" }
+            Write-Host "   📈 Size change: $diffSign$([math]::Round($sizeDiff/1KB, 1)) KB" -ForegroundColor DarkGray
+        }
+        return $true
     }
-    
-    # Verify PDF was created/updated
-    if (-not (Test-Path $OutputPdf)) {
-        Write-Host ""
-        Write-Host "❌ FAILED: PDF file was not created!" -ForegroundColor Red
-        Write-Host "   Pandoc exit code: $exitCode" -ForegroundColor Red
-        exit 1
+    catch {
+        Write-Host "   ❌ Pandoc failed: $($_.Exception.Message)" -ForegroundColor Red
+        return $false
     }
-    
-    $newPdfTime = (Get-Item $OutputPdf).LastWriteTime
-    $newPdfSize = (Get-Item $OutputPdf).Length
-    
-    # Check if file was actually updated
-    if ($oldPdfTime -and $newPdfTime -le $oldPdfTime) {
-        Write-Host ""
-        Write-Host "⚠️  WARNING: PDF file was NOT updated!" -ForegroundColor Yellow
-        Write-Host "   Old timestamp: $oldPdfTime" -ForegroundColor Yellow
-        Write-Host "   New timestamp: $newPdfTime" -ForegroundColor Yellow
-        Write-Host "   Pandoc may have failed silently." -ForegroundColor Yellow
-        exit 1
-    }
-    
-    Write-Host ""
-    Write-Host "✅ SUCCESS! PDF created in $([math]::Round($elapsed.TotalSeconds, 1))s" -ForegroundColor Green
-    Write-Host "   📄 $OutputPdf" -ForegroundColor White
-    Write-Host "   📊 Size: $([math]::Round($newPdfSize/1MB, 2)) MB" -ForegroundColor White
-    Write-Host "   🕐 Timestamp: $newPdfTime" -ForegroundColor White
-    if ($oldPdfSize -gt 0) {
-        $sizeDiff = $newPdfSize - $oldPdfSize
-        $diffSign = if ($sizeDiff -ge 0) { "+" } else { "" }
-        Write-Host "   📈 Size change: $diffSign$([math]::Round($sizeDiff/1KB, 1)) KB" -ForegroundColor DarkGray
-    }
-    Write-Host ""
 }
-catch {
-    Write-Host ""
-    Write-Host "❌ Pandoc failed with exception:" -ForegroundColor Red
-    Write-Host "   $($_.Exception.Message)" -ForegroundColor Red
-    Write-Host ""
+
+# Build both versions
+$success = $true
+
+$PrintConfig = Join-Path $ProjectRoot "build\cookbook.yaml"
+$PrintPdf = Join-Path $OutputDir "The-Alex-Cookbook-Print.pdf"
+if (-not (Build-CookbookPdf -ConfigFile $PrintConfig -OutputPdf $PrintPdf -Label "PRINT version (twoside, chapters start on right pages)")) {
+    $success = $false
+}
+
+$DigitalConfig = Join-Path $ProjectRoot "build\cookbook-digital.yaml"
+$DigitalPdf = Join-Path $OutputDir "The-Alex-Cookbook-Digital.pdf"
+if (-not (Build-CookbookPdf -ConfigFile $DigitalConfig -OutputPdf $DigitalPdf -Label "DIGITAL version (oneside, no blank pages)")) {
+    $success = $false
+}
+
+Write-Host ""
+if ($success) {
+    Write-Host "🎉 All builds completed successfully!" -ForegroundColor Green
+}
+else {
+    Write-Host "⚠️  Some builds failed. Check output above." -ForegroundColor Yellow
     exit 1
 }
+Write-Host ""

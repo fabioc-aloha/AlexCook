@@ -1,0 +1,46 @@
+{
+    "name": "cookbook-qa",
+    "version": "1.1.0",
+    "description": "Automated QA analysis for The Alex Cookbook PDF",
+    "triggers": [
+        "QA",
+        "quality",
+        "audit",
+        "check PDF",
+        "extract text",
+        "cookbook QA",
+        "character emoji",
+        "pronoun check",
+        "difficulty terminology",
+        "ZWJ emoji",
+        "emoji consistency"
+    ],
+    "synapses": [
+        {
+            "target": "../build/build-pdf.ps1",
+            "relationship": "depends-on",
+            "context": "QA runs after PDF build; contains ZWJ emoji fix"
+        },
+        {
+            "target": "../build/cookbook-qa.ps1",
+            "relationship": "implements",
+            "context": "Main QA automation script"
+        },
+        {
+            "target": "../build/emoji-map.json",
+            "relationship": "validates",
+            "context": "Character emoji mappings including ZWJ sequences"
+        },
+        {
+            "target": "../book/00e-readers-guide.md",
+            "relationship": "validates",
+            "context": "Source of truth for character definitions"
+        }
+    ],
+    "metadata": {
+        "created": "2026-02-03",
+        "updated": "2026-02-03",
+        "author": "Alex Cook",
+        "category": "quality-assurance"
+    }
+}

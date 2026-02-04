@@ -1,16 +1,20 @@
 ---
-# Pandoc metadata for The Alex Cookbook
+# Pandoc metadata for The Alex Cookbook (PRINT version)
 # Title/author/date removed to prevent automatic title page generation
 lang: en-US
 
-# PDF settings
+# PDF settings - twoside for professional print layout
 documentclass: book
+classoption:
+  - twoside
+  - openright
 papersize: letter
 geometry:
   - margin=1in
   - top=1.25in
   - bottom=1.25in
 fontsize: 11pt
+linestretch: 1.2
 
 # Disable automatic title page (we use custom cover)
 titlepage: false
@@ -42,10 +46,33 @@ header-includes:
     \titleformat{\chapter}[display]
       {\normalfont\huge\bfseries}{\chaptertitlename\ \thechapter}{20pt}{\Huge}
     \titlespacing*{\chapter}{0pt}{-20pt}{20pt}
+    \titleformat{\section}{\normalfont\Large\bfseries}{\thesection}{1em}{}
+    \titlespacing*{\section}{0pt}{2.5ex plus 1ex minus .2ex}{1.5ex plus .2ex}
+    \titleformat{\subsection}{\normalfont\large\bfseries}{\thesubsection}{1em}{}
+    \titlespacing*{\subsection}{0pt}{2ex plus 1ex minus .2ex}{1ex plus .2ex}
+    \titleformat{\subsubsection}{\normalfont\normalsize\bfseries}{\thesubsubsection}{1em}{}
+    \titlespacing*{\subsubsection}{0pt}{1.5ex plus 1ex minus .2ex}{0.5ex plus .2ex}
+    \raggedbottom
+    \widowpenalty=10000
+    \clubpenalty=10000
+  - |
+    \usepackage{needspace}
+    \let\oldsection\section
+    \renewcommand{\section}{\needspace{5\baselineskip}\oldsection}
+    \let\oldsubsection\subsection
+    \renewcommand{\subsection}{\needspace{4\baselineskip}\oldsubsection}
+    \let\oldsubsubsection\subsubsection
+    \renewcommand{\subsubsection}{\needspace{3\baselineskip}\oldsubsubsection}
   - |
     \usepackage{booktabs}
     \usepackage{longtable}
     \usepackage{array}
+    \usepackage{tabularx}
+    \usepackage{ltablex}
+    \usepackage{etoolbox}
+    \renewcommand{\arraystretch}{1.15}
+    \BeforeBeginEnvironment{tabular}{\needspace{4\baselineskip}}
+    \BeforeBeginEnvironment{longtable}{\needspace{6\baselineskip}}
   - |
     \usepackage{graphicx}
     \usepackage{float}

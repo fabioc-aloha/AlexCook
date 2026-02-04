@@ -6,4 +6,4 @@
 
 **A Provocateur's Guide to Culinary Mastery**
 
-by Alex Chef 🧑‍🍳
+by Alex Cook 🧑‍🍳

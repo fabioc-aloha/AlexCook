@@ -79,8 +79,8 @@
   
   <!-- Top decorative line with utensils -->
   <line x1="150" y1="120" x2="700" y2="120" stroke="url(#titleGrad)" stroke-width="2"/>
-  <text x="100" y="128" font-size="30">🍴</text>
-  <text x="720" y="128" font-size="30">🔪</text>
+  <image x="85" y="103" width="30" height="30" href="./assets/emojis/1f374.png"/>
+  <image x="705" y="103" width="30" height="30" href="./assets/emojis/1f52a.png"/>
   
   <!-- THE -->
   <text x="425" y="200" font-family="Georgia, serif" font-size="42" fill="#f5af19" text-anchor="middle" letter-spacing="20" font-weight="300">THE</text>
@@ -104,17 +104,17 @@
   <text x="425" y="560" font-family="Arial, sans-serif" font-size="18" fill="#a0a0c0" text-anchor="middle" letter-spacing="3">A PROVOCATEUR'S GUIDE TO CULINARY MASTERY</text>
   
   <!-- Chef hat icon -->
-  <text x="425" y="640" font-size="60" text-anchor="middle">👨‍🍳</text>
+  <image x="395" y="585" width="60" height="60" href="./assets/emojis/1f468-200d-1f373.png"/>
   
   <!-- Cuisine flags section -->
   <text x="425" y="720" font-family="Arial, sans-serif" font-size="14" fill="#888" text-anchor="middle" letter-spacing="2">CELEBRATING THE FLAVORS OF</text>
   
   <!-- Cuisine icons row -->
-  <text x="170" y="780" font-size="40" text-anchor="middle">🇧🇷</text>
-  <text x="290" y="780" font-size="40" text-anchor="middle">🇮🇹</text>
-  <text x="425" y="780" font-size="40" text-anchor="middle">🇮🇳</text>
-  <text x="560" y="780" font-size="40" text-anchor="middle">🇨🇳</text>
-  <text x="680" y="780" font-size="40" text-anchor="middle">🇯🇵</text>
+  <image x="150" y="745" width="40" height="40" href="./assets/emojis/1f1e7-1f1f7.png"/>
+  <image x="270" y="745" width="40" height="40" href="./assets/emojis/1f1ee-1f1f9.png"/>
+  <image x="405" y="745" width="40" height="40" href="./assets/emojis/1f1ee-1f1f3.png"/>
+  <image x="540" y="745" width="40" height="40" href="./assets/emojis/1f1e8-1f1f3.png"/>
+  <image x="660" y="745" width="40" height="40" href="./assets/emojis/1f1ef-1f1f5.png"/>
   
   <!-- Cuisine labels -->
   <text x="170" y="810" font-family="Arial, sans-serif" font-size="11" fill="#888" text-anchor="middle">Brazilian</text>
@@ -129,25 +129,31 @@
   <!-- Family dedication -->
   <text x="425" y="895" font-family="Georgia, serif" font-size="16" fill="#c0c0d0" text-anchor="middle" font-style="italic">For the ones who make every meal worth cooking:</text>
   
-  <!-- Family members -->
-  <text x="425" y="940" font-family="Arial, sans-serif" font-size="20" fill="#f5af19" text-anchor="middle">
-    <tspan>Claudia</tspan>
-    <tspan fill="#666"> • </tspan>
-    <tspan>Douglas</tspan>
-    <tspan fill="#666"> • </tspan>
-    <tspan>Freddy</tspan>
-    <tspan fill="#666"> • </tspan>
-    <tspan>Jolly</tspan>
-  </text>
+  <!-- Family members with aligned emojis -->
+  <text x="125" y="940" font-family="Arial, sans-serif" font-size="18" fill="#f5af19" text-anchor="middle">Fabio</text>
+  <text x="255" y="940" font-family="Arial, sans-serif" font-size="18" fill="#f5af19" text-anchor="middle">Claudia</text>
+  <text x="385" y="940" font-family="Arial, sans-serif" font-size="18" fill="#f5af19" text-anchor="middle">Douglas</text>
+  <text x="530" y="940" font-family="Arial, sans-serif" font-size="18" fill="#f5af19" text-anchor="middle">Freddy</text>
+  <text x="680" y="940" font-family="Arial, sans-serif" font-size="18" fill="#f5af19" text-anchor="middle">Jolly</text>
   
-  <!-- Family emojis -->
-  <text x="425" y="985" font-size="28" text-anchor="middle">👩‍🦰  🧒  🐕  🐕</text>
+  <!-- Dots between names -->
+  <text x="190" y="940" font-family="Arial, sans-serif" font-size="18" fill="#666" text-anchor="middle">•</text>
+  <text x="320" y="940" font-family="Arial, sans-serif" font-size="18" fill="#666" text-anchor="middle">•</text>
+  <text x="458" y="940" font-family="Arial, sans-serif" font-size="18" fill="#666" text-anchor="middle">•</text>
+  <text x="605" y="940" font-family="Arial, sans-serif" font-size="18" fill="#666" text-anchor="middle">•</text>
+  
+  <!-- Family emojis aligned under names -->
+  <image x="111" y="958" width="28" height="28" href="./assets/emojis/1f9d4-200d-2642-fe0f.png"/>
+  <image x="241" y="958" width="28" height="28" href="./assets/emojis/1f469-200d-1f9b0.png"/>
+  <image x="371" y="958" width="28" height="28" href="./assets/emojis/1f9d2.png"/>
+  <image x="516" y="958" width="28" height="28" href="./assets/emojis/1f415.png"/>
+  <image x="666" y="958" width="28" height="28" href="./assets/emojis/1f429.png"/>
   
   <!-- Bottom decorative line -->
   <line x1="150" y1="1020" x2="700" y2="1020" stroke="url(#titleGrad)" stroke-width="2"/>
   
   <!-- Author -->
-  <text x="425" y="1060" font-family="Georgia, serif" font-size="22" fill="url(#titleGrad)" text-anchor="middle">by Alex Chef</text>
+  <text x="425" y="1060" font-family="Georgia, serif" font-size="22" fill="url(#titleGrad)" text-anchor="middle">by Alex Cook</text>
   
   <!-- Year -->
   <text x="425" y="1085" font-family="Arial, sans-serif" font-size="12" fill="#666" text-anchor="middle">2026</text>

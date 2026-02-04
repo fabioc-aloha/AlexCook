@@ -67,7 +67,7 @@ Here, you won't just learn *how* to cook. You'll learn *why* — and then you'll
 | **Claudia** 👩‍🦰 | Chief Taste Officer | Loves apples, elegant presentations | IBS — needs Low-FODMAP friendly options |
 | **Douglas** 🧒 | Quality Control (Picky Division) | Chocolate fanatic, comfort food king | Selective eater — keep it approachable |
 | **Freddy** 🐕 | "Kitchen Helper" (self-appointed) | Bacon, peanut butter, anything dropped | Male. Dog-safe only! |
-| **Jolly** 🐕 | "Sous Chef" (in her dreams) | Those eyes could melt steel | Female. Dog-safe only! |
+| **Jolly** � | "Sous Chef" (in her dreams) | Those eyes could melt steel | Female. Dog-safe only! |
 
 > *"They think they're helping. They are not helping. But we love them anyway."* — Alex
 

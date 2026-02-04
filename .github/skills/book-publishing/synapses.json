@@ -1,0 +1,77 @@
+{
+    "$schema": "../SYNAPSE-SCHEMA.json",
+    "skillId": "book-publishing",
+    "version": "1.0.0",
+    "lastValidated": "2026-02-03",
+    "inheritance": "inheritable",
+    "connections": [
+        {
+            "target": "svg-graphics",
+            "type": "requires",
+            "strength": 0.95,
+            "reason": "Banner and cover SVG creation, base64 embedding"
+        },
+        {
+            "target": "graphic-design",
+            "type": "complements",
+            "strength": 0.85,
+            "reason": "Visual hierarchy, typography, layout composition"
+        },
+        {
+            "target": "writing-publication",
+            "type": "complements",
+            "strength": 0.9,
+            "reason": "Content structure, front matter, chapter organization"
+        },
+        {
+            "target": "project-scaffolding",
+            "type": "enables",
+            "strength": 0.8,
+            "reason": "Build system structure and script organization"
+        },
+        {
+            "target": "image-handling",
+            "type": "requires",
+            "strength": 0.9,
+            "reason": "SVG→PNG conversion, Sharp library, DPI settings"
+        },
+        {
+            "target": "infrastructure-as-code",
+            "type": "complements",
+            "strength": 0.6,
+            "reason": "YAML config files, declarative build settings"
+        },
+        {
+            "target": "localization",
+            "type": "enables",
+            "strength": 0.5,
+            "reason": "Multi-language book variants possible"
+        },
+        {
+            "target": "cookbook-qa",
+            "type": "complements",
+            "strength": 0.85,
+            "reason": "QA automation validates PDF output, emoji consistency, terminology"
+        }
+    ],
+    "triggers": [
+        "book publishing",
+        "PDF generation",
+        "cookbook",
+        "pandoc",
+        "latex",
+        "lualatex",
+        "markdown to PDF",
+        "print version",
+        "digital version",
+        "twoside",
+        "oneside",
+        "chapter banners",
+        "twemoji",
+        "color emoji",
+        "SVG to PNG",
+        "sharp conversion",
+        "ZWJ emoji",
+        "emoji-map"
+    ]
+}
