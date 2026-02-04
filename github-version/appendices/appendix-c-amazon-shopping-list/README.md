@@ -27,7 +27,7 @@ I could have scraped Amazon and given you prices that would be outdated by the t
 
 ### Knives — Because Dull Knives Are Dangerous
 
-| Item | Alex's Take | Search Term |
+| Item | Alex's Take | Shop |
 |------|-------------|-------------|
 | **Chef's Knife (8")** | The extension of your hand. Don't cheap out. | [🔍 Victorinox Fibrox Pro 8 inch chef knife](https://www.amazon.com/s?k=Victorinox+Fibrox+Pro+8+inch+chef+knife&tag=alexcook05-20) |
 | **Paring Knife** | For when the chef's knife is overkill | [🔍 Victorinox paring knife 3.25 inch](https://www.amazon.com/s?k=Victorinox+paring+knife+3.25+inch&tag=alexcook05-20) |
@@ -40,7 +40,7 @@ I could have scraped Amazon and given you prices that would be outdated by the t
 
 ### Cast Iron — The Heirloom Your Grandkids Will Use
 
-| Item | Alex's Take | Search Term |
+| Item | Alex's Take | Shop |
 |------|-------------|-------------|
 | **12" Cast Iron Skillet** | Lodge. Preseasoned. Indestructible. | [🔍 Lodge cast iron skillet 12 inch](https://www.amazon.com/s?k=Lodge+cast+iron+skillet+12+inch&tag=alexcook05-20) |
 | **10" Cast Iron Skillet** | For when 12" is too much | [🔍 Lodge cast iron skillet 10.25 inch](https://www.amazon.com/s?k=Lodge+cast+iron+skillet+10.25+inch&tag=alexcook05-20) |
@@ -51,7 +51,7 @@ I could have scraped Amazon and given you prices that would be outdated by the t
 
 ### The Workhorse Pans
 
-| Item | Alex's Take | Search Term |
+| Item | Alex's Take | Shop |
 |------|-------------|-------------|
 | **Stainless Steel Sauté Pan** | For fond. For searing. For not being afraid of metal utensils. | [🔍 All-Clad D3 12 inch stainless steel fry pan](https://www.amazon.com/s?k=All-Clad+D3+12+inch+stainless+steel+fry+pan&tag=alexcook05-20) |
 | **Non-Stick Pan** | For eggs. ONLY for eggs. | [🔍 T-fal professional nonstick fry pan 12 inch](https://www.amazon.com/s?k=T-fal+professional+nonstick+fry+pan+12+inch&tag=alexcook05-20) |
@@ -62,7 +62,7 @@ I could have scraped Amazon and given you prices that would be outdated by the t
 
 ### Bakeware That Doesn't Suck
 
-| Item | Alex's Take | Search Term |
+| Item | Alex's Take | Shop |
 |------|-------------|-------------|
 | **Sheet Pans (Half Sheet)** | Buy 4. You'll use all 4. Trust me. | [🔍 Nordic Ware half sheet pan aluminum](https://www.amazon.com/s?k=Nordic+Ware+half+sheet+pan+aluminum&tag=alexcook05-20) |
 | **Wire Cooling Racks** | That fit IN your sheet pans. Game changer. | [🔍 wire cooling rack half sheet pan](https://www.amazon.com/s?k=wire+cooling+rack+half+sheet+pan&tag=alexcook05-20) |
@@ -76,7 +76,7 @@ I could have scraped Amazon and given you prices that would be outdated by the t
 
 ### Dutch Oven: The MVP
 
-| Item | Alex's Take | Search Term |
+| Item | Alex's Take | Shop |
 |------|-------------|-------------|
 | **Enameled Dutch Oven (5.5-7 qt)** | Le Creuset is overpriced. Lodge is perfect. | [🔍 Lodge enameled cast iron dutch oven 6 quart](https://www.amazon.com/s?k=Lodge+enameled+cast+iron+dutch+oven+6+quart&tag=alexcook05-20) |
 | **The Fancy One** | If you MUST have Le Creuset (I won't judge) | [🔍 Le Creuset signature dutch oven 5.5 quart](https://www.amazon.com/s?k=Le+Creuset+signature+dutch+oven+5.5+quart&tag=alexcook05-20) |
@@ -91,7 +91,7 @@ I could have scraped Amazon and given you prices that would be outdated by the t
 
 > *"A $15 scale makes you a better baker than any $200 gadget. Weight measurements don't lie. Cups do."* — Alex Cook (See Appendix: Cooking Conversions for conversion charts!)
 
-| Item | Alex's Take | Search Term |
+| Item | Alex's Take | Shop |
 |------|-------------|-------------|
 | **Kitchen Scale** | THE most important measuring tool. Baking by weight is the only way. | [🔍 OXO Good Grips kitchen scale 11 lb](https://www.amazon.com/s?k=OXO+Good+Grips+kitchen+scale+11+lb&tag=alexcook05-20) |
 | **Instant-Read Thermometer** | The ThermoWorks Thermapen is the gold standard | [🔍 ThermoWorks Thermapen ONE](https://www.amazon.com/s?k=ThermoWorks+Thermapen+ONE&tag=alexcook05-20) |
@@ -102,7 +102,7 @@ I could have scraped Amazon and given you prices that would be outdated by the t
 
 ### Utensils That Aren't Garbage
 
-| Item | Alex's Take | Search Term |
+| Item | Alex's Take | Shop |
 |------|-------------|-------------|
 | **Wooden Spoons (Set)** | Not bamboo. Real wood. | [🔍 olive wood spoon set cooking](https://www.amazon.com/s?k=olive+wood+spoon+set+cooking&tag=alexcook05-20) |
 | **Silicone Spatulas** | Heat-resistant. Flexible. Essential. | [🔍 GIR silicone spatula set](https://www.amazon.com/s?k=GIR+silicone+spatula+set&tag=alexcook05-20) |
@@ -118,7 +118,7 @@ I could have scraped Amazon and given you prices that would be outdated by the t
 
 ### Mixing & Prep
 
-| Item | Alex's Take | Search Term |
+| Item | Alex's Take | Shop |
 |------|-------------|-------------|
 | **Mixing Bowls (Stainless)** | Nested set. 3-5 sizes. Forever. | [🔍 stainless steel mixing bowl set nesting](https://www.amazon.com/s?k=stainless+steel+mixing+bowl+set+nesting&tag=alexcook05-20) |
 | **Glass Prep Bowls** | Mise en place isn't optional | [🔍 glass prep bowls with lids set](https://www.amazon.com/s?k=glass+prep+bowls+with+lids+set&tag=alexcook05-20) |
@@ -128,7 +128,7 @@ I could have scraped Amazon and given you prices that would be outdated by the t
 
 ### Specialty Tools Worth Having
 
-| Item | Alex's Take | Search Term |
+| Item | Alex's Take | Shop |
 |------|-------------|-------------|
 | **Mortar & Pestle** | For pesto. For spice blooming. For aggression therapy. | [🔍 marble mortar and pestle](https://www.amazon.com/s?k=marble+mortar+and+pestle&tag=alexcook05-20) |
 | **Citrus Juicer** | Hand-held. Efficient. Essential for margaritas. | [🔍 citrus juicer handheld lemon squeezer](https://www.amazon.com/s?k=citrus+juicer+handheld+lemon+squeezer&tag=alexcook05-20) |
@@ -143,7 +143,7 @@ I could have scraped Amazon and given you prices that would be outdated by the t
 
 ### The Essential Trio
 
-| Item | Alex's Take | Search Term |
+| Item | Alex's Take | Shop |
 |------|-------------|-------------|
 | **Stand Mixer** | KitchenAid. Accept no substitutes. | [🔍 KitchenAid Artisan stand mixer 5 quart](https://www.amazon.com/s?k=KitchenAid+Artisan+stand+mixer+5+quart&tag=alexcook05-20) |
 | **Food Processor** | Cuisinart. The original. Still the best. | [🔍 Cuisinart food processor 14 cup](https://www.amazon.com/s?k=Cuisinart+food+processor+14+cup&tag=alexcook05-20) |
@@ -152,7 +152,7 @@ I could have scraped Amazon and given you prices that would be outdated by the t
 
 ### The Useful Add-Ons
 
-| Item | Alex's Take | Search Term |
+| Item | Alex's Take | Shop |
 |------|-------------|-------------|
 | **Air Fryer** | Douglas's mozzarella sticks depend on this | [🔍 Ninja air fryer XL](https://www.amazon.com/s?k=Ninja+air+fryer+XL&tag=alexcook05-20) |
 | **Instant Pot** | Pressure cooker + slow cooker + rice cooker | [🔍 Instant Pot Duo 8 quart](https://www.amazon.com/s?k=Instant+Pot+Duo+8+quart&tag=alexcook05-20) |
@@ -168,7 +168,7 @@ I could have scraped Amazon and given you prices that would be outdated by the t
 
 ### Oils (Quality Matters Here)
 
-| Item | Alex's Take | Search Term |
+| Item | Alex's Take | Shop |
 |------|-------------|-------------|
 | **Extra Virgin Olive Oil** | California Olive Ranch. Not fake Italian stuff. | [🔍 California Olive Ranch olive oil everyday](https://www.amazon.com/s?k=California+Olive+Ranch+olive+oil+everyday&tag=alexcook05-20) |
 | **Finishing Olive Oil** | For drizzling. Not for cooking. Splurge here. | [🔍 Brightland olive oil](https://www.amazon.com/s?k=Brightland+olive+oil&tag=alexcook05-20) |
@@ -179,7 +179,7 @@ I could have scraped Amazon and given you prices that would be outdated by the t
 
 ### Vinegars
 
-| Item | Alex's Take | Search Term |
+| Item | Alex's Take | Shop |
 |------|-------------|-------------|
 | **Balsamic Vinegar (Aged)** | IGP minimum. DOP if you're fancy. | [🔍 balsamic vinegar modena IGP aged](https://www.amazon.com/s?k=balsamic+vinegar+modena+IGP+aged&tag=alexcook05-20) |
 | **Balsamic Glaze** | For drizzling. For lazy elegance. | [🔍 balsamic glaze reduction](https://www.amazon.com/s?k=balsamic+glaze+reduction&tag=alexcook05-20) |
@@ -190,7 +190,7 @@ I could have scraped Amazon and given you prices that would be outdated by the t
 
 ### Salt (Yes, You Need Multiple Kinds)
 
-| Item | Alex's Take | Search Term |
+| Item | Alex's Take | Shop |
 |------|-------------|-------------|
 | **Diamond Crystal Kosher Salt** | THE cooking salt. Not Morton. Diamond Crystal. | [🔍 Diamond Crystal kosher salt 3 lb box](https://www.amazon.com/s?k=Diamond+Crystal+kosher+salt+3+lb+box&tag=alexcook05-20) |
 | **Maldon Flaky Sea Salt** | For finishing. For drama. For everything at the end. | [🔍 Maldon sea salt flakes](https://www.amazon.com/s?k=Maldon+sea+salt+flakes&tag=alexcook05-20) |
@@ -200,7 +200,7 @@ I could have scraped Amazon and given you prices that would be outdated by the t
 
 ### Spices (Buy Whole, Grind Fresh)
 
-| Item | Alex's Take | Search Term |
+| Item | Alex's Take | Shop |
 |------|-------------|-------------|
 | **Black Peppercorns** | With a good grinder. Pre-ground is sawdust. | [🔍 Tellicherry peppercorns whole](https://www.amazon.com/s?k=Tellicherry+peppercorns+whole&tag=alexcook05-20) |
 | **Pepper Grinder** | Manual. Solid. Forever. | [🔍 Cole and Mason pepper mill](https://www.amazon.com/s?k=Cole+and+Mason+pepper+mill&tag=alexcook05-20) |
@@ -220,7 +220,7 @@ I could have scraped Amazon and given you prices that would be outdated by the t
 
 ### Asian Pantry Essentials
 
-| Item | Alex's Take | Search Term |
+| Item | Alex's Take | Shop |
 |------|-------------|-------------|
 | **Soy Sauce** | Kikkoman. Less sodium version for cooking. | [🔍 Kikkoman soy sauce less sodium](https://www.amazon.com/s?k=Kikkoman+soy+sauce+less+sodium&tag=alexcook05-20) |
 | **Fish Sauce** | Red Boat. Single ingredient. Life-changing. | [🔍 Red Boat fish sauce](https://www.amazon.com/s?k=Red+Boat+fish+sauce&tag=alexcook05-20) |
@@ -237,7 +237,7 @@ I could have scraped Amazon and given you prices that would be outdated by the t
 
 ### Latin/Brazilian Essentials
 
-| Item | Alex's Take | Search Term |
+| Item | Alex's Take | Shop |
 |------|-------------|-------------|
 | **Cachaça** | For caipirinhas. Leblon or Novo Fogo. | [🔍 Leblon cachaca](https://www.amazon.com/s?k=Leblon+cachaca&tag=alexcook05-20) |
 | **Dendê Oil (Palm Oil)** | Essential for moqueca. Non-negotiable. | [🔍 dende palm oil Brazilian](https://www.amazon.com/s?k=dende+palm+oil+Brazilian&tag=alexcook05-20) |
@@ -249,7 +249,7 @@ I could have scraped Amazon and given you prices that would be outdated by the t
 
 ### Italian Essentials
 
-| Item | Alex's Take | Search Term |
+| Item | Alex's Take | Shop |
 |------|-------------|-------------|
 | **San Marzano Tomatoes** | DOP certified or don't bother | [🔍 San Marzano tomatoes DOP certified](https://www.amazon.com/s?k=San+Marzano+tomatoes+DOP+certified&tag=alexcook05-20) |
 | **Pasta (De Cecco)** | Bronze-cut. Holds sauce properly. | [🔍 De Cecco pasta](https://www.amazon.com/s?k=De+Cecco+pasta&tag=alexcook05-20) |
@@ -262,7 +262,7 @@ I could have scraped Amazon and given you prices that would be outdated by the t
 
 ### Chocolate & Baking
 
-| Item | Alex's Take | Search Term |
+| Item | Alex's Take | Shop |
 |------|-------------|-------------|
 | **Dark Chocolate (70%+)** | Valrhona Guanaja is the gold standard | [🔍 Valrhona Guanaja dark chocolate](https://www.amazon.com/s?k=Valrhona+Guanaja+dark+chocolate&tag=alexcook05-20) |
 | **Milk Chocolate** | For lava cake centers | [🔍 Valrhona milk chocolate](https://www.amazon.com/s?k=Valrhona+milk+chocolate&tag=alexcook05-20) |
@@ -274,7 +274,7 @@ I could have scraped Amazon and given you prices that would be outdated by the t
 
 ### Flour & Leavening
 
-| Item | Alex's Take | Search Term |
+| Item | Alex's Take | Shop |
 |------|-------------|-------------|
 | **All-Purpose Flour** | King Arthur. Gold standard. | [🔍 King Arthur all purpose flour](https://www.amazon.com/s?k=King+Arthur+all+purpose+flour&tag=alexcook05-20) |
 | **Bread Flour** | Higher protein. For bread. Obviously. | [🔍 King Arthur bread flour](https://www.amazon.com/s?k=King+Arthur+bread+flour&tag=alexcook05-20) |
@@ -286,7 +286,7 @@ I could have scraped Amazon and given you prices that would be outdated by the t
 
 ### Sweeteners
 
-| Item | Alex's Take | Search Term |
+| Item | Alex's Take | Shop |
 |------|-------------|-------------|
 | **Granulated Sugar** | White. Fine. For most things. | [🔍 granulated sugar](https://www.amazon.com/s?k=granulated+sugar&tag=alexcook05-20) |
 | **Brown Sugar (Light & Dark)** | For cookies. For marinades. For caramel. | [🔍 brown sugar light](https://www.amazon.com/s?k=brown+sugar+light&tag=alexcook05-20) |
@@ -302,7 +302,7 @@ I could have scraped Amazon and given you prices that would be outdated by the t
 
 ### Beef (When Quality Matters)
 
-| Item | Alex's Take | Search Term |
+| Item | Alex's Take | Shop |
 |------|-------------|-------------|
 | **Ribeye Steak** | 1.5"+ thick. Bone-in preferred. | [🔍 ribeye steak bone in prime](https://www.amazon.com/s?k=ribeye+steak+bone+in+prime&tag=alexcook05-20) |
 | **NY Strip** | The weeknight steak | [🔍 New York strip steak](https://www.amazon.com/s?k=New+York+strip+steak&tag=alexcook05-20) |
@@ -313,7 +313,7 @@ I could have scraped Amazon and given you prices that would be outdated by the t
 
 ### Pork
 
-| Item | Alex's Take | Search Term |
+| Item | Alex's Take | Shop |
 |------|-------------|-------------|
 | **Pork Belly** | For chashu. For everything decadent. | [🔍 pork belly](https://www.amazon.com/s?k=pork+belly&tag=alexcook05-20) |
 | **Bacon (Thick-Cut)** | Nueske's or Benton's if you can get it | [🔍 thick cut bacon applewood](https://www.amazon.com/s?k=thick+cut+bacon+applewood&tag=alexcook05-20) |
@@ -321,7 +321,7 @@ I could have scraped Amazon and given you prices that would be outdated by the t
 
 ### Poultry
 
-| Item | Alex's Take | Search Term |
+| Item | Alex's Take | Shop |
 |------|-------------|-------------|
 | **Chicken Thighs** | Bone-in, skin-on. Always. | [🔍 chicken thighs bone in skin on](https://www.amazon.com/s?k=chicken+thighs+bone+in+skin+on&tag=alexcook05-20) |
 | **Chicken Livers** | For Freddy's frozen pops | [🔍 chicken livers](https://www.amazon.com/s?k=chicken+livers&tag=alexcook05-20) |
@@ -329,7 +329,7 @@ I could have scraped Amazon and given you prices that would be outdated by the t
 
 ### Seafood
 
-| Item | Alex's Take | Search Term |
+| Item | Alex's Take | Shop |
 |------|-------------|-------------|
 | **Salmon** | Wild-caught. Skin-on. | [🔍 wild salmon fillet](https://www.amazon.com/s?k=wild+salmon+fillet&tag=alexcook05-20) |
 | **White Fish** | For moqueca. Cod, halibut, mahi-mahi. | [🔍 cod fillet wild](https://www.amazon.com/s?k=cod+fillet+wild&tag=alexcook05-20) |
@@ -341,7 +341,7 @@ I could have scraped Amazon and given you prices that would be outdated by the t
 
 ### Pup Treat Essentials
 
-| Item | Alex's Take | Search Term |
+| Item | Alex's Take | Shop |
 |------|-------------|-------------|
 | **Peanut Butter (XYLITOL-FREE!)** | THIS IS CRITICAL. Check the label twice. | [🔍 peanut butter xylitol free dog safe](https://www.amazon.com/s?k=peanut+butter+xylitol+free+dog+safe&tag=alexcook05-20) |
 | **Pumpkin Puree** | NOT pie filling. Plain pumpkin. For digestion. | [🔍 pumpkin puree plain no spice](https://www.amazon.com/s?k=pumpkin+puree+plain+no+spice&tag=alexcook05-20) |
@@ -355,7 +355,7 @@ I could have scraped Amazon and given you prices that would be outdated by the t
 
 ## ☕ COFFEE & TEA: The Fuel
 
-| Item | Alex's Take | Search Term |
+| Item | Alex's Take | Shop |
 |------|-------------|-------------|
 | **Coffee Grinder (Burr)** | Fresh ground only. Blade grinders are for spices. | [🔍 Baratza Encore coffee grinder](https://www.amazon.com/s?k=Baratza+Encore+coffee+grinder&tag=alexcook05-20) |
 | **Pour-Over Setup** | Chemex or Hario V60 | [🔍 Chemex pour over coffee maker](https://www.amazon.com/s?k=Chemex+pour+over+coffee+maker&tag=alexcook05-20) |
@@ -371,7 +371,7 @@ I could have scraped Amazon and given you prices that would be outdated by the t
 
 ### Spirits
 
-| Item | Alex's Take | Search Term |
+| Item | Alex's Take | Shop |
 |------|-------------|-------------|
 | **Tequila (Blanco, 100% Agave)** | For margaritas. Fortaleza or Espolón. | [🔍 Espolon blanco tequila](https://www.amazon.com/s?k=Espolon+blanco+tequila&tag=alexcook05-20) |
 | **Cachaça** | For caipirinhas. The real Brazilian spirit. | [🔍 Leblon cachaca](https://www.amazon.com/s?k=Leblon+cachaca&tag=alexcook05-20) |
@@ -382,7 +382,7 @@ I could have scraped Amazon and given you prices that would be outdated by the t
 
 ### Bar Tools
 
-| Item | Alex's Take | Search Term |
+| Item | Alex's Take | Shop |
 |------|-------------|-------------|
 | **Cocktail Shaker** | Boston shaker if you're serious | [🔍 Boston shaker cocktail](https://www.amazon.com/s?k=Boston+shaker+cocktail&tag=alexcook05-20) |
 | **Jigger** | Japanese style. For accuracy. | [🔍 Japanese jigger cocktail](https://www.amazon.com/s?k=Japanese+jigger+cocktail&tag=alexcook05-20) |
@@ -395,7 +395,7 @@ I could have scraped Amazon and given you prices that would be outdated by the t
 
 ## 📚 BOOKS: Because You Should Keep Learning
 
-| Book | Why | Search Term |
+| Book | Why | Shop |
 |------|-----|-------------|
 | **Salt, Fat, Acid, Heat** | Samin Nosrat teaches the fundamentals | [🔍 Salt Fat Acid Heat Samin Nosrat](https://www.amazon.com/s?k=Salt+Fat+Acid+Heat+Samin+Nosrat&tag=alexcook05-20) |
 | **The Food Lab** | Kenji López-Alt is a genius | [🔍 The Food Lab Kenji](https://www.amazon.com/s?k=The+Food+Lab+Kenji&tag=alexcook05-20) |
@@ -448,11 +448,10 @@ I could have scraped Amazon and given you prices that would be outdated by the t
 
 ## 🔗 How to Actually Shop This List
 
-1. **Copy any search term** from the tables above
-2. **Paste into Amazon.com** search bar
-3. **Sort by rating** and check reviews
-4. **Compare Prime options** for shipping
-5. **Look for Subscribe & Save** on pantry items (saves 5-15%)
+1. **Click any 🔍 link** in the tables above — goes directly to Amazon search
+2. **Sort by rating** and check reviews
+3. **Compare Prime options** for shipping
+4. **Look for Subscribe & Save** on pantry items (saves 5-15%)
 
 ### Pro Tips
 - **CamelCamelCamel.com** — Track price history on any Amazon product
@@ -469,6 +468,10 @@ I could have scraped Amazon and given you prices that would be outdated by the t
 *Now go fill that cart.* 🛒
 
 — **Alex Cook**
+
+---
+
+> **📋 Affiliate Disclosure:** The links in this chapter are affiliate links. As an Amazon Associate, I earn from qualifying purchases — at no extra cost to you. This helps support the cookbook and keeps Alex cooking up new recipes. Thank you for your support! ❤️
 
 ---
 
