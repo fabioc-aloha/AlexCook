@@ -93,7 +93,7 @@ node build/convert-svgs.js
 <text x="25" y="45" font-size="28">🥣</text>
 
 // Transformed to embedded image:
-<image x="25" y="21" width="28" height="28" 
+<image x="25" y="21" width="28" height="28"
        href="data:image/png;base64,iVBORw0KGgo..."/>
 ```
 
@@ -340,6 +340,42 @@ LaTeX preamble with:
 - **Pandoc** 3.0+ (Markdown→LaTeX)
 - **LuaLaTeX** (TeX Live or MiKTeX)
 - **TikZ** package (for cover page)
+
+---
+
+### 7. `cookbook-qa.ps1` — Quality Assurance
+
+**Purpose:** Automated QA analysis for the generated PDF — checks consistency, typos, and character references.
+
+**Location:** `build/cookbook-qa.ps1`
+
+**Usage:**
+```powershell
+.\build\cookbook-qa.ps1
+.\build\cookbook-qa.ps1 -PdfPath ".\book\output\The-Alex-Cookbook-Digital.pdf"
+.\build\cookbook-qa.ps1 -OutputReport ".\book\output\qa-report.txt"
+```
+
+**How it works:**
+1. Extracts text from PDF using `pdftotext` (Poppler)
+2. Analyzes document statistics (word count, page estimate)
+3. Checks character emoji consistency (Alex=🧑‍🍳, Claudia=👩‍🦱, Douglas=🧒, Freddy=🐕, Jolly=🐩)
+4. Verifies pronoun consistency per character
+5. Detects common typos (doubled words, misspellings)
+6. Validates difficulty and IBS terminology
+
+**Character definitions:**
+```powershell
+$CharacterEmojis = @{
+    "Alex"    = "🧑‍🍳"    # Chef emoji
+    "Claudia" = "👩‍🦱"    # Woman brunette
+    "Douglas" = "🧒"      # Child
+    "Freddy"  = "🐕"      # Dog
+    "Jolly"   = "🐩"      # Poodle
+}
+```
+
+**Requires:** `pdftotext` from Poppler (or MiKTeX)
 
 ---
 
