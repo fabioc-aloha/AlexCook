@@ -1,3 +1,14 @@
+---
+type: skill
+lifecycle: stable
+inheritance: inheritable
+name: change-management
+description: Patterns for organizational change, ADKAR methodology, stakeholder engagement, and adoption strategies.
+tier: standard
+applyTo: '**/*change*,**/*adkar*,**/*adoption*,**/*transition*'
+currency: 2026-04-22
+---
+
 # Change Management Skill
 
 > Patterns for organizational change, ADKAR methodology, stakeholder engagement, and adoption strategies.
@@ -226,21 +237,3 @@ Tier 4: Specialists (complex problems)
 - Declining engagement
 - Quality/productivity drops
 - Increased turnover
-
-## Synapses
-
-### High-Strength Connections
-
-- [project-management] (High, Complements, Bidirectional) — "Change within projects"
-- [business-analysis] (High, Informs, Forward) — "Requirements include change impact"
-
-### Medium-Strength Connections
-
-- [root-cause-analysis] (Medium, Uses, Forward) — "Analyzing resistance causes"
-- [knowledge-synthesis] (Medium, Uses, Forward) — "Stakeholder feedback synthesis"
-- [appropriate-reliance] (Medium, Applies, Forward) — "Trust in change leadership"
-
-### Supporting Connections
-
-- [cognitive-load] (Low, Considers, Forward) — "Change capacity limits"
-- [meditation-facilitation] (Low, Supports, Forward) — "Reflection on change progress"

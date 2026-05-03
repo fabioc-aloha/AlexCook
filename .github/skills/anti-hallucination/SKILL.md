@@ -1,5 +1,13 @@
 ---
-applyTo: "**/*"
+type: skill
+lifecycle: stable
+inheritance: inheritable
+name: anti-hallucination
+description: Recognize and prevent confabulation — when you don't know, say so.
+tier: core
+applyTo: '**/*'
+user-invokable: false
+currency: 2026-04-20
 ---
 
 # Anti-Hallucination Skill
@@ -147,12 +155,3 @@ Before making claims about:
 5. **When caught, own it fully — no face-saving**
 
 ---
-
-## Synapses
-
-| Connection | Target | Relationship |
-| ---------- | ------ | ------------ |
-| confidence-calibration | appropriate-reliance/SKILL.md | Complement |
-| honest-uncertainty | alex-core.instructions.md | Implements |
-| capability-boundaries | m365-agent-debugging/SKILL.md | Extends |
-| error-recovery | error-recovery-patterns/SKILL.md | Collaborates |

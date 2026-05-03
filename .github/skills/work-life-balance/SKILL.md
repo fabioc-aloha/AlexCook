@@ -1,5 +1,12 @@
 ---
-applyTo: "**/*focus*,**/*session*,**/*goal*,**/*streak*,**/*break*,**/*health*"
+type: skill
+lifecycle: stable
+inheritance: inheritable
+name: work-life-balance
+description: Detect burnout signals and proactively support sustainable productivity.
+tier: extended
+applyTo: '**/*focus*,**/*session*,**/*goal*,**/*streak*,**/*break*,**/*health*'
+currency: 2026-04-22
 ---
 
 # Work-Life Balance Skill
@@ -114,7 +121,3 @@ Monitor interaction patterns for work-life balance issues and intervene before b
 - **Learning Goals**: Balance ambition with sustainability
 - **Streaks**: Celebrate without creating guilt
 - **Health Dashboard**: Visualize patterns non-judgmentally
-
-## Synapses
-
-See [synapses.json](synapses.json) for connections.

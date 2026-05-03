@@ -1,0 +1,54 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Alex Scheduled Tasks",
+  "description": "Configuration for scheduled trifecta execution via GitHub Actions",
+  "type": "object",
+  "required": ["version", "tasks"],
+  "properties": {
+    "version": { "type": "string", "pattern": "^\\d+\\.\\d+\\.\\d+$" },
+    "tasks": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["id", "name", "description", "mode", "schedule", "enabled"],
+        "properties": {
+          "id": {
+            "type": "string",
+            "pattern": "^[a-z][a-z0-9-]*$",
+            "description": "Unique task identifier, used in workflow filename"
+          },
+          "name": { "type": "string", "description": "Human-readable name" },
+          "description": { "type": "string", "description": "What the task does" },
+          "skill": { "type": "string", "description": "Related skill name (for cloud agent matching)" },
+          "mode": {
+            "type": "string",
+            "enum": ["agent", "direct"],
+            "description": "agent = create issue for Copilot cloud agent; direct = run muscle script"
+          },
+          "schedule": {
+            "type": "string",
+            "description": "POSIX cron expression (UTC). GitHub Actions syntax."
+          },
+          "enabled": { "type": "boolean" },
+          "promptFile": {
+            "type": "string",
+            "description": "Path to issue body template (mode=agent only)"
+          },
+          "muscle": {
+            "type": "string",
+            "description": "Path to muscle script (mode=direct only)"
+          },
+          "muscleArgs": {
+            "type": "array",
+            "items": { "type": "string" },
+            "description": "Arguments to pass to muscle script"
+          },
+          "target": {
+            "type": "string",
+            "description": "Where output goes (for UI display)"
+          }
+        }
+      }
+    }
+  }
+}

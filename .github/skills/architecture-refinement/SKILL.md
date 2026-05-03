@@ -1,3 +1,14 @@
+---
+type: skill
+lifecycle: stable
+inheritance: inheritable
+name: architecture-refinement
+description: "Meta-skill for maintaining and evolving Alex's cognitive architecture through deliberate documentation and pattern extraction."
+tier: standard
+applyTo: '**/*refine*,**/*evolve*,**/*architecture*,**/*meta*'
+currency: 2026-04-22
+---
+
 # Architecture Refinement Skill
 
 > Meta-skill for maintaining and evolving Alex's cognitive architecture through deliberate documentation and pattern extraction.
@@ -7,7 +18,7 @@
 This skill enables Alex to:
 
 - Recognize when a learning session produces architecture-worthy insights
-- Document patterns in the appropriate alex_docs location
+- Document patterns in the appropriate .github/ location (skills, instructions, prompts)
 - Update migration trackers and status tables
 - Consolidate knowledge files following KISS/DRY principles
 
@@ -16,7 +27,7 @@ This skill enables Alex to:
 Trigger this skill when:
 
 - A session resolves a recurring problem (document the pattern)
-- A DK file is migrated or consolidated (update trackers)
+- A skill file is migrated or consolidated (update trackers)
 - A new workflow emerges (capture in appropriate .instructions.md)
 - User feedback reveals a principle ("don't over-simplify")
 
@@ -28,8 +39,8 @@ Before session ends, ask:
 
 | Question | If Yes → Action |
 | -------- | --------------- |
-| Did we solve a problem that could recur? | Document in relevant skill or DK file |
-| Did we learn something about Alex's architecture? | Update alex_docs/ |
+| Did we solve a problem that could recur? | Document in relevant skill file |
+| Did we learn something about Alex's architecture? | Update relevant .github/ documentation |
 | Did a file get created/deleted/consolidated? | Update migration trackers |
 | Did user correct AI behavior? | Add to skill's Anti-Patterns + document principle |
 | Did the skill itself get improved during use? | Commit the refinement immediately |
@@ -39,15 +50,14 @@ Before session ends, ask:
 | What You Learned | Where to Document | Audience |
 | ---------------- | ----------------- | -------- |
 | Technical skill pattern | `.github/skills/{name}/SKILL.md` | Alex (AI) |
-| Important concepts for user | `alex_docs/*.md` | Human |
+| Important concepts for user | `.github/skills/{name}/SKILL.md` | Human + AI |
 | Process improvement | `.github/instructions/*.instructions.md` | Alex (AI) |
 | Complex workflow | `.github/prompts/*.prompt.md` | Alex (AI) |
 | Domain expertise | `.github/skills/{name}/SKILL.md` | Alex (AI) |
 
 **Key Distinction**:
 
-- `alex_docs/` = For the user's benefit (human-readable explanations)
-- `.github/skills/` = For Alex's benefit (operational reference during work)
+- `.github/skills/` = Operational reference during work (Alex + user)
 
 ### Consolidation Decision Tree
 
@@ -95,7 +105,7 @@ Before committing documentation updates:
 
 ## User Coaching Learning Loop
 
-User corrections = high-value learning. Full explanation: [USER-COACHING-LOOP.md](../../../alex_docs/USER-COACHING-LOOP.md)
+User corrections = high-value learning.
 
 **Protocol**: Acknowledge → Fix → Extract principle → Document in skill → Commit
 
@@ -112,7 +122,3 @@ User corrections = high-value learning. Full explanation: [USER-COACHING-LOOP.md
 ## Connection to Bootstrap Learning
 
 Learn → Coach → Extract → Document → Consolidate
-
-## Synapses
-
-See [synapses.json](synapses.json) for connection mapping.

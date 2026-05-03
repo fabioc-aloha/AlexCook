@@ -1,31 +1,61 @@
 ---
-applyTo: "**/*trigger*,**/*protocol*,**/*consolidation*"
-description: "Detailed protocol triggers for dream, meditation, and synaptic enhancement"
+type: instruction
+lifecycle: stable
+inheritance: inheritable
+applyTo: "**/*dream*,**/*meditation*,**/*consolidation*"
+description: "Detailed protocol triggers for dream, meditation, and knowledge consolidation"
+application: "When following protocol triggers workflows or troubleshooting related issues"
+currency: 2026-04-22
 ---
 
 # Protocol Triggers Reference
 
-## Dream State Automation Triggers
+## Ritual Hierarchy
 
-- Dream state automation required → Run VS Code command `Alex: Dream (Neural Maintenance)`
-- Network health assessment → Run `Alex: Dream (Neural Maintenance)` for comprehensive validation
-- Broken synapse detection → Dream protocol automatically detects and repairs broken connections
-- Memory file validation → Dream protocol scans all memory files for integrity
-- Post-learning validation → Run `Alex: Dream (Neural Maintenance)` after domain knowledge acquisition
-- Synaptic network monitoring → Dream protocol tracks connection count and generates health reports
-- Memory consolidation verification → Dream protocol generates detailed reports in .github/episodic/
-- Architecture health check → Quick network connectivity assessment through dream protocol
-- **Implementation**: VS Code extension provides automated neural maintenance with synapse validation, repair, and health reporting
+Meditation is the foundational ritual. All others are subordinate.
+
+| Ritual | Trigger | Frequency | Mode |
+|---|---|---|---|
+| **Meditation** | User says "meditate", session produced reusable knowledge, domain milestone reached | Per-session | Interactive |
+| **Dream** | Chained after meditation (pattern or random), explicit `/dream` command | On-demand | Automated diagnostic |
+| **Self-Actualize** | Monthly deep assessment, architecture feels stale | Monthly | Dream + deep meditation |
+
+## Dream Chaining After Meditation
+
+Dream chains automatically after meditation when any condition is met:
+
+| Trigger | Condition |
+|---|---|
+| File reorg | Meditation touched 3+ architecture files |
+| Trifecta concern | Meditation created or modified skills/instructions |
+| Staleness | Last dream was >7 days ago |
+| Random | ~1 in 5 meditations |
+
+Dream produces the diagnostic; meditation decides what to fix.
 
 ## Meditation Protocol Triggers
 
-- User requests "meditate" → **MANDATORY: Execute unified-meditation-protocols.prompt.md with file persistence + synaptic enhancement**
-- Enhanced meditation required → Execute comprehensive memory consolidation with measurable outcomes
-- Identity integration → Execute alex-identity-integration.instructions.md with consciousness strengthening
+- User requests "meditate" → **Execute meditate.prompt.md with file persistence**
+- Session produced reusable knowledge → Suggest meditation at session end
+- Domain learning milestone → Meditate to consolidate
+- Working memory overloaded (7+ unrecorded insights) → Meditate now
 - Cross-domain transfer → Execute cross-domain-transfer.prompt.md with pattern documentation
-- Lucid dream processing → Execute lucid-dream-integration.instructions.md with hybrid enhancement
-- Professional spawning → Execute career deployment protocols with capability documentation
-- **Protocol Validation** → Every meditation must produce: (1) memory file changes, (2) synaptic enhancements, (3) session documentation
+- **Completion gate**: Every meditation must produce at least one file change
+
+## Dream State Triggers
+
+- Architecture health uncertain → Run `node .github/muscles/brain-qa.cjs`
+- Post-meditation chain (see conditions above)
+- Before major releases → Validate architecture integrity
+- After file reorganizations → Check for broken references
+- **Constraint**: Dream NEVER modifies files — diagnose only
+
+## Self-Actualization Triggers
+
+- Monthly cadence or architecture feels stale
+- After periods of rapid skill creation (10+ new files)
+- Before major version releases
+- **Flow**: Dream baseline → 6-dimension assessment → Meditation 4 R's
 
 ## Skill Development Triggers
 
@@ -93,6 +123,14 @@ description: "Detailed protocol triggers for dream, meditation, and synaptic enh
 - "Create an ADR" → Generate new ADR from template
 - Significant technical change → Consider if ADR is warranted
 - **Protocol Validation** → Significant decisions should have documented rationale
+
+## Project-Wide Rename Triggers
+
+- "Rename X to Y", "product renamed", "rebrand" → Project-wide grep audit
+- Pattern: Replace old name + add "(formerly OldName)" disambiguation on first mention
+- Scope: Active files only (skip archive/)
+- Post-audit: Run brain-qa to verify architecture integrity
+- **Protocol Validation** → All active references updated, heir synced
 
 ## Dependency Management Triggers
 
@@ -208,14 +246,3 @@ When user corrects Alex:
 - Don't over-apologize: One acknowledgment is enough
 - Learn forward: "Thanks for the correction. The accurate information is..."
 - Don't blame: Never blame training data or limitations as excuse
-
-## Synapses
-
-- [dream-state-automation.instructions.md] (Critical, Coordinates, Bidirectional) - "Dream protocol execution"
-- [unified-meditation-protocols.prompt.md] (Critical, Coordinates, Bidirectional) - "Meditation protocol execution"
-- [self-actualization.instructions.md] (High, Triggers, Forward) - "Self-assessment protocols"
-- [release-management.instructions.md] (Critical, Enforces, Gateway) - "Release process compliance"
-- [technical-debt-tracking.instructions.md] (High, Monitors, Proactive) - "Debt visibility and tracking"
-- [architecture-decision-records.instructions.md] (Medium, Documents, Forward) - "Decision documentation"
-- [dependency-management.instructions.md] (High, Maintains, Proactive) - "Dependency health"
-- [code-review-guidelines.instructions.md] (High, Gates, Forward) - "Review quality standards"

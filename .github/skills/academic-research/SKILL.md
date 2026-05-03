@@ -1,72 +1,70 @@
-# Academic Research Skill
+---
+type: skill
+lifecycle: stable
+inheritance: inheritable
+name: academic-research
+description: Research project scaffolding, thesis/dissertation writing, literature reviews, publication workflows, and Alex-assisted academic workflows
+tier: extended
+category: documentation
+applyTo: '**/*paper*,**/*manuscript*,**/*journal*,**/*thesis*,**/*dissertation*,**/*research*,**/*academic*'
+currency: 2026-04-20
+---
 
-> Patterns for thesis writing, dissertations, research papers, literature reviews, and scholarly work.
+# Academic Research
+
+> Complete research lifecycle: project setup, literature review, writing, publication, and defense.
+
+---
+
+## Project Structure
+
+```
+research-project/
+├── .github/
+│   └── copilot-instructions.md    # Research context for Alex
+├── docs/
+│   ├── RESEARCH-PLAN.md           # Questions, timeline, milestones
+│   ├── METHODOLOGY.md             # Design decisions
+│   └── DECISION-LOG.md            # Key decisions with rationale
+├── data/
+│   ├── raw/                       # Untouched source data
+│   ├── processed/                 # Cleaned/transformed
+│   └── DATA-DICTIONARY.md         # Variable definitions
+├── analysis/
+│   ├── scripts/                   # Analysis code
+│   └── outputs/                   # Figures, tables
+├── writing/
+│   ├── drafts/                    # Work in progress
+│   └── submissions/               # Submitted versions
+├── references/
+│   ├── LITERATURE-MATRIX.md       # Systematic tracking
+│   └── notes/                     # Reading notes
+└── README.md
+```
+
+### Quick Setup
+
+```bash
+mkdir -p .github docs data/{raw,processed} analysis/{scripts,outputs} writing/{drafts,submissions} references/notes
+touch docs/RESEARCH-PLAN.md docs/METHODOLOGY.md references/LITERATURE-MATRIX.md .github/copilot-instructions.md
+```
+
+---
 
 ## Research Project Types
 
-| Type | Duration | Output | Review Process |
-| ---- | -------- | ------ | -------------- |
+| Type | Duration | Output | Review |
+|------|----------|--------|--------|
 | Master's Thesis | 1-2 years | 80-150 pages | Committee defense |
 | PhD Dissertation | 3-7 years | 150-300+ pages | Committee + external |
-| Journal Article | 3-12 months | 5,000-10,000 words | Peer review (2-12 mo) |
-| Conference Paper | 2-6 months | 4,000-8,000 words | Peer review (2-4 mo) |
-| Literature Review | 1-6 months | 5,000-15,000 words | Varies |
-| Grant Proposal | 1-3 months | 5-50 pages | Panel review |
+| Journal Article | 3-12 months | 5,000-10,000 words | Peer review |
+| Conference Paper | 2-6 months | 4,000-8,000 words | Peer review |
 
-## Thesis/Dissertation Structure
-
-### Standard Chapter Flow
-
-1. **Introduction** — Problem, significance, research questions, scope
-2. **Literature Review** — Theoretical framework, prior work, gaps
-3. **Methodology** — Research design, data collection, analysis methods
-4. **Results/Findings** — Present data without interpretation
-5. **Discussion** — Interpret results, connect to literature
-6. **Conclusion** — Summary, contributions, limitations, future work
-
-### Variations by Discipline
-
-| Discipline | Structure Variation |
-| ---------- | ------------------- |
-| Sciences | Methods-heavy, often includes "Materials and Methods" |
-| Humanities | May have multiple analysis chapters by theme |
-| Social Sciences | Often has separate "Theoretical Framework" chapter |
-| Engineering | May include "Implementation" and "Evaluation" chapters |
-
-## Literature Review Strategies
-
-### Systematic Review Steps
-
-1. Define research questions
-2. Establish inclusion/exclusion criteria
-3. Search multiple databases
-4. Screen titles/abstracts
-5. Full-text review
-6. Data extraction
-7. Quality assessment
-8. Synthesis
-
-### Synthesis Approaches
-
-| Approach | When to Use |
-| -------- | ----------- |
-| **Thematic** | Organize by concepts/themes across sources |
-| **Chronological** | Show evolution of field over time |
-| **Methodological** | Compare research approaches |
-| **Theoretical** | Organize by competing frameworks |
-| **Concept Matrix** | Map concepts to sources in a table |
-
-### Literature Gap Types
-
-- **Empirical gap** — No studies in specific context
-- **Theoretical gap** — Theory not applied to this domain
-- **Methodological gap** — New methods could reveal new insights
-- **Population gap** — Understudied demographic
-- **Practical gap** — Theory exists but not applied
+---
 
 ## Research Question Development
 
-### PICO Framework (Empirical)
+### PICO Framework
 
 - **P**opulation — Who is being studied?
 - **I**ntervention — What is being tested?
@@ -76,132 +74,270 @@
 ### FINER Criteria
 
 | Criterion | Question |
-| --------- | -------- |
+|-----------|----------|
 | **F**easible | Can it be done with available resources? |
 | **I**nteresting | Does anyone care? |
 | **N**ovel | Does it add new knowledge? |
 | **E**thical | Can it be done ethically? |
 | **R**elevant | Does it matter to the field? |
 
-## Methodology Design
+---
+
+## Literature Review
+
+### Synthesis Approaches
+
+| Approach | When to Use |
+|----------|-------------|
+| **Thematic** | Organize by concepts across sources |
+| **Chronological** | Show field evolution |
+| **Methodological** | Compare research approaches |
+| **Concept Matrix** | Map concepts to sources in table |
+
+### Gap Types
+
+- **Empirical** — No studies in specific context
+- **Theoretical** — Theory not applied to domain
+- **Methodological** — New methods could reveal insights
+- **Population** — Understudied demographic
+
+### Literature Matrix Template
+
+```markdown
+| Citation | Year | Method | Findings | Gaps | Relevance |
+|----------|------|--------|----------|------|-----------|
+| Author1 et al. | 2024 | RCT | X | Y | ⭐⭐⭐ |
+```
+
+---
+
+## Methodology
 
 ### Qualitative Methods
 
-| Method | Best For | Sample Size |
-| ------ | -------- | ----------- |
+| Method | Best For | Sample |
+|--------|----------|--------|
 | Interviews | Deep understanding | 10-30 |
-| Focus Groups | Group dynamics | 4-8 per group |
-| Ethnography | Cultural context | 1+ settings |
-| Case Study | Detailed exploration | 1-10 cases |
+| Focus Groups | Group dynamics | 4-8/group |
+| Case Study | Detailed exploration | 1-10 |
 | Grounded Theory | Theory generation | Until saturation |
 
 ### Quantitative Methods
 
-| Method | Best For | Sample Size |
-| ------ | -------- | ----------- |
+| Method | Best For | Sample |
+|--------|----------|--------|
 | Survey | Breadth, generalization | 100-1000+ |
 | Experiment | Causation | Power analysis |
-| Quasi-experiment | When randomization impossible | Varies |
-| Secondary Analysis | Large datasets | Varies |
+| Quasi-experiment | No randomization | Varies |
 
-### Mixed Methods Designs
+### Mixed Methods
 
-- **Convergent** — Qual + quant simultaneously, merge results
-- **Explanatory Sequential** — Quant → Qual to explain findings
-- **Exploratory Sequential** — Qual → Quant to test findings
+- **Convergent** — Qual + quant simultaneously
+- **Explanatory Sequential** — Quant → Qual
+- **Exploratory Sequential** — Qual → Quant
 
-## Citation Management
+---
 
-### Citation Styles by Discipline
+## Thesis/Dissertation Structure
 
-| Style | Discipline |
-| ----- | ---------- |
-| APA 7 | Psychology, social sciences, education |
-| MLA 9 | Humanities, literature |
-| Chicago | History, some humanities |
-| IEEE | Engineering, computer science |
-| Vancouver | Medicine, biomedical |
-| Harvard | Business, some social sciences |
+1. **Introduction** — Problem, significance, research questions
+2. **Literature Review** — Framework, prior work, gaps
+3. **Methodology** — Design, collection, analysis
+4. **Results** — Data without interpretation
+5. **Discussion** — Interpret, connect to literature
+6. **Conclusion** — Summary, contributions, limitations
 
-### Citation Principles
+### Discipline Variations
 
-- Cite primary sources when possible
-- Acknowledge all borrowed ideas
-- Cite recent and foundational works
-- Balance seminal vs. contemporary
-- Avoid over-relying on single sources
+| Discipline | Variation |
+|------------|-----------|
+| Sciences | Methods-heavy |
+| Humanities | Multiple thematic chapters |
+| Social Sciences | Separate theoretical framework |
+| Engineering | Implementation + Evaluation chapters |
+
+---
+
+## Academic Writing
+
+### Hedging Language
+
+| Strong | Hedged |
+|--------|--------|
+| "This proves..." | "This suggests..." |
+| "Always causes" | "May contribute to" |
+| "Definitely shows" | "Evidence indicates" |
+
+### CARS Model (Introductions)
+
+1. **Establish territory** — topic importance
+2. **Establish niche** — gap in knowledge
+3. **Occupy niche** — your contribution
+
+### Citation Density
+
+| Section | Density |
+|---------|---------|
+| Abstract | None |
+| Introduction | Medium |
+| Related Work | High |
+| Methods | Low-Medium |
+| Results | Low |
+| Discussion | Medium |
+
+---
+
+## Publication Workflow
+
+### Venue Selection
+
+| Research Type | Venue |
+|---------------|-------|
+| User study with metrics | ACM CHI |
+| Business implications | Harvard Business Review |
+| Cognitive theory | Cognitive Systems Research |
+| Philosophical AI argument | Minds & Machines |
+
+### 5-Phase Process
+
+| Phase | Duration | Focus |
+|-------|----------|-------|
+| Preparation | 1-2 weeks | Literature, outline, figures |
+| Rough Draft | 1-2 weeks | Write without editing |
+| Revision | 1-2 weeks | Structure → Section → Paragraph → Sentence |
+| Feedback | 2-4 weeks | Advisor, peers |
+| Polish | 1 week | Format, citations, submit |
+
+### Responding to Reviews
+
+```markdown
+## Response to Reviewer 1
+
+### R1.1: "[Concern]"
+
+We appreciate this observation. [How addressed].
+
+Changes: Section X, paragraph Y: [new text]
+```
+
+---
 
 ## Committee Navigation
-
-### Advisor Relationship
-
-- Meet regularly (weekly/biweekly)
-- Come prepared with specific questions
-- Document agreements in writing
-- Manage expectations early
-- Give drafts with enough lead time
 
 ### Defense Preparation
 
 1. Anticipate likely questions
 2. Prepare 20-30 minute presentation
 3. Know your limitations
-4. Have backup slides for deep dives
+4. Have backup slides
 5. Practice with friendly audience
-6. Prepare for "So what?" questions
 
-### Common Committee Concerns
+### Common Concerns
 
-| Concern | How to Address |
-| ------- | -------------- |
-| "Why this topic?" | Strong motivation section |
-| "What's your contribution?" | Explicit contributions list |
+| Concern | Address With |
+|---------|--------------|
+| "Why this topic?" | Strong motivation |
+| "What's your contribution?" | Explicit list |
 | "How is this valid?" | Robust methodology |
-| "What about X?" | Acknowledge scope, future work |
-| "How does this connect?" | Clear theoretical framework |
+| "What about X?" | Scope, future work |
 
-## Academic Writing Quality
+---
 
-### Hedging Language
+## Citation Management
 
-| Strong Claim | Hedged Version |
-| ------------ | -------------- |
-| "This proves..." | "This suggests..." |
-| "Always causes" | "May contribute to" |
-| "Definitely shows" | "The evidence indicates" |
+| Style | Discipline |
+|-------|------------|
+| APA 7 | Psychology, social sciences |
+| MLA 9 | Humanities |
+| Chicago | History |
+| IEEE | Engineering, CS |
+| Vancouver | Medicine |
 
-### Signal Phrases by Purpose
+---
 
-| Purpose | Phrases |
-| ------- | ------- |
-| Agreement | "Consistent with...", "Similarly..." |
-| Contrast | "In contrast...", "However..." |
-| Extension | "Building on...", "Extending..." |
-| Gap | "Yet to be explored...", "Remains unclear..." |
+## Refactoring Existing Projects
 
-## Common Pitfalls
+### Audit Checklist
 
-| Problem | Solution |
-| ------- | -------- |
-| Scope creep | Define boundaries early, revisit often |
-| Literature overwhelm | Set search limits, use concept matrix |
-| Perfectionism | "Good enough" for drafts, perfect for final |
-| Isolation | Join writing groups, find accountability |
-| Imposter syndrome | Remember: you're learning, not failing |
+- [ ] Has .github/copilot-instructions.md
+- [ ] Data separated: raw vs processed
+- [ ] Research questions documented
+- [ ] Literature systematically tracked
+- [ ] Methodology decisions recorded
 
-## Synapses
+### Migration Pattern
 
-### High-Strength Connections
+```bash
+git mv old-data.csv data/raw/
+git mv cleaned.csv data/processed/
+git mv draft.docx writing/drafts/paper-v1.docx
+```
 
-- [writing-publication] (High, Complements, Bidirectional) — "Academic writing standards"
-- [bootstrap-learning] (High, Uses, Forward) — "Knowledge acquisition methodology"
+---
 
-### Medium-Strength Connections
+## File Templates
 
-- [knowledge-synthesis] (Medium, Uses, Forward) — "Literature synthesis patterns"
-- [root-cause-analysis] (Medium, Applies, Forward) — "Research problem analysis"
+### RESEARCH-PLAN.md
 
-### Supporting Connections
+```markdown
+# Research Plan: [Title]
 
-- [cognitive-load] (Low, Considers, Forward) — "Information chunking in writing"
-- [meditation] (Low, Supports, Forward) — "Knowledge consolidation after research sessions"
+## Research Questions
+1. Primary: [Main question]
+2. Secondary: [Supporting questions]
+
+## Timeline
+| Phase | Duration | Deliverable |
+|-------|----------|-------------|
+| Literature | Weeks 1-4 | Matrix complete |
+| Collection | Weeks 5-12 | Raw data |
+| Analysis | Weeks 13-16 | Results |
+| Writing | Weeks 17-20 | Draft |
+```
+
+### copilot-instructions.md (Research)
+
+```markdown
+# [Project] - Research Context
+
+## Current Phase
+- [x] Literature Review
+- [ ] Data Collection
+
+## Alex Guidance
+- Add literature to references/LITERATURE-MATRIX.md
+- Log decisions in docs/DECISION-LOG.md
+- Citation style: APA 7
+```
+
+---
+
+## Pre-Submission Checklist
+
+- [ ] Abstract stands alone
+- [ ] Contributions stated explicitly
+- [ ] All claims supported
+- [ ] Limitations acknowledged
+- [ ] References complete
+- [ ] Word limit respected
+- [ ] Anonymized if required
+
+---
+
+## Tools
+
+| Tool | Purpose |
+|------|---------|
+| Zotero | Reference management |
+| Overleaf | LaTeX collaboration |
+| Connected Papers | Literature discovery |
+| Pandoc | Markdown to Word/PDF |
+
+---
+
+## Related Skills
+
+- [literature-review](../literature-review/SKILL.md) — Systematic search
+- [citation-management](../citation-management/SKILL.md) — APA formatting
+- [md-to-word](../md-to-word/SKILL.md) — Document conversion
+- [dissertation-defense](../dissertation-defense/SKILL.md) — Defense preparation

@@ -1,0 +1,155 @@
+#!/usr/bin/env node
+/**
+ * @muscle new-skill
+ * @inheritance inheritable
+ * @description Create properly structured skill scaffolds with frontmatter
+ * @version 1.0.0
+ * @skill skill-building
+ * @reviewed 2026-04-15
+ * @platform windows,macos,linux
+ * @requires node
+ *
+ * New Skill Scaffold - Create properly structured skill with frontmatter.
+ * Cross-platform port of new-skill.ps1.
+ *
+ * Location: .github/muscles/new-skill.cjs
+ *
+ * Usage:
+ *   node new-skill.cjs <skill-name> [options]
+ *
+ * Options:
+ *   --inheritance TYPE   Inheritance: inheritable (default), universal, master-only, heir:vscode, heir:m365
+ *   --description DESC   Skill description
+ *   --domain DOMAIN      Skill domain
+ */
+
+'use strict';
+
+const fs = require('fs');
+const path = require('path');
+const { execSync } = require('child_process');
+
+// Parse arguments
+const args = process.argv.slice(2);
+const flags = {};
+let skillNameArg = null;
+
+for (let i = 0; i < args.length; i++) {
+  if (args[i] === '--name' && args[i + 1]) { skillNameArg = args[++i]; }
+  else if (args[i] === '--inheritance' && args[i + 1]) { flags.inheritance = args[++i]; }
+  else if (args[i] === '--description' && args[i + 1]) { flags.description = args[++i]; }
+  else if (args[i] === '--domain' && args[i + 1]) { flags.domain = args[++i]; }
+  else if (!args[i].startsWith('--')) { skillNameArg = args[i]; }
+}
+
+if (!skillNameArg) {
+  console.error('Usage: node new-skill.cjs <skill-name> [--inheritance inheritable] [--description "..."] [--domain "..."]');
+  console.error('  Inheritance: inheritable (default), universal, master-only, heir:vscode, heir:m365');
+  process.exit(1);
+}
+
+const validInheritance = ['inheritable', 'universal', 'master-only', 'heir:vscode', 'heir:m365'];
+const inheritance = flags.inheritance || 'inheritable';
+if (!validInheritance.includes(inheritance)) {
+  console.error(`[ERROR] Invalid inheritance: ${inheritance}. Must be one of: ${validInheritance.join(', ')}`);
+  process.exit(1);
+}
+
+// Normalize skill name (kebab-case)
+const skillName = skillNameArg
+  .replace(/\s+/g, '-')
+  .replace(/_/g, '-')
+  .replace(/[^a-zA-Z0-9-]/g, '')
+  .toLowerCase();
+
+// Paths
+const rootPath = path.resolve(__dirname, '..', '..');
+const templatePath = path.join(rootPath, '.github', 'skills', 'skill-building', 'skill.template.md');
+const skillsPath = path.join(rootPath, '.github', 'skills');
+const newSkillPath = path.join(skillsPath, skillName);
+
+// Validation
+if (fs.existsSync(newSkillPath)) {
+  console.error(`[ERROR] Skill already exists: ${skillName}`);
+  process.exit(1);
+}
+
+if (!fs.existsSync(templatePath)) {
+  console.error(`[ERROR] Skill template not found: ${templatePath}`);
+  process.exit(1);
+}
+
+// Create skill directory and copy template
+console.log(`Creating skill: ${skillName}`);
+fs.mkdirSync(newSkillPath, { recursive: true });
+fs.copyFileSync(templatePath, path.join(newSkillPath, 'SKILL.md'));
+
+// Generate display name
+const displayName = skillName.split('-').map(w => w.charAt(0).toUpperCase() + w.slice(1)).join(' ');
+const today = new Date().toISOString().slice(0, 10);
+
+// Update SKILL.md frontmatter
+const skillMdPath = path.join(newSkillPath, 'SKILL.md');
+let content = fs.readFileSync(skillMdPath, 'utf8');
+
+// Update template placeholders
+content = content.replace('name: "{skill-name}"', `name: "${displayName}"`);
+content = content.replace('{skill-name}', skillName);
+content = content.replace(/\{Skill Name\}/g, displayName);
+if (flags.description) {
+  content = content.replace(
+    'description: "{Brief description of what this skill provides}"',
+    `description: "${flags.description}"`
+  );
+  content = content.replace('{One-line description — what capability + who benefits}', flags.description);
+}
+if (flags.domain) {
+  content = content.replace('{Primary domain this workflow addresses}', flags.domain);
+}
+content = content.replace('{date}', today);
+content = content.replace('{category}', flags.domain || 'uncategorized');
+
+fs.writeFileSync(skillMdPath, content);
+
+// Register non-inheritable skills in SKILL_EXCLUSIONS
+const syncArchPath = path.join(rootPath, '.github', 'muscles', 'sync-architecture.cjs');
+if (inheritance !== 'inheritable' && inheritance !== 'universal' && fs.existsSync(syncArchPath)) {
+  let syncContent = fs.readFileSync(syncArchPath, 'utf8');
+  const pattern = /(const SKILL_EXCLUSIONS = \{[\s\S]*?)(\n\};)/;
+  const match = syncContent.match(pattern);
+  if (match) {
+    const pad = ' '.repeat(Math.max(1, 33 - skillName.length));
+    const newEntry = `\n    '${skillName}':${pad}'${inheritance}',`;
+    syncContent = syncContent.replace(pattern, `$1${newEntry}$2`);
+    fs.writeFileSync(syncArchPath, syncContent);
+    console.log(`[LIST] Registered in SKILL_EXCLUSIONS as '${inheritance}'`);
+  } else {
+    console.warn('[WARN] Could not find SKILL_EXCLUSIONS in sync-architecture.cjs');
+    console.warn(`   Manually add: '${skillName}': '${inheritance}'`);
+  }
+}
+
+// Success output
+console.log(`[OK] Created skill: ${skillName}`);
+console.log(`   Location: .github/skills/${skillName}/`);
+if (inheritance === 'inheritable' || inheritance === 'universal') {
+  console.log(`   Inheritance: ${inheritance} (syncs to all heirs automatically)`);
+} else {
+  console.log(`   Inheritance: ${inheritance} (registered in SKILL_EXCLUSIONS)`);
+}
+console.log('');
+console.log('Next steps:');
+console.log(`  1. Edit .github/skills/${skillName}/SKILL.md`);
+console.log('  2. Run: node .github/muscles/brain-qa.cjs --mode schema');
+console.log('  3. Add to memory-activation index if user-facing');
+if (inheritance !== 'inheritable' && inheritance !== 'universal') {
+  console.log(`  4. If creating trifecta siblings (.instructions.md, muscle scripts):`);
+  console.log(`     Add 'inheritance: ${inheritance}' to their YAML frontmatter`);
+  console.log('     to keep them excluded from the same heirs as the skill.');
+}
+
+// Open in VS Code if available
+try {
+  execSync(`code "${skillMdPath}"`, { stdio: 'ignore' });
+  console.log('\nOpening in VS Code...');
+} catch { /* code not available, skip */ }

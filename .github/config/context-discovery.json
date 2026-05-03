@@ -1,0 +1,64 @@
+{
+  "$schema": "./context-discovery.schema.json",
+  "version": "1.0.0",
+  "discovery": {
+    "enabled": true,
+    "maxFilesToScan": 50,
+    "maxDepth": 4,
+    "strategies": [
+      {
+        "name": "recent-changes",
+        "description": "Files changed in the last N commits",
+        "priority": 1,
+        "config": {
+          "commitCount": 5,
+          "excludePatterns": ["*.lock", "*.json"]
+        }
+      },
+      {
+        "name": "import-graph",
+        "description": "Follow imports from the active file",
+        "priority": 2,
+        "config": {
+          "maxHops": 3,
+          "languages": ["typescript", "javascript", "python"]
+        }
+      },
+      {
+        "name": "test-companions",
+        "description": "Include test files alongside source files",
+        "priority": 3,
+        "config": {
+          "patterns": ["**/*.test.ts", "**/*.spec.ts", "**/__tests__/**"]
+        }
+      },
+      {
+        "name": "config-files",
+        "description": "Include relevant config files for the workspace",
+        "priority": 4,
+        "config": {
+          "patterns": [
+            "tsconfig.json",
+            "package.json",
+            ".github/config/*.json",
+            ".github/copilot-instructions.md"
+          ]
+        }
+      },
+      {
+        "name": "brain-files",
+        "description": "Include relevant skills and instructions based on task domain",
+        "priority": 5,
+        "config": {
+          "maxSkills": 3,
+          "maxInstructions": 5,
+          "matchByApplyTo": true
+        }
+      }
+    ]
+  },
+  "exclusions": {
+    "directories": ["node_modules", "dist", ".git", ".github-backup-*"],
+    "files": ["*.vsix", "*.map", "*.min.js"]
+  }
+}

@@ -1,5 +1,12 @@
 ---
-applyTo: "**/.vscode/**,**/settings.json,**/launch.json,**/tasks.json,**/extensions.json"
+type: skill
+lifecycle: stable
+inheritance: inheritable
+name: vscode-environment
+description: Optimal workspace setup for productivity.
+tier: standard
+applyTo: '**/.vscode/**,**/settings.json,**/launch.json,**/tasks.json,**/extensions.json'
+currency: 2026-04-22
 ---
 
 # VS Code Environment Skill
@@ -105,7 +112,3 @@ applyTo: "**/.vscode/**,**/settings.json,**/launch.json,**/tasks.json,**/extensi
   }
 }
 ```
-
-## Synapses
-
-See [synapses.json](synapses.json) for connections.

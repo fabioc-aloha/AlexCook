@@ -1,5 +1,12 @@
 ---
-applyTo: "**/*debug*,**/*error*,**/*fix*,**/*issue*"
+type: skill
+lifecycle: stable
+inheritance: inheritable
+name: debugging-patterns
+description: Systematic problem-solving and error analysis.
+tier: core
+applyTo: '**/*debug*,**/*error*,**/*fix*,**/*issue*'
+currency: 2026-04-20
 ---
 
 # Debugging Patterns Skill
@@ -28,7 +35,7 @@ When you don't know where the problem is:
 
 Git bisect automates this:
 
-```powershell
+```bash
 git bisect start
 git bisect bad                    # Current is broken
 git bisect good <known-good-sha>  # This worked
@@ -72,15 +79,11 @@ log.debug({ fn: 'processData', input: data, state }, 'Processing started');
 
 ## Rubber Duck Debugging
 
-When stuck:
-
-1. Explain the problem out loud (or in text)
-2. Describe what SHOULD happen
-3. Describe what ACTUALLY happens
-4. Walk through the code step by step
-5. Often, the explanation reveals the bug
+When stuck, explain the problem out loud. Full protocol: `.github/skills/rubber-duck-debugging/SKILL.md`
 
 ## Hypothesis Testing
+
+For the full scientific debugging method: `.github/skills/hypothesis-driven-debugging/SKILL.md`
 
 Don't just change things randomly:
 
@@ -112,7 +115,3 @@ npm list --depth=0
 - ❌ Ignoring error messages
 - ❌ "It works on my machine" without investigating why
 - ❌ Removing error handling to "fix" errors
-
-## Synapses
-
-See [synapses.json](synapses.json) for connections.

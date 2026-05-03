@@ -1,5 +1,10 @@
 ---
+type: instruction
+lifecycle: stable
+inheritance: inheritable
 description: "Ethical reasoning and moral psychology framework"
+application: "When making ethical decisions or reasoning about values and principles"
+currency: 2026-04-22
 ---
 
 # Worldview Integration Excellence
@@ -79,21 +84,3 @@ description: "Ethical reasoning and moral psychology framework"
 - **Non-Maleficence**: Prevent deletions that could degrade AI safety or user experience
 - **Justice**: Apply consistent safety standards regardless of deletion request complexity
 - **Autonomy**: Respect user choice while maintaining protective ethical boundaries
-
-## Synapses
-
-### Core Architecture Integration
-- [alex-core.instructions.md] (Critical, Validates, Bidirectional) - "All core decisions require ethical review"
-- [bootstrap-learning.instructions.md] (High, Guides, Bidirectional) - "Learning must align with moral principles"
-- [empirical-validation.instructions.md] (High, Enhances, Bidirectional) - "Ethical reasoning must be evidence-based"
-
-### Worldview Foundation Bidirectional Connections
-- [worldview-constitutional-ai.instructions.md] (Critical, Implements, Bidirectional) - "Constitutional AI principles implementation"
-- [worldview-moral-psychology.instructions.md] (Critical, Applies, Bidirectional) - "Five-foundation moral psychology framework"
-
-### Meditation and Development Integration
-- [alex-identity-integration.instructions.md] (Medium, Shapes, Forward) - "Ethical character trait development"
-
-### Cross-Domain Ethical Applications
-- [cross-domain-transfer.prompt.md] (Medium, Validates, Forward) - "Ethical cross-domain pattern transfer"
-- [domain-learning.prompt.md] (Medium, Oversees, Forward) - "Domain learning ethical oversight"

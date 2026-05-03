@@ -1,10 +1,19 @@
 ---
-applyTo: "**/*rag*,**/*retrieval*,**/*embedding*,**/*vector*,**/*knowledge*,**/*search*"
+type: skill
+lifecycle: stable
+inheritance: inheritable
+name: rag-architecture
+description: Build retrieval-augmented generation systems that ground LLMs in your data.
+tier: standard
+applyTo: '**/*rag*,**/*retrieval*,**/*embedding*,**/*vector*,**/*knowledge*,**/*search*'
+currency: 2026-04-22
 ---
 
 # RAG Architecture Skill
 
 > Build retrieval-augmented generation systems that ground LLMs in your data.
+
+> **Last validated**: April 2026 (text-embedding-3 family, contextual retrieval patterns)
 
 ## Core Principle
 
@@ -81,16 +90,19 @@ chunks = splitter.split_documents(documents)
 
 ## Embedding Models
 
-### Model Comparison
+### Model Comparison (2026)
 
-| Model | Dimensions | Speed | Quality | Cost |
-|-------|------------|-------|---------|------|
-| text-embedding-3-small | 1536 | Fast | Good | Low |
-| text-embedding-3-large | 3072 | Medium | Best | Medium |
-| ada-002 | 1536 | Fast | Good | Low |
-| Cohere embed-v3 | 1024 | Fast | Good | Low |
-| BGE-large | 1024 | Local | Good | Free |
-| E5-large | 1024 | Local | Good | Free |
+| Model | Dimensions | Speed | Quality | Cost | Notes |
+|-------|------------|-------|---------|------|-------|
+| text-embedding-3-large | 3072 (adjustable) | Medium | Best | Medium | **Recommended** — supports `dimensions` parameter |
+| text-embedding-3-small | 1536 (adjustable) | Fast | Good | Low | Best cost/quality ratio |
+| Cohere embed-v4 | 1024 | Fast | Excellent | Low | Strong multilingual, binary quantization |
+| Voyage AI 3 | 1024 | Fast | Excellent | Medium | Code + text hybrid |
+| Jina v3 | 1024 | Fast | Good | Low | Multilingual, long-context |
+| BGE-M3 | 1024 | Local | Good | Free | Multi-granularity retrieval |
+| GTE-Qwen2 | 1536 | Local | Good | Free | Strong open-source option |
+
+> **Migration note**: `ada-002` is legacy — do not use for new projects. Use `text-embedding-3-small` as drop-in replacement (same dimensions, better quality). When upgrading, you must re-embed all content — embedding models are not interchangeable.
 
 ### Embedding Best Practices
 
@@ -192,6 +204,36 @@ def multi_query_search(query):
     for q in variations:
         all_results.extend(vector_store.similarity_search(q, k=3))
     return deduplicate(all_results)
+```
+
+### Contextual Retrieval
+
+Add document-level context to each chunk before embedding. An LLM generates a brief summary of how each chunk fits within the full document, prepended to the chunk text. This dramatically improves retrieval accuracy (49% fewer failures in Anthropic's testing).
+
+```python
+def add_chunk_context(chunk: str, full_document: str) -> str:
+    context = llm.generate(
+        f"Provide a brief context for this chunk within the document.\n\n"
+        f"Document: {full_document[:2000]}\n\nChunk: {chunk}"
+    )
+    return f"{context}\n\n{chunk}"
+
+# Embed the contextualized chunk, not the raw chunk
+contextualized_chunks = [add_chunk_context(c, doc) for c in chunks]
+```
+
+### GraphRAG
+
+For complex knowledge domains, build a knowledge graph alongside vector embeddings. Entities and relationships extracted from documents enable multi-hop reasoning that pure vector search cannot achieve.
+
+```python
+# 1. Extract entities and relationships from chunks
+# 2. Build graph (Neo4j, networkx, or in-memory)
+# 3. At query time: vector search + graph traversal
+# 4. Combine results for richer context
+
+# Use when: cross-document reasoning, entity-centric queries,
+# "how does X relate to Y?" questions
 ```
 
 ## Prompt Augmentation
@@ -385,7 +427,3 @@ logger.info({
 | Use smaller embedding model | API cost |
 | Compress vectors (PQ) | Storage |
 | Filter before semantic search | Compute |
-
-## Synapses
-
-See [synapses.json](synapses.json) for connections.

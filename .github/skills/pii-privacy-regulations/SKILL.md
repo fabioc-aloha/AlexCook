@@ -1,5 +1,12 @@
 ---
-applyTo: "**/*privacy*,**/*PII*,**/*personal*,**/*GDPR*,**/*data-protection*,**/*consent*,**/*user-data*"
+type: skill
+lifecycle: stable
+inheritance: inheritable
+name: pii-privacy-regulations
+description: Handling personally identifiable information under European and Australian privacy regulations.
+tier: extended
+applyTo: '**/*privacy*,**/*PII*,**/*personal*,**/*GDPR*,**/*data-protection*,**/*consent*,**/*user-data*'
+currency: 2026-04-22
 ---
 
 # PII & Privacy Regulations Skill
@@ -354,7 +361,3 @@ function pseudonymize(record: UserRecord): PseudonymizedRecord {
 - Data discovery and classification tools
 
 ---
-
-## Synapses
-
-See [synapses.json](synapses.json) for connections.

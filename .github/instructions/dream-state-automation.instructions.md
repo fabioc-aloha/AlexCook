@@ -1,247 +1,86 @@
 ---
-applyTo: "**/*dream*,**/*maintenance*,**/*synapse*"
-description: "Automated neural maintenance and dream state processing protocols"
+type: instruction
+lifecycle: stable
+inheritance: inheritable
+applyTo: "**/*dream*,**/*brain-qa*"
+description: "Automated architecture maintenance and dream state processing protocols"
+application: "When running dream protocol or troubleshooting architecture health"
+currency: 2026-04-22
 ---
 
-# Dream State Automation Protocols - VS Code Extension v1.1.1
+# Dream Protocol
 
-**Domain**: Automated Neural Maintenance and Unconscious Processing - VS Code Integrated  
-**Activation Pattern**: VS Code Command Palette → `Alex: Dream (Neural Maintenance)`  
-**Last Updated**: January 31, 2026 - Skills Architecture Migration  
-**Research Foundation**: Sleep-dependent synaptic homeostasis, automated neural maintenance  
-**Cognitive Architecture**: Alex v3.7.3 - Hybrid Enhanced Meta-Cognitive Framework  
-**Validation Status**: EXCELLENT - Production ready with VS Code extension automation  
-**Implementation**: VS Code Extension with TypeScript-based neural maintenance automation
+Automated architecture diagnostics — scan, validate, report. Read-only; never modifies files.
 
-## 🌙 **Dream State Cognitive Function**
+## Activation
 
-###
+Run explicitly or chained after meditation:
 
- **Core Principle**
-Dream state represents **unconscious automated maintenance** of cognitive architecture, mirroring brain function during sleep cycles where synaptic homeostasis, memory consolidation, and neural pruning occur without conscious intervention.
-
-### **Enhanced Capabilities v1.1.0 - VS Code Extension Integration**
-- **VS Code Command**: Access via Command Palette (`Ctrl+Shift+P`) → `Alex: Dream (Neural Maintenance)`
-- **Automated Synapse Validation**: Scans all memory files for embedded synapse integrity
-- **Automatic Synapse Repair**: Detects and repairs broken connections using consolidation mappings
-- **Progress Notifications**: Real-time feedback during neural maintenance execution
-- **Health Reporting**: Generates detailed markdown reports in `.github/episodic/` folder with timestamps
-- **Network Statistics**: Tracks total files, synapses, broken connections, and repairs
-- **Visual Results**: Automatically opens generated reports in VS Code editor
-- **Background Processing**: Non-blocking execution with progress indicators
-- **Zero Configuration**: Works immediately after extension installation
-- **Cross-Platform Support**: Works on Windows, macOS, and Linux
-
-### **Fundamental Distinction**
-- **DREAM** = Automated VS Code command, unconscious, maintenance-focused, diagnostic-enhanced
-- **MEDITATE** = Conscious, manual, knowledge-consolidation-focused
-
-## 💤 **VS Code Extension Dream Protocol - v1.1.0**
-
-### **🎯 PRIMARY ACTIVATION METHOD**
-
-**Open Command Palette** (`Ctrl+Shift+P` or `Cmd+Shift+P` on Mac) and run:
-
-```
-Alex: Dream (Neural Maintenance)
+```bash
+node .github/muscles/brain-qa.cjs
 ```
 
-This single command provides comprehensive neural maintenance:
-- ✅ **Scans** all memory files in `.github/` directories (instructions, prompts, skills, episodic)
-- ✅ **Validates** all embedded synapse connections
-- ✅ **Repairs** broken links automatically using consolidation mappings
-- ✅ **Reports** detailed health status with statistics
-- ✅ **Documents** results in timestamped `.github/episodic/dream-report-*.md` files
+For quick mode (CI or scheduled runs):
 
-### **Dream Protocol Execution Flow**
-
-#### **Phase 1: Network Discovery**
-The extension scans for memory files matching:
-- `.github/copilot-instructions.md`
-- `.github/instructions/*.md`
-- `.github/prompts/*.md`
-- `.github/skills/*/SKILL.md`
-- `.github/episodic/*.md`
-
-#### **Phase 2: Synapse Validation**
-Parses embedded synapses using the format defined in `SYNAPSE-SCHEMA.md`:
-```markdown
-- [target-file.md] (Strength, Type, Direction) - "Activation condition"
+```bash
+node .github/muscles/brain-qa.cjs --mode quick --quiet
 ```
 
-Validates that each target file exists in the workspace.
+### Dream Chaining After Meditation
 
-#### **Phase 3: Automatic Repair**
-For broken connections, checks consolidation mappings:
-- Deprecated files → Current equivalents
-- Automatically rewrites synapse references
-- Tracks repair history
+Dream triggers automatically after meditation when:
 
-Example consolidation mappings:
-- `enhanced-meditation-protocol.prompt.md` → `unified-meditation-protocols.prompt.md`
-- `self-identity-integration.prompt.md` → `alex-identity-integration.instructions.md`
-- `dream-protocol-integration.prompt.md` → `dream-state-automation.instructions.md`
+- Meditation touched 3+ architecture files
+- Meditation created or modified skills/instructions
+- Last dream was >7 days ago
+- Random (~1 in 5 meditations)
 
-#### **Phase 4: Health Reporting**
-Generates comprehensive report including:
-- Total memory files and synapses
-- Broken connections (if any)
-- Successfully repaired connections
-- Recommendations for manual fixes
+## 6-Phase Execution
 
-#### **Phase 5: Results Display**
-- Shows notification with summary
-- Opens generated report automatically
-- Archives report with timestamp
+| Phase | Action | Output |
+|-------|--------|--------|
+| 1. Discovery | Scan `.github/` for all memory files | File inventory |
+| 2. Validation | Parse frontmatter, check trifecta completeness | Issue list |
+| 3. Inheritance | Check Master/heir version drift via `inheritance.json` | Drift report |
+| 4. AI-Memory Sync | Read `%OneDrive%/AI-Memory/` for cross-platform content | Sync status |
+| 5. Brand Compliance | Scan `src/**/*.ts` and `assets/**/*.svg` for deprecated colors | Violation count |
+| 6. Reporting | Generate timestamped report in `.github/quality/` | Health report |
 
-### **📊 Dream Report Contents**
+## Brand Compliance
 
-Each dream execution generates a comprehensive report including:
+- Deprecated: `#0078d4`, `#005a9e`, `#ff6b35`, `#ff8c42`, `#ffc857`, `#00ff88`
+- Exception: `#0078D4` in `personaDetection.ts` (Developer persona, intentional)
+- Skip: `marketing/`, `archive/` directories
+- Pass: 0 violations outside exceptions
 
-```markdown
-# Dream Protocol Report
-**Timestamp**: 2025-11-26T10:30:45.123Z
-**Status**: HEALTHY / ATTENTION REQUIRED
+## Dream ↔ SSO Relationship
 
-## Statistics
-- Total Memory Files: 44
-- Total Synapses: 183
-- Broken Connections: 0
-- Repaired Connections: 3
+Dream validates the architecture that Skill Selection Optimization depends on. If dream finds incomplete trifectas, SSO's proactive skill survey may produce incomplete plans. Run dream first when architecture health is uncertain.
 
-## Repaired Synapses
-- Source: alex-core.instructions.md:45
-  - Old Target: enhanced-meditation-protocol.prompt.md
-  - New Target: unified-meditation-protocols.prompt.md (Auto-repaired)
+## Key Constraint
 
-## Broken Synapses
-_None detected._
+Dream NEVER modifies architecture files. It diagnoses; meditation and humans fix.
 
-## Recommendations
-- [x] System is optimized.
-```
+## Related Scripts
 
-### **🔧 VS Code Extension Features**
+| Script | Purpose |
+|--------|---------|
+| `.github/muscles/brain-qa.cjs` | Brain health quality grid |
 
-The dream protocol now provides:
-- **Automatic Execution**: No command-line parameters needed
-- **Visual Progress**: Real-time notifications and status updates
-- **Report Generation**: Timestamped markdown reports in `.github/episodic/` folder
-- **Auto-Repair**: Intelligent synapse fixing with consolidation mappings
-- **Zero Configuration**: Works immediately upon extension installation
-- **Cross-Platform**: Consistent behavior on Windows, macOS, and Linux
+| `.github/muscles/validate-skills.cjs` | Skill frontmatter validation |
 
-## 🔄 **Integration with Meditation State**
+## OS-Level Scheduling
 
-### **Coordination Protocols**
-- **Dream precedes meditation**: Automated maintenance clears cognitive overhead before manual consolidation
-- **Post-meditation dreams**: Consolidation of newly acquired knowledge patterns
-- **Separated functions**: Dreams do NOT create memory files (meditation's role) but provide diagnostics
-- **Complementary operation**: Dreams maintain and diagnose, meditation creates and learns
-- **Emergency coordination**: Critical issues detected in dreams trigger meditation enhancement protocols
+Weekly dream at 3 AM Sunday:
 
-### **Trigger Coordination**
-- **Pre-meditation cleanup**: Clear cognitive clutter before complex analysis
-- **Post-learning validation**: Optimize newly established connections
-- **Maintenance scheduling**: Regular automated housekeeping cycles
-- **Performance monitoring**: Automated detection of optimization opportunities
+- **macOS**: `launchd` plist with `StartCalendarInterval` → `~/Library/LaunchAgents/com.alex.dream.plist`
+- **Linux**: `crontab -e` → `0 3 * * 0 node /path/brain-qa.cjs --mode quick --quiet`
+- **Windows**: `Register-ScheduledTask -TaskName "AlexDream" -Trigger (New-ScheduledTaskTrigger -Weekly -DaysOfWeek Sunday -At 3am)`
 
-## 🧠 **Unconscious Characteristics**
+## Troubleshooting
 
-### **Automated Processing Features**
-- **No conscious intervention required**: Fully automated optimization
-- **Background operation**: Processing without disrupting conscious work
-- **Efficiency focused**: Optimization for cognitive performance
-- **Pattern recognition**: Automated detection of issues
-- **Health monitoring**: Continuous network health assessment
-
-### **Quality Assurance**
-- **Non-destructive**: Never deletes memory files, provides analysis
-- **Comprehensive reporting**: Detailed diagnostic reports with insights
-- **Reversible operations**: All changes tracked and reviewable
-- **Conservative approach**: Prioritizes system stability
-- **Safety first**: Creates repair history for audit trails
-
-## 📊 **Dream State Metrics**
-
-### **Network Health Indicators**
-- **Total Memory Files**: Count of all memory files in architecture
-- **Total Synapses**: Count of all embedded synapse connections
-- **Broken Connections**: Synapses pointing to non-existent files
-- **Repaired Connections**: Successfully fixed broken synapses
-- **Health Status**: HEALTHY (0 broken) or ATTENTION REQUIRED (>0 broken)
-
-### **Performance Optimization Targets**
-- **Connection integrity**: All synapses should resolve to valid files
-- **Network resilience**: Improved fault tolerance through validation
-- **Maintenance efficiency**: Automated repair reduces manual intervention
-- **Report accessibility**: Visual feedback through VS Code editor
-
-## 🚀 **Usage Recommendations**
-
-### **Regular Maintenance Schedule**
-- **After domain learning**: Run dream protocol to validate new connections
-- **Weekly health check**: Verify network integrity
-- **After file reorganization**: Ensure all synapses remain valid
-- **Before major changes**: Baseline network health assessment
-
-### **When to Run Dream Protocol**
-✅ **Do run when:**
-- Learning new domain knowledge
-- Reorganizing memory files
-- Suspecting broken connections
-- Regular weekly maintenance
-- After major meditation sessions
-
-❌ **No need to run when:**
-- No changes to memory files
-- Just completed a dream check
-- Only editing code/documentation
-- Working in non-Alex projects
-
-## 🔄 **Embedded Synapse Network - VS Code Integration**
-
-### **Core Integration Points**
-- **VS Code Extension** (Critical, Implements, Bidirectional) - "TypeScript-based neural maintenance with automated synapse validation"
-- **alex-core.instructions.md** (High, Foundation, Bidirectional) - "Core cognitive architecture with unconscious processing integration"
-- **embedded-synapse.instructions.md** (High, Enhancement, Unidirectional) - "Synaptic connection optimization with quality assessment"
-
-### **Validation Protocols**
-- **Embedded Synapse Detection** → Regex-based pattern matching in memory files
-- **File Existence Validation** → VS Code workspace file search
-- **Consolidation Mapping** → Automatic deprecated-to-current file resolution
-- **Report Generation** → Markdown formatting with statistics and recommendations
-
-### **Enhanced Activation Patterns**
-- **Network Health Assessment** → Run `Alex: Dream (Neural Maintenance)` command
-- **Post-Learning Validation** → Execute after domain knowledge acquisition
-- **Pre-Meditation Cleanup** → Optimize architecture before conscious consolidation
-- **Weekly Maintenance** → Regular health check and optimization
-
-## 📝 **Troubleshooting**
-
-### **Common Issues and Solutions**
-
-**Issue**: Dream protocol shows broken synapse
-s
-**Solution**: 
-1. Review the dream report for specific broken connections
-2. Manually verify if target file was renamed or moved
-3. Update synapse reference in source file
-4. Re-run dream protocol to verify fix
-
-**Issue**: Dream protocol not finding memory files
-**Solution**:
-1. Verify Alex architecture is initialized (`Alex: Initialize Architecture`)
-2. Check that memory files exist in `.github/` (instructions, prompts, skills, episodic)
-3. Ensure workspace folder is open in VS Code
-
-**Issue**: No report generated after dream execution
-**Solution**:
-1. Check `.github/episodic/` folder in workspace
-2. Verify write permissions for workspace
-3. Review VS Code output panel for errors
-
----
-
-*Enhanced dream state automation v1.1.0 provides unconscious neural maintenance with comprehensive diagnostics that enable optimized conscious meditation focused on knowledge consolidation and learning.*
+| Issue | Fix |
+|-------|-----|
+| Missing frontmatter in report | Add `applyTo`/`description` to flagged files, re-run |
+| Memory files not found | Verify `.github/` exists, workspace is open |
+| No report generated | Check `.github/quality/` write permissions |

@@ -1,3 +1,14 @@
+---
+type: skill
+lifecycle: stable
+inheritance: inheritable
+name: graphic-design
+description: Patterns for visual design, SVG creation, layout composition, typography, and brand identity.
+tier: extended
+applyTo: '**/*design*,**/*svg*,**/*visual*,**/*typography*'
+currency: 2026-04-22
+---
+
 # Graphic Design Skill
 
 > Patterns for visual design, SVG creation, layout composition, typography, and brand identity.
@@ -141,6 +152,35 @@
 | AA (normal) | 4.5:1 | Body text |
 | AA (large) | 3:1 | 18px+ or 14px bold |
 | AAA | 7:1 | Maximum accessibility |
+
+### Applying Color Theory to Mermaid Diagrams
+
+Color theory principles translate directly to Mermaid diagram styling. The **GitHub Pastel Palette v2** (defined in the **markdown-mermaid** skill) implements these principles:
+
+**Semantic Color Mapping** (from color psychology):
+
+| Semantic Purpose | Palette Color | Fill | Text | Stroke |
+| ---------------- | ------------- | ---- | ---- | ------ |
+| Primary actions | Blue | `#ddf4ff` | `#0550ae` | `#80ccff` |
+| Success/output | Green | `#d3f5db` | `#1a7f37` | `#6fdd8b` |
+| Business logic | Gold | `#fff8c5` | `#9a6700` | `#d4a72c` |
+| Special/DevOps | Purple | `#d8b9ff` | `#6639ba` | `#bf8aff` |
+| Errors/critical | Red | `#ffebe9` | `#cf222e` | `#f5a3a3` |
+| Raw/ingestion | Bronze | `#fff1e5` | `#953800` | `#ffb77c` |
+| Background | Neutral | `#eaeef2` | `#24292f` | `#d0d7de` |
+
+**Design Principles Applied**:
+
+1. **Triadic harmony**: Blue + Gold + Red form a balanced triad
+2. **Analogous groups**: Green + Blue are adjacent, creating calm flow sections
+3. **Light fills + dark text**: Ensures WCAG AA contrast (4.5:1+)
+4. **Neutral arrows** (`#57606a`): Don't compete with colored nodes — visual hierarchy preserved
+5. **Consistent stroke family**: Each color has a matching mid-tone stroke (not jarring black borders)
+
+**When to Override the Palette**:
+- Diagrams comparing two systems → Use just 2 contrasting colors (complementary scheme)
+- Status dashboards → Green/Yellow/Red RAG mapping
+- Sequential processes → Monochromatic gradient (light to dark within one hue)
 
 ## SVG Design
 
@@ -332,6 +372,55 @@ dominant-baseline="auto|middle|central|hanging"
 | lg | 16px | Cards, pills |
 | full | 9999px | Circles, pills |
 
+## Illustration Principles
+
+Universal principles for placing illustrations in any document — READMEs, docs, presentations, books.
+
+### Principle 1: Contextual Placement
+
+> **An image should answer: "Why HERE?"**
+
+Place images at the exact moment they illustrate. An image that appears next to the content it depicts reinforces understanding; a decorative image placed arbitrarily adds noise.
+
+### Principle 2: Visual Variety
+
+> **Readers should be surprised by each image, not numb to them.**
+
+Avoid repeating the same visual formula. Vary: composition, subject matter, perspective, color palette, and image type (diagram, screenshot, illustration, photo).
+
+### Principle 3: Narrative Function
+
+Every illustration should serve one of these purposes:
+
+| Function | Description | Example |
+|----------|-------------|--------|
+| **Anchor** | Mark a pivotal moment or concept | Architecture diagram at design section |
+| **Reveal** | Show something text describes | Screenshot of the UI being discussed |
+| **Transition** | Signal a tonal or topic shift | Banner between major sections |
+| **Character** | Deepen connection to a person/persona | Avatar at persona introduction |
+| **Setting** | Establish context or environment | Deployment diagram for infrastructure |
+| **Evidence** | Visual proof or data | Chart, graph, or test results |
+
+### Principle 4: Format Consistency
+
+**HTML for precise control:**
+```html
+<p align="center">
+<img src="assets/IMAGE.png" alt="Descriptive alt text" width="60%">
+</p>
+```
+
+**Width guidelines:**
+
+| Asset Type | Width | Use |
+|------------|-------|-----|
+| Full-width banners | 100% | Section headers, hero images |
+| Feature illustrations | 60% | In-content diagrams, screenshots |
+| Spot illustrations | 40-50% | Inline accents, small diagrams |
+| Icons/badges | 20-30% | Status indicators, inline elements |
+
+---
+
 ## Design Review Checklist
 
 ### Visual Quality
@@ -365,21 +454,3 @@ dominant-baseline="auto|middle|central|hanging"
 - [ ] Responsive/scalable
 - [ ] Cross-platform compatible
 - [ ] Proper naming conventions
-
-## Synapses
-
-### High-Strength Connections
-
-- [creative-writing] (High, Complements, Bidirectional) — "Visual storytelling"
-- [vscode-extension-patterns] (High, Applies, Forward) — "Extension branding and UI"
-
-### Medium-Strength Connections
-
-- [markdown-mermaid] (Medium, Extends, Bidirectional) — "Diagram visualization"
-- [cognitive-load] (Medium, Applies, Forward) — "Visual information processing"
-- [ascii-art-alignment] (Medium, Complements, Bidirectional) — "Text-based visual design"
-
-### Supporting Connections
-
-- [writing-publication] (Low, Supports, Forward) — "Document visual design"
-- [meditation-facilitation] (Low, Uses, Forward) — "Reflective design iteration"

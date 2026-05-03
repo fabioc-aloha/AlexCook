@@ -1,0 +1,14 @@
+{
+  "entries": [],
+  "toolCounts": {},
+  "_schema": {
+    "entries[]": {
+      "timestamp": "ISO 8601 timestamp",
+      "tool": "string (tool name)",
+      "success": "boolean"
+    },
+    "toolCounts": "Record<string, number> - aggregated per-tool counts"
+  },
+  "_maxEntries": 500,
+  "_notes": "Tool usage telemetry for efficiency analysis. Gitignored - local only."
+}

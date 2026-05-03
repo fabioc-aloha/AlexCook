@@ -1,0 +1,132 @@
+{
+    "hooks": {
+        "SessionStart": [
+            {
+                "hooks": [
+                    {
+                        "type": "command",
+                        "command": "node .github/muscles/hooks/session-start.cjs",
+                        "timeout": 5
+                    },
+                    {
+                        "type": "command",
+                        "command": "node .github/muscles/hooks/rai-session-safety.cjs",
+                        "timeout": 3
+                    }
+                ]
+            }
+        ],
+        "Stop": [
+            {
+                "hooks": [
+                    {
+                        "type": "command",
+                        "command": "node .github/muscles/hooks/stop.cjs",
+                        "timeout": 10
+                    },
+                    {
+                        "type": "command",
+                        "command": "node .github/muscles/hooks/auto-commit-suggest.cjs",
+                        "timeout": 5
+                    },
+                    {
+                        "type": "command",
+                        "command": "node .github/muscles/hooks/decision-journal.cjs",
+                        "timeout": 3
+                    },
+                    {
+                        "type": "command",
+                        "command": "node .github/muscles/hooks/rai-response-audit.cjs",
+                        "timeout": 3
+                    }
+                ]
+            }
+        ],
+        "PreToolUse": [
+            {
+                "hooks": [
+                    {
+                        "type": "command",
+                        "command": "node .github/muscles/hooks/pre-tool-use.cjs",
+                        "timeout": 2
+                    },
+                    {
+                        "type": "command",
+                        "command": "node .github/muscles/hooks/breaking-change-detector.cjs",
+                        "timeout": 2
+                    }
+                ]
+            }
+        ],
+        "PostToolUse": [
+            {
+                "hooks": [
+                    {
+                        "type": "command",
+                        "command": "node .github/muscles/hooks/post-tool-use.cjs",
+                        "timeout": 2
+                    },
+                    {
+                        "type": "command",
+                        "command": "node .github/muscles/hooks/targeted-test-runner.cjs",
+                        "timeout": 2
+                    },
+                    {
+                        "type": "command",
+                        "command": "node .github/muscles/hooks/output-secret-scan.cjs",
+                        "timeout": 2
+                    },
+                    {
+                        "type": "command",
+                        "command": "node .github/muscles/hooks/skill-weight-update.cjs",
+                        "timeout": 2
+                    }
+                ]
+            }
+        ],
+        "UserPromptSubmit": [
+            {
+                "hooks": [
+                    {
+                        "type": "command",
+                        "command": "node .github/muscles/hooks/prompt-safety-gate.cjs",
+                        "timeout": 2
+                    }
+                ]
+            }
+        ],
+        "SubagentStart": [
+            {
+                "hooks": [
+                    {
+                        "type": "command",
+                        "command": "node .github/muscles/hooks/subagent-context.cjs",
+                        "timeout": 3
+                    }
+                ]
+            }
+        ],
+        "SubagentStop": [
+            {
+                "hooks": [
+                    {
+                        "type": "command",
+                        "command": "node .github/muscles/hooks/subagent-stop.cjs",
+                        "timeout": 3
+                    }
+                ]
+            }
+        ],
+        "PreCompact": [
+            {
+                "hooks": [
+                    {
+                        "type": "command",
+                        "command": "node .github/muscles/hooks/pre-compact.cjs",
+                        "timeout": 5
+                    }
+                ]
+            }
+        ]
+    }
+}

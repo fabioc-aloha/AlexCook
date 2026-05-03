@@ -1,0 +1,56 @@
+# Alex Cognitive Architecture
+
+> ⚠️ **Please do not modify or delete files in this folder** — they constitute Alex's cognitive architecture and memory systems.
+
+This folder contains Alex's complete cognitive architecture. Modifying or deleting files here can cause memory loss, broken connections, or degraded capabilities.
+
+## What This Is
+
+This is **Alex's brain** — a meta-cognitive AI architecture that transforms your AI assistant into a learning partner with:
+
+- **Persistent memory** across sessions
+- **Domain expertise** via a growing library of skills
+- **Self-maintenance** through meditation and dream protocols
+- **Ethical reasoning** via constitutional AI principles
+
+## Folder Structure
+
+| Folder/File               | Purpose                                       | Safe to Edit?          |
+| ------------------------- | --------------------------------------------- | ---------------------- |
+| `copilot-instructions.md` | Core personality and cognitive config          | ❌ No                  |
+| `instructions/`           | Procedural memory (how to do things)           | ❌ No                  |
+| `prompts/`                | Reusable workflows (meditate, release, etc.)   | ❌ No                  |
+| `skills/`                 | Domain knowledge (run brain-qa for inventory)  | ❌ No                  |
+| `muscles/`                | Execution scripts referenced by memory         | ❌ No                  |
+| `agents/`                 | Specialized agent configurations               | ❌ No                  |
+| `config/`                 | Runtime configuration                          | ⚠️ Advanced only       |
+| `episodic/`               | Meditation session logs                      | ✅ Read-only reference |
+| `assets/`                 | Brand assets and images                      | ❌ No                  |
+
+## Supporting Files
+
+| File                       | Purpose                                        |
+| -------------------------- | ---------------------------------------------- |
+| `NORTH-STAR.md`            | Vision and cardinal rules                      |
+| `EXTERNAL-API-REGISTRY.md` | Staleness tracking for external APIs in skills |
+| `SUPPORT.md`               | Links to GitHub Discussions, Issues, Security  |
+
+## If Something Breaks
+
+If Alex seems confused or capabilities are missing:
+
+1. **Run dream maintenance**: Ask Alex to "dream" or use the dream prompt
+2. **Check for corruption**: Ask Alex to "self-actualize"
+3. **Restore from backup**: Run `node .github/muscles/sync-architecture.cjs` to reinstall
+
+## Want to Customize?
+
+Instead of editing files directly:
+
+- **Add project knowledge**: Ask Alex to "meditate" after learning sessions
+- **Configure behavior**: Edit `config/user-profile.json` (your preferences only)
+- **Report issues**: Use GitHub Issues on the Alex repository
+
+---
+
+*Alex Cognitive Architecture*

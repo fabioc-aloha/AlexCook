@@ -1,5 +1,12 @@
 {
-    "markdown.styles": [
-        ".vscode/markdown-light.css"
-    ]
+  "chat.useCustomAgentHooks": true,
+  "github.copilot.chat.copilotMemory.enabled": false,
+  "chat.customAgentInSubagent.enabled": true,
+  "chat.useNestedAgentsMdFiles": true,
+  "chat.includeReferencedInstructions": true,
+  "github.copilot.chat.agent.thinkingTool": true,
+  "chat.plugins.enabled": true,
+  "markdown.styles": [
+    ".vscode/markdown-light.css"
+  ]
 }

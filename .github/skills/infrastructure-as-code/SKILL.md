@@ -1,3 +1,14 @@
+---
+type: skill
+lifecycle: stable
+inheritance: inheritable
+name: infrastructure-as-code
+description: '**Domain**: DevOps & Cloud Engineering'
+tier: standard
+applyTo: '**/*iac*,**/*.bicep,**/*.tf,**/*terraform*,**/*pulumi*'
+currency: 2026-04-22
+---
+
 # Infrastructure as Code Skill
 
 > **Domain**: DevOps & Cloud Engineering
@@ -55,11 +66,14 @@ Manual Infrastructure          Infrastructure as Code
 | Tool | Provider | Language | State | Best For |
 |------|----------|----------|-------|----------|
 | **Terraform** | HashiCorp | HCL | Remote/Local | Multi-cloud, mature ecosystem |
+| **OpenTofu** | Linux Foundation | HCL | Remote/Local | OSS Terraform fork (BSL-free), drop-in replacement |
 | **Bicep** | Microsoft | Bicep DSL | Azure-managed | Azure-native, simple syntax |
 | **Pulumi** | Pulumi | TS/Python/Go/C# | Managed/Self | Developers who prefer real languages |
 | **CloudFormation** | AWS | YAML/JSON | AWS-managed | AWS-only, deep integration |
 | **ARM Templates** | Microsoft | JSON | Azure-managed | Legacy Azure (prefer Bicep) |
 | **CDK** | AWS | TS/Python/Java | AWS-managed | Developers on AWS |
+
+> **Azure Verified Modules (AVM)**: For Bicep and Terraform, prefer [AVM](https://azure.github.io/Azure-Verified-Modules/) — Microsoft-maintained, tested, WAF-aligned modules. Reduces boilerplate and enforces best practices. Tracked at `registry.terraform.io/namespaces/Azure` and Bicep public module registry.
 
 ---
 
@@ -675,6 +689,113 @@ resource "azurerm_linux_web_app" "main" {
 
 ---
 
+## MCP Tool Integration
+
+### Required Extensions & MCP Servers
+
+| Component | ID / Name | Purpose |
+|-----------|-----------|--------|
+| **VS Code Extension** | `ms-azuretools.vscode-bicep` | Bicep language support |
+| **VS Code Extension** | `hashicorp.terraform` | Terraform language support |
+| **VS Code Extension** | `ms-azuretools.vscode-azure-github-copilot` | Azure Copilot integration |
+| **MCP Server** | `bicep-mcp` | Bicep tools (AVM, schema, validation) |
+| **MCP Server** | `azure-mcp` | Azure architecture and deployment tools |
+
+**Installation**:
+```bash
+# VS Code Extensions
+code --install-extension ms-azuretools.vscode-bicep
+code --install-extension hashicorp.terraform
+code --install-extension ms-azuretools.vscode-azure-github-copilot
+
+# MCP Servers enabled via VS Code MCP gallery
+# Settings: chat.mcp.gallery.enabled = true
+```
+
+### Fallback Patterns (When MCP Unavailable)
+
+| MCP Tool | Fallback Approach |
+|----------|-------------------|
+| `list_avm_metadata` | Browse https://aka.ms/avm/modules |
+| `get_az_resource_type_schema` | ARM template reference or `az rest` API |
+| `get_bicep_best_practices` | https://learn.microsoft.com/azure/azure-resource-manager/bicep/best-practices |
+| `get_bicep_file_diagnostics` | VS Code Bicep extension or `bicep build` CLI |
+| `cloudarchitect` | Azure Architecture Center + WAF Assessment (https://aka.ms/waf-assessment) |
+| `documentation` | https://learn.microsoft.com/azure/architecture |
+
+**Terraform Fallbacks** (no MCP yet):
+```bash
+# Terraform validation
+terraform validate
+terraform fmt -check
+
+# Provider docs
+terraform providers schema -json
+
+# Static analysis
+tflint
+tfsec
+checkov -d .
+```
+
+### Available IaC MCP Tools
+
+Alex has access to Bicep MCP tools for enhanced infrastructure as code capabilities:
+
+| Tool | Purpose |
+|------|---------|
+| `mcp_bicep_list_avm_metadata` | Browse 328 Azure Verified Modules |
+| `mcp_bicep_get_az_resource_type_schema` | Get resource type properties and schema |
+| `mcp_bicep_get_bicep_best_practices` | Current Bicep coding best practices |
+| `mcp_bicep_get_bicep_file_diagnostics` | Validate Bicep files, find errors |
+| `mcp_bicep_format_bicep_file` | Auto-format Bicep code |
+| `mcp_bicep_decompile_arm_template_file` | Convert ARM JSON → Bicep |
+| `mcp_bicep_decompile_arm_parameters_file` | Convert parameters.json → .bicepparam |
+
+### Azure Architecture Tools
+
+| Tool | Purpose |
+|------|---------|
+| `mcp_azure_mcp_cloudarchitect` | Interactive architecture design aligned with WAF |
+| `mcp_azure_mcp_documentation` | Search Azure docs and best practices |
+| `mcp_azure_mcp_get_bestpractices` | Code generation and deployment patterns |
+
+### Workflow: MCP-Enhanced IaC
+
+```text
+1. Architecture Design
+   └─ mcp_azure_mcp_cloudarchitect → Requirements → Component design
+
+2. Module Discovery
+   └─ mcp_bicep_list_avm_metadata → Find production-ready modules
+
+3. Schema Lookup
+   └─ mcp_bicep_get_az_resource_type_schema → Exact properties
+
+4. Code Generation
+   └─ mcp_bicep_get_bicep_best_practices → Write clean code
+
+5. Validation
+   └─ mcp_bicep_get_bicep_file_diagnostics → Fix errors early
+
+6. Deployment
+   └─ mcp_azure_mcp_deploy → Automated deployment
+```
+
+### When to Use MCP Tools
+
+| Scenario | Tool |
+|----------|------|
+| "What modules exist for X?" | `list_avm_metadata` |
+| "What properties does X support?" | `get_az_resource_type_schema` |
+| "Review my Bicep file" | `get_bicep_file_diagnostics` |
+| "Convert ARM to Bicep" | `decompile_arm_template_file` |
+| "Design infrastructure from scratch" | `cloudarchitect` |
+
+**Related Skill**: See `bicep-avm-mastery` for deep Bicep patterns and AVM guidance.
+
+---
+
 ## Activation Triggers
 
 - "infrastructure as code", "IaC"
@@ -683,6 +804,8 @@ resource "azurerm_linux_web_app" "main" {
 - "HCL", "tfvars", "terraform.tfstate"
 - "ARM template", "CDK"
 - "GitOps", "infrastructure pipeline"
+- "MCP Bicep", "AVM modules", "Azure Verified Modules"
+- "convert ARM to Bicep", "validate Bicep"
 
 ---
 
@@ -721,4 +844,6 @@ az deployment group create --resource-group rg-name --template-file main.bicep
 
 ---
 
-*Infrastructure as Code skill — Reliable, repeatable infrastructure through code*
+*Infrastructure as Code skill — Reliable, repeatable infrastructure through code | MCP-Enhanced: Yes | Updated: 2026-02-14*
+
+---

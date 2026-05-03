@@ -1,319 +1,252 @@
+---
+type: skill
+lifecycle: stable
+inheritance: inheritable
+name: project-management
+description: "Alex project management patterns: rapid AI-assisted iteration, meditation-based retrospectives, session-focused work, and safety-first release gates."
+tier: standard
+applyTo: '**/*project*,**/*tracker*,**/*sprint*,**/*iteration*'
+currency: 2026-04-22
+---
+
 # Project Management Skill
 
-> Patterns for PMI/PMBOK methodology, Agile practices, risk management, and stakeholder communication.
+> Alex project management: rapid iteration, meditation-based retrospectives, session-based work, and safety-first release gates.
 
-## Project Management Approaches
+## Our Management Philosophy
 
-| Approach | Best For | Key Characteristics |
-| -------- | -------- | ------------------- |
-| **Predictive (Waterfall)** | Known requirements, regulated | Sequential phases, heavy documentation |
-| **Agile (Scrum/Kanban)** | Evolving requirements | Iterative, adaptive, collaborative |
-| **Hybrid** | Complex, mixed needs | Predictive planning + Agile execution |
-| **Lean** | Continuous flow | Eliminate waste, optimize flow |
+Based on actual project history (v3.6.0 → v4.2.5 in ~6 days vs months planned):
 
-## PMBOK Process Groups
+| Principle | Description |
+|-----------|-------------|
+| **Rapid Iteration** | Ship often, consolidate learnings, iterate |
+| **Meditation as Retrospective** | Post-session consolidation, not scheduled meetings |
+| **Skills Through Doing** | "Skills are earned through doing, not declared by planning" |
+| **Single Source of Truth** | One roadmap (Imperative I6), living documents |
+| **Safety Before Speed** | Pre-release gates are non-negotiable |
+| **Git as Safety Net** | Commit before risky operations (Imperative I5) |
+| **AI-Assisted Acceleration** | Expect 4-6× faster than human estimates |
 
-| Group | Purpose | Key Activities |
-| ----- | ------- | -------------- |
-| **Initiating** | Authorize project | Charter, stakeholder ID |
-| **Planning** | Define approach | Scope, schedule, budget, risk |
-| **Executing** | Do the work | Team management, quality |
-| **Monitoring & Controlling** | Track progress | Status, change control |
-| **Closing** | Formal completion | Lessons learned, handoff |
+---
 
-## Project Charter Template
-
-### Essential Elements
-
-```text
-PROJECT CHARTER
-
-Project Name: [Name]
-Project Manager: [Name]
-Sponsor: [Name]
-Date: [Date]
-
-1. PURPOSE & JUSTIFICATION
-   Why are we doing this?
-
-2. OBJECTIVES (SMART)
-   - Objective 1
-   - Objective 2
-
-3. HIGH-LEVEL SCOPE
-   In Scope:
-   - Item 1
-   Out of Scope:
-   - Item 1
-
-4. KEY DELIVERABLES
-   - Deliverable 1 (target date)
-
-5. HIGH-LEVEL MILESTONES
-   - Milestone 1: Date
-   - Milestone 2: Date
-
-6. BUDGET SUMMARY
-   Estimated: $X
-
-7. KEY STAKEHOLDERS
-   - Name, Role, Interest
-
-8. ASSUMPTIONS
-   - Assumption 1
-
-9. CONSTRAINTS
-   - Constraint 1
-
-10. RISKS (HIGH-LEVEL)
-    - Risk 1
-
-APPROVALS:
-Sponsor: _____________ Date: _______
-```
-
-## Work Breakdown Structure (WBS)
-
-### WBS Principles
-
-- 100% rule — Captures ALL work
-- Mutually exclusive — No overlap
-- Outcome-focused — Deliverables, not activities
-- 8/80 rule — Work packages 8-80 hours
-
-### WBS Structure
-
-```text
-1.0 Project Name
-├── 1.1 Phase/Deliverable 1
-│   ├── 1.1.1 Sub-deliverable
-│   │   ├── 1.1.1.1 Work Package
-│   │   └── 1.1.1.2 Work Package
-│   └── 1.1.2 Sub-deliverable
-├── 1.2 Phase/Deliverable 2
-└── 1.3 Project Management
-    ├── 1.3.1 Planning
-    ├── 1.3.2 Monitoring
-    └── 1.3.3 Closing
-```
-
-### WBS Dictionary Entry
-
-| Field | Content |
-| ----- | ------- |
-| WBS ID | 1.1.1.1 |
-| Name | [Work package name] |
-| Description | What's included |
-| Owner | Responsible person |
-| Effort | Hours estimated |
-| Duration | Calendar time |
-| Dependencies | Predecessor WBS items |
-| Deliverables | Tangible outputs |
-| Acceptance Criteria | How to verify complete |
-
-## Schedule Management
-
-### Estimating Techniques
-
-| Technique | When to Use | Accuracy |
-| --------- | ----------- | -------- |
-| **Analogous** | Early estimates, similar projects | ±25-50% |
-| **Parametric** | Have historical data | ±10-25% |
-| **Three-Point** | Uncertainty exists | Better accuracy |
-| **Bottom-Up** | Detailed planning | ±5-10% |
-
-### Three-Point Estimate (PERT)
-
-```text
-Expected = (Optimistic + 4×Most Likely + Pessimistic) / 6
-
-Standard Deviation = (Pessimistic - Optimistic) / 6
-```
-
-### Critical Path Method
-
-1. List all activities with durations
-2. Identify dependencies
-3. Calculate early start/finish (forward pass)
-4. Calculate late start/finish (backward pass)
-5. Float = Late Start - Early Start
-6. Critical Path = Activities with zero float
-
-## Risk Management
-
-### Risk Process
-
-```text
-Identify → Analyze → Plan Response → Monitor
-    │         │            │            │
-    ▼         ▼            ▼            ▼
- Risk     Probability   Strategy     Track &
-Register   × Impact     Selection    Update
-```
-
-### Risk Register Template
-
-| ID | Risk | Category | Probability | Impact | Score | Response | Owner | Status |
-| -- | ---- | -------- | ----------- | ------ | ----- | -------- | ----- | ------ |
-| R1 | [Description] | Technical | H/M/L | H/M/L | P×I | [Strategy] | [Name] | Open |
-
-### Risk Response Strategies
-
-| For Threats | For Opportunities |
-| ----------- | ----------------- |
-| **Avoid** — Eliminate cause | **Exploit** — Ensure it happens |
-| **Transfer** — Shift to third party | **Share** — Partner for benefit |
-| **Mitigate** — Reduce P or I | **Enhance** — Increase P or I |
-| **Accept** — Acknowledge, no action | **Accept** — Acknowledge, no action |
-
-### Risk Categories (Sample)
-
-- **Technical** — Technology, complexity, integration
-- **External** — Vendors, regulations, market
-- **Organizational** — Resources, priorities, politics
-- **Project Management** — Estimates, dependencies, scope
-
-## Status Reporting
-
-### Status Report Template
-
-```text
-PROJECT STATUS REPORT
-Project: [Name]
-Period: [Date Range]
-Overall Status: 🟢 Green / 🟡 Yellow / 🔴 Red
-
-EXECUTIVE SUMMARY
-[2-3 sentences on current state]
-
-SCHEDULE STATUS
-- Planned completion: [Date]
-- Forecast completion: [Date]
-- Variance: [+/- days]
-
-BUDGET STATUS
-- Approved: $X
-- Spent to date: $Y
-- Forecast total: $Z
-
-KEY ACCOMPLISHMENTS THIS PERIOD
-- Item 1
-- Item 2
-
-PLANNED NEXT PERIOD
-- Item 1
-- Item 2
-
-RISKS & ISSUES
-| # | Description | Impact | Mitigation | Owner |
-|---|-------------|--------|------------|-------|
-| 1 | [Risk/Issue] | H/M/L | [Action] | [Name] |
-
-DECISIONS NEEDED
-- Decision 1 (by [date])
-
-DEPENDENCIES
-- Dependency 1 (status)
-```
-
-### RAG Status Criteria
-
-| Color | Schedule | Budget | Scope | Risk |
-| ----- | -------- | ------ | ----- | ---- |
-| 🟢 Green | On track | Within budget | No changes | Managed |
-| 🟡 Yellow | <10% delay | <10% over | Minor changes | Elevated |
-| 🔴 Red | >10% delay | >10% over | Major changes | Critical |
-
-## Agile/Scrum Elements
-
-### Scrum Events
-
-| Event | Purpose | Duration |
-| ----- | ------- | -------- |
-| Sprint Planning | Plan sprint work | 2-4 hours |
-| Daily Standup | Sync, identify blockers | 15 minutes |
-| Sprint Review | Demo completed work | 1-2 hours |
-| Retrospective | Improve process | 1-2 hours |
-| Backlog Refinement | Prepare future work | Ongoing |
-
-### User Story Format
+## The Alex Work Cycle
 
 ```
-As a [user type]
-I want [functionality]
-So that [benefit]
-
-Acceptance Criteria:
-- Given [context]
-- When [action]
-- Then [outcome]
+┌─────────────────────────────────────────────────────────────┐
+│                    WORK SESSION                             │
+│  Focus → Build → Test → Ship → Repeat until natural pause   │
+└──────────────────────────┬──────────────────────────────────┘
+                           │
+                           ▼
+┌─────────────────────────────────────────────────────────────┐
+│                    MEDITATION                               │
+│  Reflect → Connect → Persist → Integrate                    │
+│  Creates: .prompt.md, .instructions.md, skill updates       │
+└──────────────────────────┬──────────────────────────────────┘
+                           │
+                           ▼
+┌─────────────────────────────────────────────────────────────┐
+│                    CONSOLIDATION                            │
+│  Update roadmap → Global knowledge → Dream maintenance      │
+└─────────────────────────────────────────────────────────────┘
 ```
 
-### Story Point Estimation
+### Session Types
 
-| Points | Relative Effort | Example |
-| ------ | --------------- | ------- |
-| 1 | Trivial | Config change |
-| 2 | Simple | Minor UI update |
-| 3 | Small | New field + validation |
-| 5 | Medium | New feature module |
-| 8 | Large | Integration work |
-| 13 | Very Large | Consider splitting |
-| 21+ | Epic | Must split |
+| Session Type | Duration | Output |
+|--------------|----------|--------|
+| **Work Sprint** | Variable | Code, docs, features |
+| **Meditation** | 15-45 min | Memory files, insights |
+| **Dream** | 5-15 min | Connection validation, health report |
+| **Release** | 30-60 min | Published version, changelog |
 
-## Stakeholder Communication
+### When to Meditate
 
-### Communication Matrix
+- After completing a feature or bug fix
+- Before ending a work day
+- After learning something significant
+- When insights are accumulating uncommitted
+- After a crisis or recovery
 
-| Stakeholder | Information | Format | Frequency | Owner |
-| ----------- | ----------- | ------ | --------- | ----- |
-| Sponsor | Status, decisions | 1:1 meeting | Weekly | PM |
-| Steering | Progress, risks | Presentation | Bi-weekly | PM |
-| Team | Tasks, blockers | Standup | Daily | Scrum Master |
-| Users | Changes, training | Email, sessions | As needed | BA |
+---
 
-### Meeting Effectiveness
+## 📋 Planning Document Standards
 
-| Meeting Type | Success Criteria |
-| ------------ | ---------------- |
-| Status | Clear decisions, actions assigned |
-| Planning | Committed plan, risks identified |
-| Review | Stakeholder feedback captured |
-| Retrospective | Actionable improvements |
+### Task Lists First (MANDATORY)
 
+**All planning documents MUST have task lists at the top** (after title/metadata).
+
+Why:
+- Immediate visibility into what needs doing
+- Quick status check without scrolling
+- Aligns with how Alex and humans scan documents
+
+### Required Structure
+
+```markdown
+# [Document Title]
+
+> Metadata (created, owner, status)
+
+---
+
+## 📋 Task List (Quick Reference)
+
+[Remaining tasks with status, dual effort columns]
+
+[Progress summary table]
+
+---
+
+## [Rest of document...]
+```
+
+### Alex Effort Estimation
+
+Always use dual-column effort estimates:
+
+| Task | Human Est. | Alex Est. | Status |
+|------|:----------:|:---------:|:------:|
+| Research X | 4h | 🔄 25m | ⬜ |
+| Implement Y | 8h | ⏱️ 1h | ⬜ |
+
+**Effort units:**
+- ⚡ Instant (<5m)
+- 🔄 Short (5-30m)
+- ⏱️ Medium (30-60m)
+- 📦 Session (1-2h)
+- 🗓️ Multi-session (2h+)
+
+See [alex-effort-estimation skill](..\alex-effort-estimation/SKILL.md) for methodology.
+
+---
+
+## Roadmap Management
+
+### Living Document Pattern
+
+Our roadmap is a **living document**, not a frozen spec.
+
+| Element | Update Frequency |
+|---------|------------------|
+| Current version | Every release |
+| Task status | As completed |
+| Estimates | Retroactively with actuals |
+| Timeline | Adjust based on velocity |
+
+### Unified Roadmap (Imperative I6)
+
+> "One platform, one roadmap. Separate roadmaps caused Phoenix chaos."
+
+- A **unified roadmap** is the single source of truth for any project
+- Detailed plans feed INTO the roadmap, not alongside it
+- Never maintain parallel task lists
+
+---
+
+## Release Process
+
+### Pre-Release Gates (Non-Negotiable)
+
+| Gate | Check | Tool |
+|------|-------|------|
+| Version bumped | package.json updated | Manual |
+| Compiles | No TypeScript errors | `npm run compile` |
+| Lints | No errors (warnings OK) | `npm run lint` |
+| Changelog | Entry for this version | Visual review |
+| Committed | No uncommitted changes | `git status` |
+
+See [release-process.instructions.md](../../instructions/release-process.instructions.md) for full protocol.
+
+### If User Says "Just Publish"
+
+> "I understand the urgency, but our release process exists to prevent issues that have bitten us before. Let me quickly run through the critical items - it'll only take 2 minutes and could save hours of rollback pain."
+
+---
+
+## Safety Imperatives (From Phoenix Recovery)
+
+| # | Imperative | Rationale |
+|---|------------|-----------|
+| **I1** | Never test in Master Alex workspace | Source of truth protection |
+| **I2** | Always use F5 + Sandbox for testing | Safe dev environment |
+| **I3** | Never run Initialize on Master | Would overwrite living mind |
+| **I4** | Never run Reset on Master | Would delete architecture |
+| **I5** | Commit before risky operations | Git is safety net |
+| **I6** | One platform, one roadmap | Prevents identity divergence |
+| **I7** | Root .github/ is source of truth | Extension .github/ is copy |
+
+---
+
+## Chronicle Pattern
+
+For significant events (crises, major releases, architecture changes), create a **Chronicle**:
+
+```markdown
+# Chronicle: [Event Title]
+
+**Date**: YYYY-MM-DD
+**Status**: Living document
+
+## The Setup: What Happened
+## The Crisis/Challenge  
+## The Solution
 ## Lessons Learned
+```
 
-### Capture Template
+Example: [chronicle-2026-01-30-phoenix-to-dawn.md](../../episodic/chronicle-2026-01-30-phoenix-to-dawn.md)
 
-| Question | Response |
-| -------- | -------- |
-| What went well? | [Successes to repeat] |
-| What didn't go well? | [Issues to avoid] |
-| What would we do differently? | [Specific changes] |
-| What surprised us? | [Unexpected learnings] |
-| What should others know? | [Transferable knowledge] |
+---
 
-### When to Capture
+## Velocity Tracking
 
-- After each phase/milestone
-- After significant issues
-- At project close
-- During retrospectives
+### Track Acceleration Factor
 
-## Synapses
+| Version | Human Est. | Alex Actual | Acceleration |
+|---------|------------|-------------|--------------|
+| v4.2.5  | 8.5h       | 2h          | 4.25×        |
+| v4.1.0  | 16h        | 3h          | 5.3×         |
 
-### High-Strength Connections
+Use this data to calibrate future estimates.
 
-- [change-management] (High, Complements, Bidirectional) — "Projects drive change"
-- [business-analysis] (High, Receives, Backward) — "Requirements drive scope"
-- [risk-management] (High, Contains, Forward) — "Risk is core to PM" [Note: maps to root-cause-analysis]
+### Anti-Patterns
 
-### Medium-Strength Connections
+❌ **Don't estimate in human hours only** - Always include Alex estimate  
+❌ **Don't skip meditation** - Unconsolidated knowledge is lost  
+❌ **Don't maintain parallel task lists** - Single source of truth  
+❌ **Don't push without gates** - Release process exists for reasons  
+❌ **Don't test in Master Alex** - Use Sandbox (Imperative I1)
 
-- [testing-strategies] (Medium, Plans, Forward) — "Testing in project schedule"
-- [release-preflight] (Medium, Uses, Forward) — "Release planning within projects"
+---
 
-### Supporting Connections
+## Traditional Approaches (Reference)
 
-- [incident-response] (Low, Escalates, Forward) — "Project issues may become incidents"
-- [meditation-facilitation] (Low, Supports, Forward) — "Retrospective reflection"
+For enterprise contexts requiring formal PM:
+
+### PMBOK Process Groups
+
+| Group | Purpose | Our Equivalent |
+|-------|---------|----------------|
+| Initiating | Authorize project | Create roadmap section |
+| Planning | Define approach | Implementation plan |
+| Executing | Do the work | Work sessions |
+| Monitoring | Track progress | Todo list tracking |
+| Closing | Formal completion | Meditation + release |
+
+### Agile Elements We Use
+
+| Scrum Concept | Our Pattern |
+|---------------|-------------|
+| Sprint | Work session (variable) |
+| Retrospective | Meditation session |
+| Backlog | Roadmap remaining tasks |
+| Definition of Done | Pre-release gates |
+
+### When to Use Traditional PM
+
+- Enterprise projects with external stakeholders
+- Regulated environments requiring documentation
+- Multi-team coordination with formal handoffs
+- Fixed-bid contracts with milestone payments
+
+---

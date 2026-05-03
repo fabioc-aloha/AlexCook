@@ -1,0 +1,194 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/fabioc-aloha/AlexMaster/blob/main/.github/config/loop-config.schema.json",
+  "title": "Loop Menu Configuration",
+  "description": "Defines the sidebar Loop tab menu structure — groups, buttons, and prompt file references.",
+  "type": "object",
+  "required": ["groups"],
+  "additionalProperties": false,
+  "properties": {
+    "$schema": {
+      "type": "string",
+      "description": "JSON Schema reference for IDE validation."
+    },
+    "$comment": {
+      "type": "string",
+      "description": "Human-readable description of this config file."
+    },
+    "version": {
+      "type": "string",
+      "description": "Schema version for future migration support.",
+      "default": "1.0"
+    },
+    "projectType": {
+      "type": "string",
+      "description": "Project type hint used for template selection.",
+      "examples": ["vscode-extension", "python-api", "data-pipeline", "static-site", "monorepo", "generic"]
+    },
+    "groups": {
+      "type": "array",
+      "description": "Ordered list of button groups shown in the Loop tab.",
+      "items": {
+        "$ref": "#/$defs/group"
+      },
+      "minItems": 1
+    },
+    "projectPhase": {
+      "type": "string",
+      "description": "Current project lifecycle phase. Controls which groups are expanded and which buttons are prominent.",
+      "enum": ["planning", "active-development", "testing", "release", "maintenance"],
+      "default": "active-development"
+    },
+    "projectContext": {
+      "$ref": "#/$defs/projectContext"
+    }
+  },
+  "$defs": {
+    "group": {
+      "type": "object",
+      "description": "A collapsible section of related action buttons.",
+      "required": ["id", "label", "buttons"],
+      "additionalProperties": false,
+      "properties": {
+        "id": {
+          "type": "string",
+          "description": "Unique identifier for the group. Used for state persistence.",
+          "pattern": "^[a-z][a-z0-9-]*$"
+        },
+        "label": {
+          "type": "string",
+          "description": "Display label for the group header."
+        },
+        "desc": {
+          "type": "string",
+          "description": "Short description shown below the group header.",
+          "maxLength": 120
+        },
+        "icon": {
+          "type": "string",
+          "description": "Codicon name for the group header icon (without 'codicon-' prefix).",
+          "examples": ["sync", "tools", "book", "megaphone", "pulse"]
+        },
+        "accent": {
+          "type": "string",
+          "description": "CSS color for the group accent bar.",
+          "pattern": "^#[0-9a-fA-F]{6}$"
+        },
+        "collapsed": {
+          "type": "boolean",
+          "description": "Whether the group is collapsed by default.",
+          "default": true
+        },
+        "phase": {
+          "type": "array",
+          "description": "Project phases where this group is active. Omit to show in all phases.",
+          "items": {
+            "type": "string",
+            "enum": ["planning", "active-development", "testing", "release", "maintenance"]
+          },
+          "minItems": 1
+        },
+        "source": {
+          "type": "string",
+          "description": "Origin of this group: 'core' (default config), 'type' (project type template), or 'skill' (skill partial).",
+          "enum": ["core", "type", "skill"]
+        },
+        "buttons": {
+          "type": "array",
+          "description": "Ordered list of action buttons in this group.",
+          "items": {
+            "$ref": "#/$defs/button"
+          },
+          "minItems": 1
+        }
+      }
+    },
+    "button": {
+      "type": "object",
+      "description": "A single action button that triggers a command or opens a chat prompt.",
+      "required": ["icon", "label", "command"],
+      "additionalProperties": false,
+      "properties": {
+        "id": {
+          "type": "string",
+          "description": "Unique identifier for frecency tracking. Defaults to lowercase label if omitted.",
+          "pattern": "^[a-z][a-z0-9-]*$"
+        },
+        "icon": {
+          "type": "string",
+          "description": "Codicon name (without 'codicon-' prefix).",
+          "examples": ["lightbulb", "tools", "bug", "rocket", "beaker"]
+        },
+        "label": {
+          "type": "string",
+          "description": "Display text on the button."
+        },
+        "command": {
+          "type": "string",
+          "description": "Action to perform when clicked.",
+          "enum": ["openChat", "openExternal", "runCommand", "setContext", "noop"]
+        },
+        "promptFile": {
+          "type": "string",
+          "description": "Filename of the .prompt.md file in .github/prompts/loop/. Loaded at click time.",
+          "pattern": "^[a-z][a-z0-9-]*\\.prompt\\.md$"
+        },
+        "prompt": {
+          "type": "string",
+          "description": "Inline prompt text. Used as fallback when promptFile is not set."
+        },
+        "file": {
+          "type": "string",
+          "description": "URL or file path for openExternal/runCommand actions."
+        },
+        "hint": {
+          "type": "string",
+          "description": "Visual hint icon for button behavior.",
+          "enum": ["chat", "link", "command"]
+        },
+        "tooltip": {
+          "type": "string",
+          "description": "Tooltip text shown on hover.",
+          "maxLength": 200
+        },
+        "phase": {
+          "type": "array",
+          "description": "Project phases where this button is visible. Omit to show in all phases.",
+          "items": {
+            "type": "string",
+            "enum": ["planning", "active-development", "testing", "release", "maintenance"]
+          },
+          "minItems": 1
+        }
+      }
+    },
+    "projectContext": {
+      "type": "object",
+      "description": "Project-specific context injected into prompts.",
+      "additionalProperties": true,
+      "properties": {
+        "buildCommand": {
+          "type": "string",
+          "description": "Command to build the project.",
+          "examples": ["npm run build", "dotnet build", "mvn package"]
+        },
+        "testCommand": {
+          "type": "string",
+          "description": "Command to run tests.",
+          "examples": ["npm test", "pytest", "dotnet test"]
+        },
+        "releaseScript": {
+          "type": "string",
+          "description": "Path to the release automation script."
+        },
+        "conventions": {
+          "type": "array",
+          "description": "List of project conventions and technologies.",
+          "items": {
+            "type": "string"
+          }
+        }
+      }
+    }
+  }
+}

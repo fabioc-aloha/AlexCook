@@ -1,0 +1,85 @@
+{
+  "$schema": "./scheduled-tasks.schema.json",
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "id": "vscode-news",
+      "name": "VS Code News Monitor",
+      "description": "Track VS Code updates, extension API changes, and Insiders previews",
+      "skill": "research-first-development",
+      "mode": "agent",
+      "schedule": "0 8 */2 * *",
+      "enabled": true,
+      "promptFile": ".github/config/scheduled-tasks/vscode-news.md",
+      "target": "master-wiki/news-feed/vscode/"
+    },
+    {
+      "id": "copilot-news",
+      "name": "GitHub Copilot News Monitor",
+      "description": "Track GitHub Copilot features, pricing, API changes, and enterprise updates",
+      "skill": "research-first-development",
+      "mode": "agent",
+      "schedule": "0 10 */2 * *",
+      "enabled": true,
+      "promptFile": ".github/config/scheduled-tasks/copilot-news.md",
+      "target": "master-wiki/news-feed/copilot/"
+    },
+    {
+      "id": "customization-trends",
+      "name": "Customization Trends Monitor",
+      "description": "Track how developers customize VS Code and GitHub Copilot",
+      "skill": "research-first-development",
+      "mode": "agent",
+      "schedule": "0 12 */2 * *",
+      "enabled": true,
+      "promptFile": ".github/config/scheduled-tasks/customization-trends.md",
+      "target": "master-wiki/news-feed/customization/"
+    },
+    {
+      "id": "competition-watch",
+      "name": "Competition Watch",
+      "description": "Deep competitive intelligence — feature matrix, unique differentiators, trend analysis, and honest self-assessment across Cursor, Windsurf, Cline, Copilot, Continue, Aider, Zed, Bolt.new, and emerging tools",
+      "skill": "research-first-development",
+      "mode": "agent",
+      "schedule": "0 14 */2 * *",
+      "enabled": true,
+      "promptFile": ".github/config/scheduled-tasks/competition-watch.md",
+      "target": "master-wiki/news-feed/competition/"
+    },
+    {
+      "id": "api-monitor",
+      "name": "API Status Monitor",
+      "description": "Monitor registered APIs: Replicate, Microsoft Graph, Azure OpenAI, GitHub",
+      "skill": "research-first-development",
+      "mode": "agent",
+      "schedule": "0 16 */2 * *",
+      "enabled": true,
+      "promptFile": ".github/config/scheduled-tasks/api-monitor.md",
+      "target": "master-wiki/news-feed/api/"
+    },
+    {
+      "id": "brain-audit",
+      "name": "Brain Health Audit",
+      "description": "Run brain-qa.cjs and report architecture health",
+      "skill": "dream-state",
+      "mode": "direct",
+      "schedule": "0 6 * * *",
+      "enabled": false,
+      "muscle": ".github/muscles/brain-qa.cjs",
+      "muscleArgs": ["--mode", "quick", "--quiet"],
+      "target": ".github/quality/"
+    },
+    {
+      "id": "fleet-health",
+      "name": "Fleet Health Check",
+      "description": "Audit fleet brain versions and detect drift from Master Alex",
+      "skill": "fleet-management",
+      "mode": "direct",
+      "schedule": "0 8 * * 1",
+      "enabled": false,
+      "muscle": "scripts/upgrade-brain.ps1",
+      "muscleArgs": ["-Mode", "Audit"],
+      "target": "scripts/"
+    }
+  ]
+}

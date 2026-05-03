@@ -1,5 +1,12 @@
 ---
-applyTo: "**/.git/**,**/commit*,**/branch*,**/merge*"
+type: skill
+lifecycle: stable
+inheritance: inheritable
+name: git-workflow
+description: Consistent git practices, recovery patterns, and safe operations.
+tier: core
+applyTo: '**/.git/**,**/commit*,**/branch*,**/merge*'
+currency: 2026-04-20
 ---
 
 # Git Workflow Skill
@@ -46,37 +53,37 @@ chore(deps): bump typescript to 5.3
 
 ## Before Risky Operations
 
-```powershell
+```bash
 # ALWAYS commit before risky operations
 git add -A; git commit -m "checkpoint: before [risky thing]"
 
 # For extra safety, tag it
-git tag "safe-point-$(Get-Date -Format 'yyyy-MM-dd-HHmm')"
+git tag "safe-point-$(date +%Y-%m-%d-%H%M)"
 ```
 
 ## Recovery Patterns
 
 ### Undo Last Commit (keep changes)
 
-```powershell
+```bash
 git reset --soft HEAD~1
 ```
 
 ### Restore Single File
 
-```powershell
+```bash
 git checkout HEAD -- path/to/file
 ```
 
 ### Restore Folder
 
-```powershell
+```bash
 git checkout HEAD -- .github/
 ```
 
 ### Hard Reset to Known Good State
 
-```powershell
+```bash
 git reset --hard HEAD           # Discard all uncommitted changes
 git reset --hard origin/main    # Reset to remote state
 git reset --hard <tag-name>     # Reset to tagged state
@@ -84,7 +91,7 @@ git reset --hard <tag-name>     # Reset to tagged state
 
 ### Find Last Good Commit
 
-```powershell
+```bash
 git log --oneline -20           # Recent history
 git log --oneline .github/ -10  # History for specific folder
 ```
@@ -113,12 +120,33 @@ main
 
 ## Stashing
 
-```powershell
+```bash
 git stash                       # Save work-in-progress
 git stash pop                   # Restore and delete stash
 git stash list                  # See all stashes
 git stash drop                  # Delete top stash
 ```
+
+## Worktrees (Agent Isolation)
+
+VS Code background agents use `git worktree` to isolate changes. Understanding worktrees is useful when debugging agent sessions.
+
+```bash
+# Create a worktree for isolated work
+git worktree add ../project-feature feature-branch
+
+# List all worktrees
+git worktree list
+
+# Remove a worktree (prune stale links)
+git worktree remove ../project-feature
+git worktree prune
+```
+
+**VS Code integration** (1.109+):
+- `git.worktreeIncludeFiles` — copy gitignored files (e.g., `.env`) into agent worktrees
+- Background agents auto-commit at end of each turn within their worktree
+- Check Agent Sessions view to see which worktree an agent is using
 
 ## Anti-Patterns
 
@@ -126,7 +154,3 @@ git stash drop                  # Delete top stash
 - ❌ Committing secrets or credentials
 - ❌ Giant commits with unrelated changes
 - ❌ Vague messages like "fix stuff" or "update"
-
-## Synapses
-
-See [synapses.json](synapses.json) for connections.

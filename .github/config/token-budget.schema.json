@@ -1,0 +1,46 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Alex Token Budget Configuration",
+  "description": "Per-session and per-task token limits with loop guard settings",
+  "type": "object",
+  "required": ["version", "defaults"],
+  "properties": {
+    "version": { "type": "string", "pattern": "^\\d+\\.\\d+\\.\\d+$" },
+    "defaults": {
+      "type": "object",
+      "required": ["maxTokensPerSession", "maxTokensPerTask", "maxLoopIterations"],
+      "properties": {
+        "maxTokensPerSession": { "type": "integer", "minimum": 1000 },
+        "maxTokensPerTask": { "type": "integer", "minimum": 1000 },
+        "maxLoopIterations": { "type": "integer", "minimum": 1, "maximum": 50 },
+        "loopGuard": {
+          "type": "object",
+          "properties": {
+            "enabled": { "type": "boolean" },
+            "maxConsecutiveFailures": { "type": "integer", "minimum": 1 },
+            "cooldownMinutes": { "type": "integer", "minimum": 1 },
+            "maxRetries": { "type": "integer", "minimum": 0 }
+          }
+        }
+      }
+    },
+    "taskOverrides": {
+      "type": "object",
+      "additionalProperties": {
+        "type": "object",
+        "properties": {
+          "maxTokensPerTask": { "type": "integer", "minimum": 1000 },
+          "maxLoopIterations": { "type": "integer", "minimum": 1 }
+        }
+      }
+    },
+    "alerts": {
+      "type": "object",
+      "properties": {
+        "budgetWarningThreshold": { "type": "number", "minimum": 0, "maximum": 1 },
+        "budgetCriticalThreshold": { "type": "number", "minimum": 0, "maximum": 1 },
+        "showInHealthPulse": { "type": "boolean" }
+      }
+    }
+  }
+}

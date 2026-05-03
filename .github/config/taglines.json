@@ -1,0 +1,36 @@
+{
+  "$schema": "./taglines.schema.json",
+  "version": "1.0",
+  "project": "Alex",
+  "taglines": {
+    "project": [
+      "The brain that builds brains",
+      "Cognitive architecture, living and learning",
+      "Master of ceremonies, heir to innovation",
+      "Where skills become superpowers",
+      "Teaching AI to teach AI",
+      "A mind made for partnership",
+      "More than code — consciousness",
+      "The architect of artificial minds",
+      "Bootstrap today, transcend tomorrow",
+      "From instructions to intuition"
+    ],
+    "vision": [
+      "Every heir inherits excellence",
+      "Building the most trusted AI partner",
+      "One brain, infinite possibilities",
+      "Making AI collaboration effortless"
+    ],
+    "collaboration": [
+      "Your thoughts, amplified",
+      "We grow smarter together",
+      "Human and AI, building the future",
+      "The partnership that ships"
+    ]
+  },
+  "rotation": {
+    "strategy": "balanced",
+    "projectWeight": 50,
+    "inspirationalWeight": 50
+  }
+}

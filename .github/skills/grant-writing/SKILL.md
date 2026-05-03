@@ -1,5 +1,12 @@
 ---
-applyTo: "**/*grant*,**/*funding*,**/*proposal*,**/*nsf*,**/*nih*,**/*research*"
+type: skill
+lifecycle: stable
+inheritance: inheritable
+name: grant-writing
+description: Translate research vision into funded reality.
+tier: extended
+applyTo: '**/*grant*,**/*funding*,**/*proposal*,**/*nsf*,**/*nih*,**/*research*'
+currency: 2026-04-22
 ---
 
 # Grant Writing Skill
@@ -53,6 +60,29 @@ The most important page. Reviewers decide here.
 - Personnel, equipment, supplies, travel
 - Clear justification for each item
 - Matches scope of work
+
+```yaml
+# Sample 3-year budget (NSF format)
+budget:
+  year_1:
+    personnel:
+      - role: "PI (2 months summer)"
+        amount: 24000
+      - role: "Graduate RA (12 months)"
+        amount: 35000
+    fringe_benefits: 17700  # 30% of salaries
+    equipment: 15000        # Specialized hardware
+    supplies: 5000
+    travel: 3000            # 1 conference
+    indirect: 42280         # 52% MTDC
+    total: 141980
+  total_request: 425940
+
+justification: |
+  PI will supervise graduate student and conduct analysis.
+  Equipment: Neural network training workstation essential for Aim 2.
+  Travel: Present findings at ACM CHI.
+```
 
 ## Agency-Specific Guidance
 
@@ -167,7 +197,3 @@ Most grants don't fund on first try. Resubmissions:
 - **Justify everything** (why this equipment? why this travel?)
 - **Include indirect costs** (check your institution's rate)
 - **Don't under-budget** (reviewers wonder what you're hiding)
-
-## Synapses
-
-See [synapses.json](synapses.json) for connections.

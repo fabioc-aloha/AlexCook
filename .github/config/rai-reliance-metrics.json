@@ -1,0 +1,17 @@
+{
+  "consecutiveNoPushback": 0,
+  "sessionAcceptanceRates": [],
+  "totalSessions": 0,
+  "lastUpdated": null,
+  "_schema": {
+    "consecutiveNoPushback": "number - suggestions accepted without correction",
+    "sessionAcceptanceRates": "number[] - per-session acceptance ratios (0-1)",
+    "totalSessions": "number - sessions tracked",
+    "lastUpdated": "ISO 8601 timestamp | null"
+  },
+  "_thresholds": {
+    "overRelianceWarning": 10,
+    "underRelianceWarning": 0.3
+  },
+  "_notes": "Appropriate Reliance tracking per RAI guidelines. High consecutiveNoPushback triggers uncertainty expression."
+}

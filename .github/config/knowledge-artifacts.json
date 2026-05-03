@@ -1,0 +1,20 @@
+{
+  "artifacts": [],
+  "_schema": {
+    "id": "string (ka-NNN)",
+    "topic": "string",
+    "insight": "string",
+    "confidence": "number 0-1 (increments by 0.1 on confirmation, cap 1.0)",
+    "assertedBy": "string (agent name that created it)",
+    "confirmedBy": "string[] (agents that independently confirmed)",
+    "evidence": "string[] (references only: file:line, URLs — never raw code or user quotes)",
+    "source": "string (agent name or session)",
+    "createdAt": "ISO 8601 timestamp",
+    "lastConfirmedAt": "ISO 8601 timestamp | null",
+    "supersededBy": "string (ka-NNN) | null",
+    "correlationId": "string | null",
+    "tags": "string[]"
+  },
+  "_maxEntries": 100,
+  "_notes": "Knowledge artifacts with supersededBy are kept for provenance but deprioritized in searches. Stale-low-confidence pruning (90 days, conf < 0.5) is curated manually during meditation today; automation deferred. See afcp-artifact-management.instructions.md for lifecycle rules."
+}

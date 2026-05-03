@@ -1,459 +1,298 @@
 ---
-applyTo: "**/*book*,**/*cookbook*,**/*publish*,**/*pandoc*,**/*latex*,**/build-pdf*"
+type: skill
+lifecycle: stable
+inheritance: inheritable
+name: "book-publishing"
+description: "Markdown-to-PDF pipeline via Pandoc and LuaLaTeX with emoji rendering, dual output, and print-ready formatting"
+tier: extended
+applyTo: '**/*book*,**/*publish*,**/*pdf*,**/*pandoc*'
+metadata:
+  inheritance: inheritable
+currency: 2026-04-22
 ---
 
-# Book Publishing Skill
+# Book Publishing
 
-> End-to-end PDF book publishing pipeline using Pandoc, LaTeX, and modern asset processing.
+> End-to-end book production pipeline: Markdown → Pandoc → LuaLaTeX → dual PDF (print + digital).
 
-## Pipeline Overview
+> **Staleness Watch**: See [EXTERNAL-API-REGISTRY.md](../../EXTERNAL-API-REGISTRY.md) for source URLs and recheck cadence
 
-```text
-┌─────────────┐    ┌──────────────┐    ┌─────────────┐    ┌──────────────┐
-│  Markdown   │───▶│  Asset       │───▶│  Pandoc +   │───▶│  PDF Output  │
-│  Chapters   │    │  Processing  │    │  LuaLaTeX   │    │  (Print/Web) │
-└─────────────┘    └──────────────┘    └─────────────┘    └──────────────┘
-       │                  │                   │
-       ▼                  ▼                   ▼
-   - Recipe MD        - SVG→PNG           - YAML config
-   - TOC structure    - Emoji embed       - Header/footer
-   - Front matter     - Cover convert     - Page layout
+**Scope**: Inheritable skill. Covers the complete pipeline for producing professional-quality PDF books from Markdown source, including emoji handling, dual format output, and print-ready configuration.
+
+## Pipeline Architecture
+
+```
+Markdown Source
+    ↓
+Pandoc (--pdf-engine=lualatex)
+    ↓
+LuaLaTeX Engine
+    ↓
+├── Print PDF (twoside, crop marks, ISBN)
+└── Digital PDF (oneside, hyperlinks, bookmarks)
 ```
 
-## Project Structure
+### Key Dependencies
 
-```text
-book/
-├── 00a-cover.md             # Custom cover (LaTeX)
-├── 00b-dedication.md        # Dedication page
-├── 00c-introduction.md      # Author introduction
-├── 00d-meet-author.md       # About the author/transparency
-├── 00e-readers-guide.md     # How to use, legend, family notes
-├── cover.svg                # SVG cover design
-├── chapters/
-│   ├── 01-appetizers/
-│   │   └── README.md        # Chapter content
-│   └── .../
-├── appendices/
-│   └── appendix-a-*/
-└── assets/
-    ├── banners/             # Chapter SVG banners
-    │   └── png/             # Converted PNGs (generated)
-    ├── emojis/              # Twemoji PNG files
-    │   └── emoji-map.json   # Emoji → filename mapping
-    └── images/              # Recipe photos
+| Tool | Version | Purpose |
+|------|---------|---------|
+| Pandoc | 3.x+ | Markdown → LaTeX conversion |
+| LuaLaTeX | TeX Live 2024+ | PDF rendering (Unicode-native) |
+| Twemoji | Latest | Cross-platform emoji rendering |
+| `needspace` package | LaTeX | Orphan/widow prevention |
 
-build/
-├── build-pdf.ps1            # Main build script
-├── cookbook.yaml            # Print config (twoside)
-├── cookbook-digital.yaml    # Digital config (oneside)
-├── convert-svgs.js          # Banner conversion
-├── convert-cover.js         # Cover conversion
-├── emoji-map.json           # Build-time emoji map
-└── extract-emojis.js        # Scan for missing emojis
-```
+**Why LuaLaTeX**: Native Unicode support (XeLaTeX works but LuaLaTeX handles emoji processing more reliably with Lua filters).
 
-## Dual Build System
+## Emoji Handling (Critical)
 
-| Version | Config File | Key Setting | Purpose |
-|---------|-------------|-------------|---------|
-| **Print** | `cookbook.yaml` | `twoside`, `openright` | Physical book printing |
-| **Digital** | `cookbook-digital.yaml` | `oneside` | PDF readers, no blank pages |
+### The ZWJ Problem
 
-### Print vs Digital Differences
+Zero Width Joiner (ZWJ) sequences combine multiple emoji into one glyph. **Sort order is critical**:
 
-| Feature | Print (twoside) | Digital (oneside) |
-|---------|-----------------|-------------------|
-| Blank pages | Yes (chapters start right) | No |
-| Margins | Mirror (inner binding) | Equal |
-| Page headers | Left/Right alternate | Consistent |
-| File size | Larger (blank pages) | Smaller |
+| Emoji | Codepoints | Length |
+|-------|-----------|--------|
+| 👨‍👩‍👧‍👦 | U+1F468 U+200D U+1F469 U+200D U+1F467 U+200D U+1F466 | 7 |
+| 👨‍👩‍👧 | U+1F468 U+200D U+1F469 U+200D U+1F467 | 5 |
+| 👨‍👩 | U+1F468 U+200D U+1F469 | 3 |
+| 👨 | U+1F468 | 1 |
 
-## Color Emoji Pipeline
+**CRITICAL RULE**: The emoji replacement map MUST be sorted by **length descending** (longest sequences first). If you process `👨` before `👨‍👩‍👧‍👦`, the family emoji gets partially replaced and corrupts the output.
 
-### Problem
+### Emoji Map File
 
-LaTeX renders emoji as monochrome glyphs. SVG emoji `<text>` elements don't survive PDF conversion.
-
-### Solution: Twemoji PNG Embedding
-
-```javascript
-// 1. Download Twemoji PNGs from CDN
-const TWEMOJI_CDN = 'https://cdn.jsdelivr.net/gh/twitter/twemoji@14.0.2/assets/72x72/';
-
-// 2. Create emoji → filename map
-{
-    "🍳": "1f373.png",      // Simple emoji
-    "👨‍🍳": "1f468-200d-1f373.png",  // ZWJ sequence
-    "🧔‍♂️": "1f9d4-200d-2642-fe0f.png"  // Gender variant
-}
-
-// 3. Replace <text> with embedded <image>
-function replaceEmojisInSvg(svg) {
-    // <text x="25" y="45" font-size="28">🥣</text>
-    // becomes:
-    // <image x="25" y="17" width="28" height="28"
-    //        href="data:image/png;base64,..."/>
-}
-```
-
-### Emoji Filename Patterns
-
-| Emoji Type | Pattern | Example |
-|------------|---------|---------|
-| Simple | `{codepoint}.png` | 🍳 → `1f373.png` |
-| With selector | `{code}-fe0f.png` | ☀️ → `2600-fe0f.png` |
-| ZWJ sequence | `{code1}-200d-{code2}.png` | 👨‍🍳 → `1f468-200d-1f373.png` |
-| Skin tone | `{base}-{skin}.png` | 👋🏻 → `1f44b-1f3fb.png` |
-
-### Code Points
-
-```javascript
-// Get codepoint for emoji
-const codepoint = '🍳'.codePointAt(0).toString(16); // "1f373"
-
-// ZWJ sequences (multiple codepoints joined by 200d)
-const zwj = [...'👨‍🍳'].map(c => c.codePointAt(0).toString(16)).join('-');
-// "1f468-200d-1f373"
-```
-
-## SVG to PNG Conversion
-
-### Dependencies
+Create an explicit `emoji-map.json` that controls all replacements:
 
 ```json
 {
-    "sharp": "^0.33.5"  // High-performance image processing
+  "metadata": {
+    "version": "1.0",
+    "source": "Twemoji",
+    "sortOrder": "length-descending"
+  },
+  "emojis": [
+    {
+      "sequence": "👨‍👩‍👧‍👦",
+      "codepoints": "1f468-200d-1f469-200d-1f467-200d-1f466",
+      "image": "1f468-200d-1f469-200d-1f467-200d-1f466.png",
+      "length": 7
+    }
+  ]
 }
 ```
 
-### Conversion Script Pattern
+**Rule**: Never rely on automatic emoji detection. Use an explicit map file that you control and sort.
 
-```javascript
-const sharp = require('sharp');
+### Twemoji Base64 Embedding
 
-async function convertSvgToPng(svgPath, pngPath) {
-    let svg = fs.readFileSync(svgPath, 'utf8');
+Embed Twemoji images directly as base64 in the LaTeX output to avoid external file dependencies:
 
-    // 1. Embed relative image paths as base64
-    svg = embedImagePaths(svg);
-
-    // 2. Replace emoji text with base64 PNG images
-    svg = replaceEmojisInSvg(svg);
-
-    // 3. Convert with Sharp at high DPI
-    await sharp(Buffer.from(svg), { density: 300 })
-        .png({ quality: 100, compressionLevel: 6 })
-        .toFile(pngPath);
-}
+```lua
+-- Pandoc Lua filter for emoji replacement
+function Str(elem)
+  -- Process emoji map (length-descending order)
+  for _, entry in ipairs(emoji_map) do
+    if elem.text:find(entry.sequence) then
+      local img = pandoc.Image("", entry.base64_data_uri)
+      -- Set size to match surrounding text
+      img.attributes.height = "1em"
+      return img
+    end
+  end
+end
 ```
 
-### Image Embedding
+### Windows Emoji Limitation
 
-```javascript
-// Convert relative paths to embedded base64
-function embedImagePaths(svg) {
-    // href="./assets/emojis/1f373.png"
-    // becomes:
-    // href="data:image/png;base64,iVBORw0KGgo..."
+Windows cannot natively render flag emoji (🇺🇸, 🇬🇧, etc.) in many contexts. Solutions:
 
-    return svg.replace(
-        /<image([^>]*)href="\.\/([^"]+)"([^>]*)\/>/g,
-        (match, before, relPath, after) => {
-            const data = fs.readFileSync(absPath);
-            const base64 = data.toString('base64');
-            return `<image${before}href="data:image/png;base64,${base64}"${after}/>`;
-        }
-    );
-}
-```
+| Approach | Result |
+|----------|--------|
+| Twemoji replacement in PDF | Full flag rendering |
+| HTML output with Twemoji CSS | Full flag rendering |
+| Windows terminal/editor | Broken or missing flags |
 
-## Pandoc + LaTeX Configuration
+**Rule**: Always preview emoji-heavy content in the PDF output, not in the editor.
 
-### YAML Metadata File
+## Dual PDF Configuration
+
+### Print Edition
 
 ```yaml
-documentclass: book
-classoption:
-  - twoside      # Print: alternating margins
-  - openright    # Print: chapters start on right page
-  # OR
-  - oneside      # Digital: no blank pages
-
-papersize: letter
-geometry:
-  - margin=1in
-  - top=1.25in
-  - bottom=1.25in
-fontsize: 11pt
-
-# Custom fonts (LuaLaTeX)
-header-includes:
-  - |
-    \usepackage{fontspec}
-    \setmainfont{Segoe UI}
-    \setsansfont{Segoe UI}
-    \setmonofont{Cascadia Code}
+# pandoc-print.yaml
+pdf-engine: lualatex
+variables:
+  documentclass: book
+  classoption:
+    - twoside            # Different left/right margins
+    - openright           # Chapters start on right pages
+  geometry:
+    - inner=2.5cm        # Binding side (wider)
+    - outer=2cm
+    - top=2.5cm
+    - bottom=2.5cm
+  fontsize: 11pt
+  mainfont: "Linux Libertine O"
+  monofont: "Fira Code"
+  linestretch: 1.15
 ```
 
-### LaTeX Header/Footer
+### Digital Edition
+
+```yaml
+# pandoc-digital.yaml
+pdf-engine: lualatex
+variables:
+  documentclass: book
+  classoption:
+    - oneside            # Symmetric margins
+  geometry:
+    - margin=2cm
+  fontsize: 11pt
+  colorlinks: true
+  linkcolor: blue
+  urlcolor: blue
+  toccolor: blue
+```
+
+### Key Differences
+
+| Feature | Print | Digital |
+|---------|-------|---------|
+| Page layout | `twoside` (inner/outer margins) | `oneside` (symmetric) |
+| Chapters | `openright` (start on right page) | No forced page side |
+| Links | Black text (no hyperlinks on paper) | Blue, clickable |
+| Crop marks | Yes (for professional printing) | No |
+| Blank pages | Inserted for chapter openings | None |
+
+## Page Numbering
+
+### Front Matter vs. Body
+
+| Section | Numbering | Style |
+|---------|-----------|-------|
+| Title page | None | — |
+| Copyright, dedication | None | — |
+| Table of Contents | Roman (i, ii, iii) | `\pagenumbering{roman}` |
+| Foreword, preface | Roman (continues) | — |
+| Chapter 1+ | Arabic (1, 2, 3) | `\pagenumbering{arabic}` |
+| Appendices | Arabic (continues) or lettered | `\appendix` |
+| Index | Arabic (continues) | — |
+
+**Rule**: The transition from Roman to Arabic numbering resets at page 1 for the first chapter.
+
+## Table of Contents
+
+LaTeX auto-generates TOC from headings. Configure depth:
 
 ```latex
-\usepackage{fancyhdr}
-\pagestyle{fancy}
-\fancyhf{}
-\fancyhead[LE,RO]{\thepage}           % Page number outside
-\fancyhead[RE]{\textit{Book Title}}    % Even pages: title
-\fancyhead[LO]{\textit{\leftmark}}     % Odd pages: chapter
-\fancyfoot[C]{\small Tagline}
+\setcounter{tocdepth}{2}    % Include down to subsections
+\setcounter{secnumdepth}{2} % Number down to subsections
 ```
 
-### Custom Cover Integration
+### Heading Lint Before Build
+
+Run a heading validation pass before PDF generation:
+
+| Check | Rule | Why |
+|-------|------|-----|
+| No skipped levels | H1 → H2 → H3 (not H1 → H3) | TOC structure breaks |
+| Unique within chapter | No duplicate H2 headings in same chapter | Anchor collisions |
+| No trailing punctuation | "Getting Started" not "Getting Started." | TOC formatting |
+| Consistent casing | Title Case or Sentence case, not mixed | Professional appearance |
+
+## Orphan/Widow Prevention
+
+### The `needspace` Package
+
+Prevents headings from appearing at the bottom of a page with no following content:
 
 ```latex
-% In combined markdown, before content:
-\thispagestyle{empty}
-\begin{center}
-\includegraphics[width=\textwidth]{path/to/cover.png}
-\end{center}
-\newpage
-\pagenumbering{roman}
-\tableofcontents
-\newpage
-\pagenumbering{arabic}
+\usepackage{needspace}
+\needspace{4\baselineskip}  % Ensure 4 lines available before heading
 ```
 
-## Build Script Structure
+### Configuration
 
-```powershell
-# build-pdf.ps1
-$ErrorActionPreference = "Stop"
+| Element | Minimum Space |
+|---------|--------------|
+| Chapter title | New page (automatic in `book` class) |
+| Section heading | 4 `\baselineskip` |
+| Subsection heading | 3 `\baselineskip` |
+| Code block | 5 `\baselineskip` |
+| Figure/table | Full figure height + caption |
 
-# 1. Convert SVG assets to PNG
-node build/convert-svgs.js
-node build/convert-cover.js
+## Build Pipeline
 
-# 2. Combine markdown files
-$chapters | ForEach-Object {
-    $content = Get-Content $_ -Raw
-    # Process: banner paths, emoji, HTML→MD
-}
+### Complete Build Script
 
-# 3. Build both versions
-function Build-CookbookPdf {
-    param($ConfigFile, $OutputPdf, $Label)
+```bash
+#!/bin/bash
+# build-book.sh — Dual PDF build
 
-    pandoc $CombinedMd `
-        --defaults $ConfigFile `
-        --pdf-engine=lualatex `
-        --output $OutputPdf
-}
+set -e
 
-Build-CookbookPdf -ConfigFile "cookbook.yaml" -OutputPdf "Print.pdf"
-Build-CookbookPdf -ConfigFile "cookbook-digital.yaml" -OutputPdf "Digital.pdf"
+# Step 1: Lint headings
+echo "Linting headings..."
+python scripts/lint-headings.py chapters/*.md
+
+# Step 2: Generate emoji map (sorted by length descending)
+echo "Generating emoji map..."
+python scripts/build-emoji-map.py --sort-by-length-desc
+
+# Step 3: Build print edition
+echo "Building print PDF..."
+pandoc chapters/*.md \
+  --defaults=pandoc-print.yaml \
+  --lua-filter=filters/emoji.lua \
+  --lua-filter=filters/needspace.lua \
+  --toc \
+  --output=output/book-print.pdf
+
+# Step 4: Build digital edition
+echo "Building digital PDF..."
+pandoc chapters/*.md \
+  --defaults=pandoc-digital.yaml \
+  --lua-filter=filters/emoji.lua \
+  --toc \
+  --output=output/book-digital.pdf
+
+echo "Build complete: output/book-print.pdf, output/book-digital.pdf"
 ```
 
-## Content Processing
+### Build Validation
 
-### Banner Placement
+After building, verify:
 
-```powershell
-# Move banner AFTER heading to prevent page break separation
-# Before: <img banner> \n # Chapter
-# After:  # Chapter \n <img banner>
+| Check | How |
+|-------|-----|
+| Page count reasonable | Compare to previous build |
+| TOC links work | Click in PDF reader |
+| Emoji render correctly | Visual spot-check family/flag emoji |
+| No orphan headings | Scan for headings at page bottom |
+| Front matter numbering | Roman numerals before Chapter 1 |
+| Chapter openings (print) | Always on right-hand page |
 
-$Content = $Content -replace `
-    '(<img[^>]*banner[^>]*>)\s*\n(#\s+[^\n]+)', `
-    '$2`n$1'
+## Project Structure
+
 ```
-
-### Image Path Conversion
-
-```powershell
-# Convert SVG references to PNG
-$Content = $Content -replace `
-    'src="\.\.(/assets/banners/)([^"]+)\.svg"', `
-    'src="../$1png/$2.png"'
+book/
+├── chapters/
+│   ├── 00-frontmatter.md
+│   ├── 01-introduction.md
+│   ├── 02-foundations.md
+│   └── ...
+├── filters/
+│   ├── emoji.lua
+│   └── needspace.lua
+├── scripts/
+│   ├── build-emoji-map.py
+│   └── lint-headings.py
+├── assets/
+│   ├── emoji/              # Twemoji PNGs
+│   └── images/             # Book images
+├── output/                 # Generated PDFs (gitignored)
+├── emoji-map.json          # Explicit emoji map
+├── pandoc-print.yaml       # Print edition config
+├── pandoc-digital.yaml     # Digital edition config
+└── build-book.sh           # Build script
 ```
-
-### HTML Conversion
-
-```powershell
-# Convert <br> to line breaks
-$Content = $Content -replace '<br\s*/?>', '  '
-
-# Convert details/summary to markdown
-$Content = $Content -replace '<details[^>]*>', ''
-$Content = $Content -replace '<summary>(.*?)</summary>', '**$1**'
-```
-
-## Troubleshooting
-
-### Common Issues
-
-| Issue | Cause | Solution |
-|-------|-------|----------|
-| B&W emojis | LaTeX font rendering | Embed Twemoji PNGs |
-| Missing emojis | Not in emoji-map.json | Run `extract-emojis.js` |
-| Double blank pages | `twoside` + `\newpage` | Remove extra `\newpage` |
-| Cover not rendering | Relative paths in SVG | Use base64 embedding |
-| Fonts missing | System fonts not found | Install or use fallback |
-| Orphan section titles | Page break before heading | Use `needspace` package |
-| `###` merged with text | Missing blank line before heading | Ensure blank line before all headings |
-| Lists run together | Missing blank line after bold line | Add blank line between header and list |
-| Raw `\newpage` ignored | Pandoc needs explicit LaTeX block | Wrap in `{=latex}` block |
-
-### Debug Commands
-
-```powershell
-# Check for missing emojis
-node build/extract-emojis.js
-
-# Test single SVG conversion
-node -e "require('./build/convert-svgs.js')"
-
-# Verbose Pandoc output
-pandoc ... --verbose 2>&1 | Select-String "error|warning"
-```
-
-## Required Tools
-
-| Tool | Purpose | Install |
-|------|---------|---------|
-| **Node.js** | Asset processing | `winget install OpenJS.NodeJS` |
-| **Sharp** | SVG→PNG conversion | `npm install sharp` |
-| **Pandoc** | Markdown→LaTeX | `winget install JohnMacFarlane.Pandoc` |
-| **LuaLaTeX** | PDF rendering | MiKTeX or TeX Live |
-| **PowerShell** | Build orchestration | Built into Windows |
-
-## Best Practices
-
-### Asset Management
-
-- Keep emoji PNGs in `assets/emojis/` with `emoji-map.json`
-- Generate PNG banners to `assets/banners/png/` (gitignore)
-- Use consistent DPI (300) for print quality
-
-### Build Hygiene
-
-- Always generate both Print and Digital versions
-- Clean build output before release
-- Version control configs, not generated files
-
-### Content Structure
-
-- One chapter per directory with README.md
-- Banners use consistent naming: `chapter-name.svg`
-- Front matter uses `00-` prefix for ordering
-
-## Typography & Spacing
-
-### Line Spacing Configuration
-
-```yaml
-# In cookbook.yaml
-header-includes:
-  - |
-    \usepackage{setspace}
-    \setstretch{1.2}  % Body text line spacing
-    \renewcommand{\arraystretch}{1.15}  % Table row spacing
-```
-
-### Orphan Prevention
-
-```yaml
-header-includes:
-  - |
-    \usepackage{needspace}
-    % Before sections requiring space:
-    % \needspace{5\baselineskip}
-```yaml
-header-includes:
-  - |
-    \usepackage{needspace}
-    % Before sections requiring space:
-    % \needspace{5\baselineskip}
-```
-
-### Raw LaTeX in Markdown
-
-When you need explicit LaTeX commands (like `\newpage`) in Pandoc markdown, wrap them in a raw LaTeX block:
-
-````markdown
-```{=latex}
-\newpage
-```
-````
-
-**Note:** A bare `\newpage` outside the raw block will be ignored by Pandoc.
-
-## Front Matter Organization
-
-### Professional Book Structure (Industry Standard)
-
-| Order | Element | Page Numbering | Notes |
-|-------|---------|----------------|-------|
-| 1 | **Cover** | None | Full-page artwork |
-| 2 | **Half Title** | Roman (i) | Book title only, no author |
-| 3 | **Title Page** | Roman | Full title, author, publisher |
-| 4 | **Copyright** | Roman | ©, rights, ISBN, disclaimers |
-| 5 | **Dedication** | Roman | Optional |
-| 6 | **Table of Contents** | Roman | Auto-generated by LaTeX |
-| 7 | **Introduction/Preface** | Roman | Author's voice |
-| 8 | **Chapter 1** | Arabic (1) | First numbered page |
-
-### Key Rules
-
-- **Roman numerals** for front matter → Allows last-minute additions without renumbering
-- **Arabic numerals** start fresh at Chapter 1 → Clean break from front matter
-- **Unnumbered sections** → Front matter headings use `{.unnumbered}` in Pandoc
-- **Appendices** → Letter-based (A, B, C) via `\appendix` LaTeX command
-
-### Cookbook Exception (Joel Friedlander)
-
-> "Although rag-right composition is fine in books with little text, like **art books or cookbooks**, virtually all other books ought to be set with justified composition."
-
-Cookbooks can use **ragged right (left-aligned)** text because:
-- Recipes have short lines and frequent breaks
-- Ingredient lists don't benefit from justification
-- Visual clarity matters more than text blocks
-
-### Recommended File Structure
-
-| File Pattern | Purpose | Content |
-|--------------|---------|---------|
-| `00-cover.md` | Cover | LaTeX cover page with graphics |
-| `00ab-halftitle.md` | Half Title | Simple centered title |
-| `00aa-copyright.md` | Copyright | © notice, rights, disclaimers |
-| `00a-dedication.md` | Dedication | Personal dedication |
-| `00b-introduction.md` | Introduction | Hook, manifesto, mission |
-| `00c-*` | About Author | Identity, transparency |
-| `00d-*` | Behind Scenes | Process, meta-commentary |
-| `00e-readers-guide.md` | Reader's Guide | How to use, legend, family notes |
-
-### Build Script Pattern Matching
-
-```powershell
-# Match ALL front matter files for unnumbered headings
-if ($Chapter -match 'book\\00(a[ab]?|[b-e])-') {
-    $Content = $Content -replace '^(#{1,4} [^\r\n{]+)(\r?\n)', '$1 {.unnumbered}$2'
-}
-
-# Switch to appendix mode for back matter
-if ($Chapter -match 'book\\16-') {
-    $CombinedContent += "`n`n\appendix`n`n"
-}
-```
-
-### Key Insight
-
-> **LaTeX auto-generates TOC** — Don't duplicate with manual table of contents file. Instead, use that space for reader-useful content like symbol legends, dietary guides, etc.
-
-## Synapses
-
-This skill connects to:
-- **svg-graphics** → Banner and cover creation
-- **graphic-design** → Visual composition principles
-- **writing-publication** → Content structure and editing
-- **project-scaffolding** → Build system organization
-- **image-handling** → Asset pipeline and conversion

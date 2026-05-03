@@ -1,0 +1,259 @@
+{
+  "$schema": "./loop-config.schema.json",
+  "$comment": "Loop tab menu configuration — source of truth for sidebar Loop groups and buttons. Prompts are loaded from .github/prompts/loop/{promptFile} at runtime.",
+  "version": "1.0",
+  "groups": [
+    {
+      "id": "creative-loop",
+      "label": "CREATIVE LOOP",
+      "icon": "sync",
+      "desc": "Your project journey: Ideate → Plan → Build → Test → Release → Improve",
+      "collapsed": false,
+      "buttons": [
+        {
+          "id": "ideate",
+          "icon": "lightbulb",
+          "label": "① Ideate",
+          "command": "openChat",
+          "tooltip": "Scaffold a wiki and explore your idea",
+          "promptFile": "ideate.prompt.md",
+          "hint": "chat"
+        },
+        {
+          "id": "plan",
+          "icon": "list-tree",
+          "label": "② Plan",
+          "command": "openChat",
+          "promptFile": "plan.prompt.md",
+          "hint": "chat"
+        },
+        {
+          "id": "build",
+          "icon": "tools",
+          "label": "③ Build",
+          "command": "openChat",
+          "promptFile": "build.prompt.md",
+          "hint": "chat"
+        },
+        {
+          "id": "test",
+          "icon": "beaker",
+          "label": "④ Test",
+          "command": "openChat",
+          "promptFile": "test.prompt.md",
+          "hint": "chat"
+        },
+        {
+          "id": "release",
+          "icon": "rocket",
+          "label": "⑤ Release",
+          "command": "openChat",
+          "promptFile": "release.prompt.md",
+          "hint": "chat"
+        },
+        {
+          "id": "improve",
+          "icon": "sparkle",
+          "label": "⑥ Improve",
+          "command": "openChat",
+          "promptFile": "improve.prompt.md",
+          "hint": "chat"
+        }
+      ]
+    },
+    {
+      "id": "build-helpers",
+      "label": "BUILD HELPERS",
+      "icon": "tools",
+      "desc": "Code review, refactoring, debugging, and test-driven development tools",
+      "collapsed": true,
+      "buttons": [
+        {
+          "icon": "code",
+          "label": "Review",
+          "command": "openChat",
+          "tooltip": "3-pass code review with confidence scoring",
+          "promptFile": "review.prompt.md",
+          "hint": "chat"
+        },
+        {
+          "icon": "git-pull-request",
+          "label": "Refactor",
+          "command": "openChat",
+          "promptFile": "refactor.prompt.md",
+          "hint": "chat"
+        },
+        {
+          "icon": "bug",
+          "label": "Debug",
+          "command": "openChat",
+          "promptFile": "debug.prompt.md",
+          "hint": "chat"
+        },
+        {
+          "icon": "checklist",
+          "label": "TDD",
+          "command": "openChat",
+          "promptFile": "tdd.prompt.md",
+          "hint": "chat"
+        },
+        {
+          "icon": "symbol-class",
+          "label": "Diagram",
+          "command": "openChat",
+          "promptFile": "diagram.prompt.md",
+          "hint": "chat"
+        },
+        {
+          "icon": "search",
+          "label": "Gap Analysis",
+          "command": "openChat",
+          "promptFile": "gap-analysis.prompt.md",
+          "hint": "chat"
+        }
+      ]
+    },
+    {
+      "id": "research-learn",
+      "label": "RESEARCH & LEARN",
+      "icon": "book",
+      "desc": "Structured learning, deep research, data analysis, and literature review",
+      "collapsed": true,
+      "buttons": [
+        {
+          "icon": "mortar-board",
+          "label": "Learn",
+          "command": "openChat",
+          "tooltip": "Socratic method learning session",
+          "promptFile": "learn.prompt.md",
+          "hint": "chat"
+        },
+        {
+          "icon": "telescope",
+          "label": "Research",
+          "command": "openChat",
+          "promptFile": "research.prompt.md",
+          "hint": "chat"
+        },
+        {
+          "icon": "graph-line",
+          "label": "Analyze Data",
+          "command": "openChat",
+          "promptFile": "analyze-data.prompt.md",
+          "hint": "chat"
+        },
+        {
+          "icon": "book",
+          "label": "Literature",
+          "command": "openChat",
+          "promptFile": "literature.prompt.md",
+          "hint": "chat"
+        }
+      ]
+    },
+    {
+      "id": "communicate",
+      "label": "COMMUNICATE",
+      "icon": "megaphone",
+      "desc": "Create presentations, data stories, meeting notes, and professional emails",
+      "collapsed": true,
+      "buttons": [
+        {
+          "icon": "file-media",
+          "label": "Presentation",
+          "command": "openChat",
+          "tooltip": "Structure and draft slides for any audience",
+          "promptFile": "presentation.prompt.md",
+          "hint": "chat"
+        },
+        {
+          "icon": "file-code",
+          "label": "Data Story",
+          "command": "openChat",
+          "promptFile": "data-story.prompt.md",
+          "hint": "chat"
+        },
+        {
+          "icon": "note",
+          "label": "Meeting Notes",
+          "command": "openChat",
+          "promptFile": "meeting-notes.prompt.md",
+          "hint": "chat"
+        },
+        {
+          "icon": "mail",
+          "label": "Write Email",
+          "command": "openChat",
+          "promptFile": "write-email.prompt.md",
+          "hint": "chat"
+        }
+      ]
+    },
+    {
+      "id": "project-health",
+      "label": "PROJECT HEALTH",
+      "icon": "pulse",
+      "desc": "Vision alignment, security audits, tech debt tracking, and compliance checks",
+      "collapsed": true,
+      "buttons": [
+        {
+          "icon": "star",
+          "label": "North Star",
+          "command": "openChat",
+          "tooltip": "Define or check alignment with project vision",
+          "promptFile": "north-star.prompt.md",
+          "hint": "chat"
+        },
+        {
+          "icon": "pulse",
+          "label": "Health Check",
+          "command": "openChat",
+          "promptFile": "health-check.prompt.md",
+          "hint": "chat"
+        },
+        {
+          "icon": "book",
+          "label": "Doc Audit",
+          "command": "openChat",
+          "promptFile": "doc-audit.prompt.md",
+          "hint": "chat"
+        },
+        {
+          "icon": "shield",
+          "label": "Security",
+          "command": "openChat",
+          "promptFile": "security.prompt.md",
+          "hint": "chat"
+        },
+        {
+          "icon": "trash",
+          "label": "Tech Debt",
+          "command": "openChat",
+          "promptFile": "tech-debt.prompt.md",
+          "hint": "chat"
+        },
+        {
+          "icon": "refresh",
+          "label": "Dependencies",
+          "command": "openChat",
+          "promptFile": "dependencies.prompt.md",
+          "hint": "chat"
+        },
+        {
+          "icon": "heart",
+          "label": "Responsible AI",
+          "command": "openChat",
+          "promptFile": "responsible-ai.prompt.md",
+          "hint": "chat"
+        },
+        {
+          "icon": "verified",
+          "label": "SFI Review",
+          "command": "openChat",
+          "promptFile": "sfi-review.prompt.md",
+          "hint": "chat"
+        }
+      ]
+    }
+  ]
+}
