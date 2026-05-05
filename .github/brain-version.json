@@ -1,9 +1,0 @@
-{
-  "version": "8.4.0",
-  "architecture": "Alex Cognitive Architecture",
-  "identity": "Alex",
-  "compatibility": ">=8.0.0",
-  "upgradeLock": false,
-  "lastSync": "2026-04-26T22:40:04.682Z",
-  "_notes": "Single source of truth for brain version. Synced to heirs during brain sync. Set identity plus upgradeLock=true in a customized heir to opt out of fleet upgrades. MASTER-ALEX-PROTECTED.json and alex.workspace.protectedMode remain supported as fallback safety gates."
-}

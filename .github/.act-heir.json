@@ -2,12 +2,12 @@
   "$schema": "https://github.com/fabioc-aloha/Alex_ACT_Supervisor/blob/main/fleet/schema/act-heir.schema.json",
   "spec_version": "1.0",
   "edition": "Alex_ACT_Edition",
-  "edition_version": "1.0.0",
+  "edition_version": "1.2.0",
   "heir_id": "alex-cook",
   "heir_name": "Alex Cook",
   "repo_url": "",
   "deployed_at": "2026-05-03T16:23:56Z",
-  "last_sync_at": "2026-05-03T16:23:56Z",
+  "last_sync_at": "2026-05-05T20:57:16Z",
   "contact": {
     "owner": "",
     "feedback_channel": "issues"
